@@ -1,0 +1,7613 @@
+{
+"summary": {
+"clear_flags": 944,
+"refit_ok": 244,
+"status_taxonomy": {
+"complex_rhs": 89,
+"no_code_line": 147,
+"estimator_not_refittable": 387,
+"refit_ok": 244,
+"too_many_levels": 11,
+"covariate_missing": 55,
+"load_fail": 2,
+"too_few_rows": 9
+},
+"broken_any": 80,
+"broken_ge1pct": 54,
+"broken_ge5pct": 30,
+"count": {
+"refit_ok": 52,
+"broken_ge1pct": 17
+},
+"proportion": {
+"refit_ok": 192,
+"broken_ge1pct": 37
+}
+},
+"flags": [
+{
+"dataset": "DVN_0MXT0H",
+"estimator": "lm",
+"outcome": "prop.latino.elected",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_0MXT0H",
+"estimator": "lm",
+"outcome": "prop.latino.ran",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_0MXT0H",
+"estimator": "lm",
+"outcome": "latino.voteshare",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_0QOVCH",
+"estimator": "reg",
+"outcome": "vote_ind2",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_0S5YSH",
+"estimator": "xtreg",
+"outcome": "icrg_corruption_neg",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_0S5YSH",
+"estimator": "xtreg",
+"outcome": "wgiscore_neg",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_0S5YSH",
+"estimator": "xtreg",
+"outcome": "cpiscore_neg",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_0S5YSH",
+"estimator": "reg",
+"outcome": "bribery_log",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 100,
+"p": 8
+},
+{
+"dataset": "DVN_0S5YSH",
+"estimator": "reg",
+"outcome": "icrg_corruption_neg",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_0TIFK9",
+"estimator": "lm",
+"outcome": "prop_ran",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.06517690875232775,
+"n": 1074,
+"p": 2
+},
+{
+"dataset": "DVN_0TIFK9",
+"estimator": "feols",
+"outcome": "avg_opp_prop",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_0TIFK9",
+"estimator": "felm",
+"outcome": "avg_opp_prop",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_0XEUCP",
+"estimator": "lm",
+"outcome": "prop.white",
+"kind": "proportion",
+"status": "too_many_levels"
+},
+{
+"dataset": "DVN_0XEUCP",
+"estimator": "lm",
+"outcome": "prop.black",
+"kind": "proportion",
+"status": "too_many_levels"
+},
+{
+"dataset": "DVN_0XEUCP",
+"estimator": "lm",
+"outcome": "prop.asian",
+"kind": "proportion",
+"status": "too_many_levels"
+},
+{
+"dataset": "DVN_0XEUCP",
+"estimator": "lm",
+"outcome": "prop.hisp",
+"kind": "proportion",
+"status": "too_many_levels"
+},
+{
+"dataset": "DVN_0XEUCP",
+"estimator": "lm",
+"outcome": "prop.college",
+"kind": "proportion",
+"status": "too_many_levels"
+},
+{
+"dataset": "DVN_0XEUCP",
+"estimator": "lm",
+"outcome": "prop.seniors",
+"kind": "proportion",
+"status": "too_many_levels"
+},
+{
+"dataset": "DVN_0XQNDR",
+"estimator": "reghdfe",
+"outcome": "vote_share_gdem",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_18XSG8",
+"estimator": "reg",
+"outcome": "length",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 33,
+"p": 2
+},
+{
+"dataset": "DVN_19FLXV",
+"estimator": "reg",
+"outcome": "trust_politician_index",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_19FLXV",
+"estimator": "reg",
+"outcome": "policy_support_index",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_1G5GK1",
+"estimator": "reg",
+"outcome": "ugpr_std",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_1G5GK1",
+"estimator": "reg",
+"outcome": "ugcl_std",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_1G5GK1",
+"estimator": "reg",
+"outcome": "ugtotraw_std",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_1GLFE1",
+"estimator": "lm",
+"outcome": "adjusted_gallup",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 240,
+"p": 5
+},
+{
+"dataset": "DVN_1GLFE1",
+"estimator": "reg",
+"outcome": "adjusted_gallup",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 240,
+"p": 8
+},
+{
+"dataset": "DVN_1L325J",
+"estimator": "reg",
+"outcome": "q4",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_1MGLHV",
+"estimator": "reg",
+"outcome": "elect_comp",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 359,
+"p": 2
+},
+{
+"dataset": "DVN_1OPRYA",
+"estimator": "reghdfe",
+"outcome": "share_radical_left",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_1OPRYA",
+"estimator": "reghdfe",
+"outcome": "share_radical_right",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_1OPRYA",
+"estimator": "reghdfe",
+"outcome": "share_radical_left_gps",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_1OPRYA",
+"estimator": "reghdfe",
+"outcome": "share_radical_right_gps",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_1OPRYA",
+"estimator": "reghdfe",
+"outcome": "share_mod_stro_pop_parties",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_1OPRYA",
+"estimator": "reghdfe",
+"outcome": "share_strongly_pop_parties",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_1OPRYA",
+"estimator": "reghdfe",
+"outcome": "share_populist_parties",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_1OPRYA",
+"estimator": "reghdfe",
+"outcome": "turnout",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_1OPRYA",
+"estimator": "reg",
+"outcome": "turnout",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_1PGBFC",
+"estimator": "reg",
+"outcome": "civil_society",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_1PGBFC",
+"estimator": "reg",
+"outcome": "clean_election",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_1PGBFC",
+"estimator": "reg",
+"outcome": "judicial_con",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_1PGBFC",
+"estimator": "lmer",
+"outcome": "comm_count",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_1PZSCI",
+"estimator": "regress",
+"outcome": "lka_open2",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 1508,
+"p": 2
+},
+{
+"dataset": "DVN_21HZCC",
+"estimator": "xtreg",
+"outcome": "replacement_rateadj_minister",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_22636",
+"estimator": "reg",
+"outcome": "disspoil_ratio",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_22636",
+"estimator": "reg",
+"outcome": "disactual_voters_ratio",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_23302",
+"estimator": "regress",
+"outcome": "avgagency",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_23302",
+"estimator": "regress",
+"outcome": "avgphd",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_23302",
+"estimator": "regress",
+"outcome": "avggovt",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_23302",
+"estimator": "regress",
+"outcome": "avgbushorclinton",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_23302",
+"estimator": "regress",
+"outcome": "avgsubjectall",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_23302",
+"estimator": "regress",
+"outcome": "avgpolitics",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_23302",
+"estimator": "regress",
+"outcome": "avgcampaignwork",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_23624",
+"estimator": "reg",
+"outcome": "dem_share_next",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_24387",
+"estimator": "lm",
+"outcome": "scsupx",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 693,
+"p": 16
+},
+{
+"dataset": "DVN_24387",
+"estimator": "reg",
+"outcome": "scsupx",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_25423",
+"estimator": "reg",
+"outcome": "pol2norm",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_26937",
+"estimator": "xtreg",
+"outcome": "mshare_county",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_27176",
+"estimator": "xtreg",
+"outcome": "names",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_27512",
+"estimator": "reg",
+"outcome": "lnsmallent",
+"kind": "count",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_29591",
+"estimator": "reg",
+"outcome": "turnout",
+"kind": "proportion",
+"status": "load_fail"
+},
+{
+"dataset": "DVN_2CITBJ",
+"estimator": "reg",
+"outcome": "portshare",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_2CITBJ",
+"estimator": "mixed",
+"outcome": "portshare",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_2CVG5E",
+"estimator": "lm",
+"outcome": "index",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_2E4MOZ",
+"estimator": "feols",
+"outcome": "voteshare16_ofall_noind",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_2E4MOZ",
+"estimator": "feols",
+"outcome": "voteshare16_noind",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_2LHT5U",
+"estimator": "lm_robust",
+"outcome": "c10_home_good",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 841,
+"p": 2
+},
+{
+"dataset": "DVN_2LHT5U",
+"estimator": "lm_robust",
+"outcome": "c10_catholic",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 841,
+"p": 2
+},
+{
+"dataset": "DVN_2QG92Y",
+"estimator": "xtreg",
+"outcome": "qdisprta",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_2XIFZW",
+"estimator": "reg",
+"outcome": "quality",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 2294,
+"p": 3
+},
+{
+"dataset": "DVN_2XIFZW",
+"estimator": "reg",
+"outcome": "ranking",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 2294,
+"p": 3
+},
+{
+"dataset": "DVN_3DK6JA",
+"estimator": "lm",
+"outcome": "ps_egipgrps_share",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0,
+"n": 4121,
+"p": 11
+},
+{
+"dataset": "DVN_3DK6JA",
+"estimator": "lm",
+"outcome": "aut_groupsize_excl",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.19409784115666467,
+"n": 5049,
+"p": 11
+},
+{
+"dataset": "DVN_3DK6JA",
+"estimator": "lm",
+"outcome": "aut_groupsize",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.2964943553178847,
+"n": 5049,
+"p": 11
+},
+{
+"dataset": "DVN_3KIQAW",
+"estimator": "regress",
+"outcome": "hpolcon_postc10avg",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 35,
+"p": 4
+},
+{
+"dataset": "DVN_3KIQAW",
+"estimator": "reg",
+"outcome": "hpolcon_postc10avg",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 4,
+"viol_share": 0.02857142857142857,
+"n": 35,
+"p": 5
+},
+{
+"dataset": "DVN_3TTQL2",
+"estimator": "reg",
+"outcome": "amount",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_3YK0HL",
+"estimator": "lm",
+"outcome": "bypass_pop_log",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.030120481927710843,
+"n": 332,
+"p": 28
+},
+{
+"dataset": "DVN_4EZPKF",
+"estimator": "reghdfe",
+"outcome": "terrorist_tp_fs_pc",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_4EZPKF",
+"estimator": "reghdfe",
+"outcome": "false_ied_fs_pc",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_4EZPKF",
+"estimator": "reghdfe",
+"outcome": "insider_attack_fs_pc",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_4LZXTY",
+"estimator": "xtmixed",
+"outcome": "biggestsplit",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_4PYOXP",
+"estimator": "lm_robust",
+"outcome": "duration",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 5950,
+"p": 5
+},
+{
+"dataset": "DVN_4QUS9U",
+"estimator": "reg",
+"outcome": "perc_community_contributions",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_4QUS9U",
+"estimator": "mixed",
+"outcome": "perc_community_contributions",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_4UOQUR",
+"estimator": "xtreg",
+"outcome": "grg",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_4UOQUR",
+"estimator": "xtreg",
+"outcome": "ggini",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_5MAQC2",
+"estimator": "xtreg",
+"outcome": "pctnhwht_city2011",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_5MAQC2",
+"estimator": "xtreg",
+"outcome": "pctrestrict_tr",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_5MAQC2",
+"estimator": "regress",
+"outcome": "pctrestrict",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 1262,
+"p": 3
+},
+{
+"dataset": "DVN_5O3EOW",
+"estimator": "reghdfe",
+"outcome": "univ_post",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_5O3EOW",
+"estimator": "reghdfe",
+"outcome": "ethnicity_n_nuts3",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_61JSZQ",
+"estimator": "lm",
+"outcome": "disb_perc3",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_61JSZQ",
+"estimator": "lm",
+"outcome": "disb_perc2",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_62TBIX",
+"estimator": "lm",
+"outcome": "age",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0,
+"n": 529,
+"p": 3
+},
+{
+"dataset": "DVN_6YNZTE",
+"estimator": "lm",
+"outcome": "term",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_7PCO1L",
+"estimator": "reg",
+"outcome": "total",
+"kind": "count",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_7UOT14",
+"estimator": "regress",
+"outcome": "issuanceperofextbwng",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_8EWBO9",
+"estimator": "xtreg",
+"outcome": "sspta",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_8I6NOT",
+"estimator": "lm",
+"outcome": "hostile_online",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 7,
+"viol_share": 0.21071428571428572,
+"n": 840,
+"p": 8
+},
+{
+"dataset": "DVN_8I6NOT",
+"estimator": "lm",
+"outcome": "hostile_offline",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.2581032412965186,
+"n": 833,
+"p": 8
+},
+{
+"dataset": "DVN_8I6NOT",
+"estimator": "lm",
+"outcome": "talk_online",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 6,
+"viol_share": 0.0,
+"n": 798,
+"p": 8
+},
+{
+"dataset": "DVN_8I6NOT",
+"estimator": "lm",
+"outcome": "talk_offline",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 6,
+"viol_share": 0.0,
+"n": 820,
+"p": 8
+},
+{
+"dataset": "DVN_8I6NOT",
+"estimator": "lmer",
+"outcome": "crowd.mean",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_8LQZW9",
+"estimator": "reg",
+"outcome": "v2x_cspart",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_8OPEAL",
+"estimator": "lm",
+"outcome": "percent_repub",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_8OPEAL",
+"estimator": "lm",
+"outcome": "prez_copartisans",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_8OPEAL",
+"estimator": "reg",
+"outcome": "us_high_act",
+"kind": "count",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_8SIOKU",
+"estimator": "felm",
+"outcome": "cons_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_8SIOKU",
+"estimator": "felm",
+"outcome": "lab_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_8SIOKU",
+"estimator": "felm",
+"outcome": "lib_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_8SIOKU",
+"estimator": "felm",
+"outcome": "lib_lab_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_8SIOKU",
+"estimator": "lm",
+"outcome": "cons_share",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 4062,
+"p": 2
+},
+{
+"dataset": "DVN_8SIOKU",
+"estimator": "felm",
+"outcome": "incumbent_mp_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_8SIOKU",
+"estimator": "felm",
+"outcome": "incumbent_party_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_8ZT2ID",
+"estimator": "lm",
+"outcome": "apre_1d",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_8ZT2ID",
+"estimator": "lm",
+"outcome": "first_eigen_share",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_8ZT2ID",
+"estimator": "lm",
+"outcome": "nay_correct_1d",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_97KSIK",
+"estimator": "reg",
+"outcome": "abs_pop",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0030511060259344014,
+"n": 1311,
+"p": 44
+},
+{
+"dataset": "DVN_97KSIK",
+"estimator": "xtreg",
+"outcome": "abs_pop",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_97KSIK",
+"estimator": "xtreg",
+"outcome": "added",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_97KSIK",
+"estimator": "xtreg",
+"outcome": "removed",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_9AMKHL",
+"estimator": "lm",
+"outcome": "tweets",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 960,
+"p": 2
+},
+{
+"dataset": "DVN_9AMKHL",
+"estimator": "lm",
+"outcome": "mentions",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 976,
+"p": 2
+},
+{
+"dataset": "DVN_9CEQKX",
+"estimator": "reg",
+"outcome": "blackregrate",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 3,
+"viol_share": 0.06349206349206349,
+"n": 63,
+"p": 5
+},
+{
+"dataset": "DVN_9CEQKX",
+"estimator": "reg",
+"outcome": "whiteregrate",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 3,
+"viol_share": 0.031746031746031744,
+"n": 63,
+"p": 5
+},
+{
+"dataset": "DVN_9OK6RH",
+"estimator": "reg",
+"outcome": "v819",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 182,
+"p": 2
+},
+{
+"dataset": "DVN_9OQZ2Z",
+"estimator": "lm",
+"outcome": "voteshare",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_9PWQZT",
+"estimator": "lm_robust",
+"outcome": "mpa_share_mamoor_2018",
+"kind": "proportion",
+"status": "too_many_levels"
+},
+{
+"dataset": "DVN_9PWQZT",
+"estimator": "lm_robust",
+"outcome": "turnout_2018",
+"kind": "proportion",
+"status": "too_many_levels"
+},
+{
+"dataset": "DVN_9QSQIW",
+"estimator": "areg",
+"outcome": "cbi",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_9QSQIW",
+"estimator": "areg",
+"outcome": "cbi_bcsys",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_9TFMSG",
+"estimator": "reg",
+"outcome": "prof_diversity",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 5,
+"viol_share": 0.0,
+"n": 31,
+"p": 2
+},
+{
+"dataset": "DVN_9TFMSG",
+"estimator": "reg",
+"outcome": "prof_diversity_f",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 5,
+"viol_share": 0.0,
+"n": 31,
+"p": 2
+},
+{
+"dataset": "DVN_9TFMSG",
+"estimator": "reg",
+"outcome": "prof_diversity_m",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 5,
+"viol_share": 0.0,
+"n": 31,
+"p": 2
+},
+{
+"dataset": "DVN_9TFMSG",
+"estimator": "reg",
+"outcome": "diversity_person",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 5,
+"viol_share": 0.0,
+"n": 36,
+"p": 2
+},
+{
+"dataset": "DVN_9TFMSG",
+"estimator": "reg",
+"outcome": "diversity_person_f",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 5,
+"viol_share": 0.0,
+"n": 36,
+"p": 2
+},
+{
+"dataset": "DVN_9TFMSG",
+"estimator": "reg",
+"outcome": "diversity_person_m",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 5,
+"viol_share": 0.0,
+"n": 36,
+"p": 2
+},
+{
+"dataset": "DVN_9Z1QK6",
+"estimator": "felm",
+"outcome": "national_vs_extreme",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_9Z1QK6",
+"estimator": "felm",
+"outcome": "national_turnout",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_9ZYFBX",
+"estimator": "reg",
+"outcome": "vote_general",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_9ZYFBX",
+"estimator": "reg",
+"outcome": "turnout_party_share",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_9ZYFBX",
+"estimator": "reg",
+"outcome": "turnout_party",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_9ZYFBX",
+"estimator": "reg",
+"outcome": "turnout_opp_party",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_9ZYFBX",
+"estimator": "reg",
+"outcome": "lag_share",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_9ZYFBX",
+"estimator": "reg",
+"outcome": "turnout_indep",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_9ZYFBX",
+"estimator": "reg",
+"outcome": "vote_g",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 3,
+"viol_share": 0.005411906193625977,
+"n": 1663,
+"p": 3
+},
+{
+"dataset": "DVN_9ZYFBX",
+"estimator": "reg",
+"outcome": "turnout_share1",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 3,
+"viol_share": 0.0,
+"n": 1205,
+"p": 3
+},
+{
+"dataset": "DVN_A9KK0V",
+"estimator": "lm_robust",
+"outcome": "v2xps_party",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.014230271668822769,
+"n": 773,
+"p": 153
+},
+{
+"dataset": "DVN_A9KK0V",
+"estimator": "lmer",
+"outcome": "v2xps_party",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_A9KK0V",
+"estimator": "lm",
+"outcome": "v2xps_party",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.00517464424320828,
+"n": 773,
+"p": 154
+},
+{
+"dataset": "DVN_A9KK0V",
+"estimator": "lm",
+"outcome": "ldv",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 942,
+"p": 13
+},
+{
+"dataset": "DVN_A9KK0V",
+"estimator": "lmer",
+"outcome": "v2xel_frefair",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_A9KK0V",
+"estimator": "lm",
+"outcome": "v2xel_frefair",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_ACMM3W",
+"estimator": "lm",
+"outcome": "vote_wait_time",
+"kind": "count",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_AEBVGD",
+"estimator": "feols",
+"outcome": "pooling",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_AEBVGD",
+"estimator": "feols",
+"outcome": "delegation",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_AEZKWE",
+"estimator": "lm",
+"outcome": "frag",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.03471074380165289,
+"n": 2420,
+"p": 85
+},
+{
+"dataset": "DVN_AEZKWE",
+"estimator": "lm",
+"outcome": "number",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 4,
+"viol_share": 0.014049586776859505,
+"n": 2420,
+"p": 84
+},
+{
+"dataset": "DVN_AEZKWE",
+"estimator": "lm",
+"outcome": "frag.recip",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 4,
+"viol_share": 0.009917355371900827,
+"n": 2420,
+"p": 84
+},
+{
+"dataset": "DVN_AJHFHU",
+"estimator": "reg",
+"outcome": "turnout",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_AJHFHU",
+"estimator": "xtreg",
+"outcome": "turnout",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_AJWTLI",
+"estimator": "felm",
+"outcome": "party_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_AJWTLI",
+"estimator": "xtreg",
+"outcome": "party_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_AKM97Q",
+"estimator": "xtreg",
+"outcome": "karzai0409_pct2",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_AO7IYJ",
+"estimator": "reg",
+"outcome": "scsup3ix",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_AP8JH4",
+"estimator": "reg",
+"outcome": "civicindex1",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_ARMDLY",
+"estimator": "reg",
+"outcome": "wnompctile",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_AU1MVC",
+"estimator": "reghdfe",
+"outcome": "counties",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_AW5LU8",
+"estimator": "lm_robust",
+"outcome": "turnout",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_AW5LU8",
+"estimator": "lm",
+"outcome": "voted",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_AW5LU8",
+"estimator": "lm_robust",
+"outcome": "voted",
+"kind": "count",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_AW5LU8",
+"estimator": "reg",
+"outcome": "voted",
+"kind": "count",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_AWDT1F",
+"estimator": "xtreg",
+"outcome": "ers",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_AWSQTW",
+"estimator": "reg",
+"outcome": "ev_total",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 442,
+"p": 2
+},
+{
+"dataset": "DVN_AXVEXM",
+"estimator": "lmer",
+"outcome": "salestax_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_AXVEXM",
+"estimator": "lm",
+"outcome": "salestax_share",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_AY32JZ",
+"estimator": "lm",
+"outcome": "p.edu",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0,
+"n": 5146,
+"p": 36
+},
+{
+"dataset": "DVN_AY32JZ",
+"estimator": "lm",
+"outcome": "p.health",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0,
+"n": 5149,
+"p": 36
+},
+{
+"dataset": "DVN_AYSHR4",
+"estimator": "xtreg",
+"outcome": "migshare",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_AYSHR4",
+"estimator": "ivreg2",
+"outcome": "n_corriere",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_AYSHR4",
+"estimator": "ivreg2",
+"outcome": "n_lastampa",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_AYSHR4",
+"estimator": "reghdfe",
+"outcome": "migshare",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_B1HHGV",
+"estimator": "felm",
+"outcome": "urvote",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_B1HHGV",
+"estimator": "felm",
+"outcome": "max_ur",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_B5YNLC",
+"estimator": "reg",
+"outcome": "age",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 1021,
+"p": 5
+},
+{
+"dataset": "DVN_BB7F6Z",
+"estimator": "reg",
+"outcome": "persrat_1",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_BBCAYZ",
+"estimator": "xtreg",
+"outcome": "actmilcabshare",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_BEW2ME",
+"estimator": "felm",
+"outcome": "climate",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_BEW2ME",
+"estimator": "lm",
+"outcome": "climate",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_BGLGBZ",
+"estimator": "reghdfe",
+"outcome": "agency_politicized",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_BHVEBZ",
+"estimator": "reghdfe",
+"outcome": "c_don",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_BHVEBZ",
+"estimator": "reghdfe",
+"outcome": "t_don",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_BHVEBZ",
+"estimator": "reghdfe",
+"outcome": "o_don",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_BHVEBZ",
+"estimator": "reghdfe",
+"outcome": "r_don",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_BRHY14",
+"estimator": "lm",
+"outcome": "turnout",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_BTJYHC",
+"estimator": "reg",
+"outcome": "welf_attitudes",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_BU06MH",
+"estimator": "reghdfe",
+"outcome": "applicants",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_BXIRYE",
+"estimator": "regress",
+"outcome": "cm",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_BZ9XRJ",
+"estimator": "reg",
+"outcome": "violence",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_BZ9XRJ",
+"estimator": "reg",
+"outcome": "undemocratic",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_BZ9XRJ",
+"estimator": "reg",
+"outcome": "denial_oct",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_BZ9XRJ",
+"estimator": "reg",
+"outcome": "aeo",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_BZ9XRJ",
+"estimator": "reg",
+"outcome": "online_hostility",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_BZ9XRJ",
+"estimator": "reg",
+"outcome": "nfc",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_BZ9XRJ",
+"estimator": "reg",
+"outcome": "meta_violence_po",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_BZ9XRJ",
+"estimator": "reg",
+"outcome": "meta_violence_pis",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_BZ9XRJ",
+"estimator": "reg",
+"outcome": "meta_undem_po",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_BZ9XRJ",
+"estimator": "reg",
+"outcome": "meta_undem_pis",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_BZ9Z2D",
+"estimator": "lm",
+"outcome": "wasted.fd.58",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 4,
+"viol_share": 0.0,
+"n": 1035,
+"p": 2
+},
+{
+"dataset": "DVN_BZ9Z2D",
+"estimator": "lm",
+"outcome": "wasted.fd.62",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 4,
+"viol_share": 0.0028957528957528956,
+"n": 1036,
+"p": 5
+},
+{
+"dataset": "DVN_BZ9Z2D",
+"estimator": "lm",
+"outcome": "wasted.sn.58",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 4,
+"viol_share": 0.0008802816901408451,
+"n": 1136,
+"p": 12
+},
+{
+"dataset": "DVN_BZ9Z2D",
+"estimator": "lm",
+"outcome": "wasted.sn.62",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 4,
+"viol_share": 0.0,
+"n": 1136,
+"p": 2
+},
+{
+"dataset": "DVN_BZA22S",
+"estimator": "xtreg",
+"outcome": "putin_count_share2",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_BZA22S",
+"estimator": "xtreg",
+"outcome": "putin_count_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_BZA22S",
+"estimator": "xtreg",
+"outcome": "medvedev_count_share2",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_BZZ9VF",
+"estimator": "reg",
+"outcome": "vshare_official_2013",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_C0VFMH",
+"estimator": "reg",
+"outcome": "household_income_0_1",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_C6NONY",
+"estimator": "reg",
+"outcome": "share_afd2017",
+"kind": "proportion",
+"status": "load_fail"
+},
+{
+"dataset": "DVN_CAEEG7",
+"estimator": "lm",
+"outcome": "dem",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 4,
+"viol_share": 0.0,
+"n": 2331,
+"p": 2
+},
+{
+"dataset": "DVN_CAEEG7",
+"estimator": "lm",
+"outcome": "affirm",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 4,
+"viol_share": 0.0,
+"n": 2331,
+"p": 2
+},
+{
+"dataset": "DVN_CAEEG7",
+"estimator": "lm",
+"outcome": "wht.obama.vote",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_CFASH6",
+"estimator": "reg",
+"outcome": "share_detained_sheriff",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_CHLLZ4",
+"estimator": "lmer",
+"outcome": "percent_women_candidates",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_CHLLZ4",
+"estimator": "lmer",
+"outcome": "percent_women_seats",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_CHXJRF",
+"estimator": "xtreg",
+"outcome": "turnout_alc",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_CHXJRF",
+"estimator": "reg",
+"outcome": "turnout_alc",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_CLMQ8E",
+"estimator": "reg",
+"outcome": "sd_index",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_CLMQ8E",
+"estimator": "regress",
+"outcome": "sd_index",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_CSHNIS",
+"estimator": "reg",
+"outcome": "lcri_euc1_r",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.016666666666666666,
+"n": 180,
+"p": 9
+},
+{
+"dataset": "DVN_CSHNIS",
+"estimator": "ivreg2",
+"outcome": "lcri_neu_r",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_CSHNIS",
+"estimator": "ivreg2",
+"outcome": "allbribe",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_CSHNIS",
+"estimator": "xtmixed",
+"outcome": "lcri_euc1_r",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_CSHNIS",
+"estimator": "reg",
+"outcome": "lcri_neu_r",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_CSHNIS",
+"estimator": "xtmixed",
+"outcome": "lcri_neu_r",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_CSHNIS",
+"estimator": "reg",
+"outcome": "allbribe",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_CSHNIS",
+"estimator": "xtmixed",
+"outcome": "allbribe",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_CTMZX8",
+"estimator": "xtreg",
+"outcome": "adjregionbonanzaratio",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_CTMZX8",
+"estimator": "regress",
+"outcome": "adjregionbonanzaratio",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 6,
+"viol_share": 0.07864077669902912,
+"n": 5150,
+"p": 208
+},
+{
+"dataset": "DVN_CTMZX8",
+"estimator": "reg",
+"outcome": "adjregionbonanzaratio",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.08621359223300971,
+"n": 5150,
+"p": 208
+},
+{
+"dataset": "DVN_CTMZX8",
+"estimator": "xtreg",
+"outcome": "adjregioncrisisratio",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_CTMZX8",
+"estimator": "regress",
+"outcome": "adjregioncrisisratio",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 5,
+"viol_share": 0.0594944512946979,
+"n": 6488,
+"p": 208
+},
+{
+"dataset": "DVN_CUWUYR",
+"estimator": "reg",
+"outcome": "bill_rate_all",
+"kind": "proportion",
+"status": "too_many_levels"
+},
+{
+"dataset": "DVN_CUWUYR",
+"estimator": "reg",
+"outcome": "bill_rate_hr",
+"kind": "proportion",
+"status": "too_many_levels"
+},
+{
+"dataset": "DVN_CWQYIB",
+"estimator": "reg",
+"outcome": "expost_ratio",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_CWQYIB",
+"estimator": "areg",
+"outcome": "expost_ratio",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_CZDGR2",
+"estimator": "reg",
+"outcome": "pct_agri_1970",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_DAC9NX",
+"estimator": "xtreg",
+"outcome": "perc_yes",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DAC9NX",
+"estimator": "reg",
+"outcome": "perc_yes",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_DAC9NX",
+"estimator": "areg",
+"outcome": "perc_yes",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DAPNOX",
+"estimator": "reg",
+"outcome": "postmrr",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 3,
+"viol_share": 0.0,
+"n": 3841,
+"p": 7
+},
+{
+"dataset": "DVN_DAYSCX",
+"estimator": "reg",
+"outcome": "inc_voteshare",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_DBMJQZ",
+"estimator": "lm",
+"outcome": "polity4",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 5,
+"viol_share": 0.10187353629976581,
+"n": 854,
+"p": 145
+},
+{
+"dataset": "DVN_DBNBEU",
+"estimator": "lmer",
+"outcome": "emd_econ",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DBNBEU",
+"estimator": "lmer",
+"outcome": "emd_samesex",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DEIRCB",
+"estimator": "reghdfe",
+"outcome": "sh_tesquerda",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DEIRCB",
+"estimator": "reghdfe",
+"outcome": "sh_tdireita",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DEIRCB",
+"estimator": "reghdfe",
+"outcome": "sh_tpt_",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DEIRCB",
+"estimator": "reghdfe",
+"outcome": "sh_tprn_",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DEIRCB",
+"estimator": "xtreg",
+"outcome": "sh_tpt_",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DEKMKT",
+"estimator": "reghdfe",
+"outcome": "d2pshare",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DEKMKT",
+"estimator": "reg",
+"outcome": "d2pshare",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_DFZKB6",
+"estimator": "felm",
+"outcome": "white_prop_winners",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DFZKB6",
+"estimator": "felm",
+"outcome": "hisp_prop_winners",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DFZKB6",
+"estimator": "felm",
+"outcome": "asian_prop_winners",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DFZKB6",
+"estimator": "felm",
+"outcome": "num_of_white_cands",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DFZKB6",
+"estimator": "felm",
+"outcome": "num_of_hisp_cands",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DFZKB6",
+"estimator": "felm",
+"outcome": "white_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DFZKB6",
+"estimator": "felm",
+"outcome": "hispanic_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DFZKB6",
+"estimator": "felm",
+"outcome": "asian_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DFZKB6",
+"estimator": "felm",
+"outcome": "black_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DFZKB6",
+"estimator": "felm",
+"outcome": "turnout",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DFZKB6",
+"estimator": "felm",
+"outcome": "white_prop_cands",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DFZKB6",
+"estimator": "felm",
+"outcome": "hisp_prop_cands",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DFZKB6",
+"estimator": "felm",
+"outcome": "asian_prop_cands",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DFZKB6",
+"estimator": "felm",
+"outcome": "black_prop_cands",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DFZKB6",
+"estimator": "felm",
+"outcome": "total_cands",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DGHBUX",
+"estimator": "reghdfe",
+"outcome": "voteshare",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DGHBUX",
+"estimator": "reghdfe",
+"outcome": "votesharewithzero",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DJ2DPZ",
+"estimator": "xtreg",
+"outcome": "vs",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DJ2DPZ",
+"estimator": "reg",
+"outcome": "vs",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_DJKH4H",
+"estimator": "areg",
+"outcome": "turnout_pop",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DJKH4H",
+"estimator": "reg",
+"outcome": "turnout_pop",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_DJKH4H",
+"estimator": "reg",
+"outcome": "dem_perc",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_DJKH4H",
+"estimator": "areg",
+"outcome": "dem_perc",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DJKH4H",
+"estimator": "areg",
+"outcome": "turnout_vap",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DNDSPS",
+"estimator": "lm",
+"outcome": "b.scaled.intgrp",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 1834,
+"p": 3
+},
+{
+"dataset": "DVN_DNDSPS",
+"estimator": "lm",
+"outcome": "m.scaled.intgrp",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 1834,
+"p": 3
+},
+{
+"dataset": "DVN_DNH9XV",
+"estimator": "reg",
+"outcome": "threat_combine",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 6760,
+"p": 7
+},
+{
+"dataset": "DVN_DO43V5",
+"estimator": "felm",
+"outcome": "taxrate.e",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DWQLIB",
+"estimator": "reghdfe",
+"outcome": "staten",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_DWQLIB",
+"estimator": "reg",
+"outcome": "staten",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_DXRLXI",
+"estimator": "lm",
+"outcome": "dead_spec",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 4,
+"viol_share": 0.0994604738447103,
+"n": 4263,
+"p": 48
+},
+{
+"dataset": "DVN_DXRLXI",
+"estimator": "lm",
+"outcome": "noncombat_death",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.03729767769176636,
+"n": 4263,
+"p": 48
+},
+{
+"dataset": "DVN_DXRLXI",
+"estimator": "lm",
+"outcome": "dead_total",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0994604738447103,
+"n": 4263,
+"p": 48
+},
+{
+"dataset": "DVN_E0BJIZ",
+"estimator": "feols",
+"outcome": "vd_app_pr",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_E0BJIZ",
+"estimator": "feols",
+"outcome": "vd_power_all",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EARLA4",
+"estimator": "reg",
+"outcome": "mean_prop_cospon_opp_spon_sn",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0013844023996308261,
+"n": 2167,
+"p": 18
+},
+{
+"dataset": "DVN_EARLA4",
+"estimator": "xtreg",
+"outcome": "mean_prop_cospon_opp_spon_sn",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EARLA4",
+"estimator": "reg",
+"outcome": "mean_prop_cospon_opp_spon_sn_nc",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0009233610341643582,
+"n": 2166,
+"p": 18
+},
+{
+"dataset": "DVN_EARLA4",
+"estimator": "xtreg",
+"outcome": "mean_prop_cospon_opp_spon_sn_nc",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EARLA4",
+"estimator": "reg",
+"outcome": "mean_prop_cospon_opp_spon_hr",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0007780371234856063,
+"n": 8997,
+"p": 18
+},
+{
+"dataset": "DVN_EARLA4",
+"estimator": "xtreg",
+"outcome": "mean_prop_cospon_opp_spon_hr",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EARLA4",
+"estimator": "reg",
+"outcome": "mean_prop_cospon_opp_spon_hr_nc",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0015623256332998549,
+"n": 8961,
+"p": 18
+},
+{
+"dataset": "DVN_EARLA4",
+"estimator": "xtreg",
+"outcome": "mean_prop_cospon_opp_spon_hr_nc",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EBUXTW",
+"estimator": "xtreg",
+"outcome": "first_vs_second",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EBUXTW",
+"estimator": "xtreg",
+"outcome": "first_percent",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EBWFA9",
+"estimator": "reg",
+"outcome": "attitude_to_migrants",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 5,
+"viol_share": 0.0,
+"n": 600,
+"p": 5
+},
+{
+"dataset": "DVN_EHWM14",
+"estimator": "felm",
+"outcome": "natecon_avg",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EHWM14",
+"estimator": "felm",
+"outcome": "education_avg",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EHWM14",
+"estimator": "felm",
+"outcome": "health_avg",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EHWM14",
+"estimator": "felm",
+"outcome": "competitive_all",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EHWM14",
+"estimator": "felm",
+"outcome": "competitive_construction",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EHWM14",
+"estimator": "felm",
+"outcome": "transfers_avg",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EHWM14",
+"estimator": "felm",
+"outcome": "natecon_spend",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EHWM14",
+"estimator": "felm",
+"outcome": "edu_spend",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EHWM14",
+"estimator": "felm",
+"outcome": "health_spend",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EHWM14",
+"estimator": "felm",
+"outcome": "agr_spend",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EHWM14",
+"estimator": "felm",
+"outcome": "fuel_spend",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EHWM14",
+"estimator": "felm",
+"outcome": "roads_spend",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EHWM14",
+"estimator": "felm",
+"outcome": "privateproperty_tax_rev",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EHWM14",
+"estimator": "felm",
+"outcome": "zkhx_spend",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EHWM14",
+"estimator": "felm",
+"outcome": "all_social_spend",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EHWM14",
+"estimator": "felm",
+"outcome": "unemployment",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EIINMP",
+"estimator": "reg",
+"outcome": "ticketpos",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_EKM4B3",
+"estimator": "reg",
+"outcome": "aged",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_EMIDOA",
+"estimator": "reg",
+"outcome": "next_voteshare",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.011834319526627219,
+"n": 169,
+"p": 14
+},
+{
+"dataset": "DVN_EPEDIE",
+"estimator": "reg",
+"outcome": "partydonors",
+"kind": "count",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_ER3D0H",
+"estimator": "regress",
+"outcome": "policypref",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_ER3D0H",
+"estimator": "regress",
+"outcome": "policyaction",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_EVCSCQ",
+"estimator": "xtreg",
+"outcome": "yield",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EVLKBN",
+"estimator": "regress",
+"outcome": "total",
+"kind": "count",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_EYAWES",
+"estimator": "reghdfe",
+"outcome": "detentioncenter",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EYAWES",
+"estimator": "reghdfe",
+"outcome": "sh_outmig_82",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_EYAWES",
+"estimator": "reghdfe",
+"outcome": "sh_outmig_82_77",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_F4GH3L",
+"estimator": "reg",
+"outcome": "security_sthlm2",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_F4GH3L",
+"estimator": "reg",
+"outcome": "security_sthlmw102",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_F4GH3L",
+"estimator": "reg",
+"outcome": "security_sthlmw122",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_FBKO6N",
+"estimator": "xtreg",
+"outcome": "white_share1",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_FBKO6N",
+"estimator": "xtreg",
+"outcome": "hispanic_share1",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_FBKO6N",
+"estimator": "xtreg",
+"outcome": "asian_share1",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_FBKO6N",
+"estimator": "xtreg",
+"outcome": "black_share1",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_FCZDKD",
+"estimator": "reg",
+"outcome": "proportionfemalecand",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 4,
+"viol_share": 0.0,
+"n": 96,
+"p": 3
+},
+{
+"dataset": "DVN_FCZDKD",
+"estimator": "reg",
+"outcome": "pctwomencongcands",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 900,
+"p": 19
+},
+{
+"dataset": "DVN_FIGDU9",
+"estimator": "reg",
+"outcome": "diffuse01",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_FIGDU9",
+"estimator": "reg",
+"outcome": "w1_diffuse01",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_FIGDU9",
+"estimator": "reg",
+"outcome": "w5_diffuse01",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_FIGDU9",
+"estimator": "sureg",
+"outcome": "w5_rulelaw01",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_FIGDU9",
+"estimator": "sureg",
+"outcome": "w1_abortion01",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_FIGDU9",
+"estimator": "reg",
+"outcome": "diffuse_support",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_FLDXM9",
+"estimator": "reghdfe",
+"outcome": "chavismo",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_FLV8GQ",
+"estimator": "xtreg",
+"outcome": "liberaldemocracy",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_FLV8GQ",
+"estimator": "xtreg",
+"outcome": "df_legconstraints",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_FLV8GQ",
+"estimator": "xtreg",
+"outcome": "df_juconstraints",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_FLV8GQ",
+"estimator": "reg",
+"outcome": "liberaldemocracy",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_FLV8GQ",
+"estimator": "xtreg",
+"outcome": "dj_legpower",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_FOGHI5",
+"estimator": "lm",
+"outcome": "european",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 1142,
+"p": 2
+},
+{
+"dataset": "DVN_FOGHI5",
+"estimator": "lm",
+"outcome": "national",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 3,
+"viol_share": 0.0,
+"n": 1142,
+"p": 2
+},
+{
+"dataset": "DVN_FOSMRN",
+"estimator": "reg",
+"outcome": "rev_sb_elec_periodw",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 866,
+"p": 2
+},
+{
+"dataset": "DVN_FQTA4A",
+"estimator": "reghdfe",
+"outcome": "log_delegation_ratio1",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_FQTA4A",
+"estimator": "reghdfe",
+"outcome": "log_delegation_ratio",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_FQTA4A",
+"estimator": "reghdfe",
+"outcome": "del_final",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_FQTA4A",
+"estimator": "reg",
+"outcome": "franchino_delegations",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 153,
+"p": 2
+},
+{
+"dataset": "DVN_FUAARK",
+"estimator": "xtreg",
+"outcome": "v2x_libdem",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_FUAARK",
+"estimator": "reg",
+"outcome": "v2xpa_antiplural",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 570,
+"p": 4
+},
+{
+"dataset": "DVN_FUAARK",
+"estimator": "xtmixed",
+"outcome": "v2x_libdem",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_FW87Y1",
+"estimator": "lm",
+"outcome": "b_dim1",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_FW87Y1",
+"estimator": "lm",
+"outcome": "bscale",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_FW87Y1",
+"estimator": "lm",
+"outcome": "b_rate",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_FXI5ZO",
+"estimator": "felm",
+"outcome": "nlistseats",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_FXI5ZO",
+"estimator": "felm",
+"outcome": "partymaglargest",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_FZQWZX",
+"estimator": "reg",
+"outcome": "nwspol",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_G126SC",
+"estimator": "reghdfe",
+"outcome": "imm_seized",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_G126SC",
+"estimator": "reghdfe",
+"outcome": "imm_destined",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_G126SC",
+"estimator": "reghdfe",
+"outcome": "imm_agric",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_G126SC",
+"estimator": "reghdfe",
+"outcome": "probvoterifondazione",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_G126SC",
+"estimator": "reghdfe",
+"outcome": "probvotecomunistiit",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_G126SC",
+"estimator": "reghdfe",
+"outcome": "firms",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_G1JCKK",
+"estimator": "lm",
+"outcome": "rec_benefits_income_winsor",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 42150,
+"p": 2
+},
+{
+"dataset": "DVN_GDZTK8",
+"estimator": "felm",
+"outcome": "close5",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_GDZTK8",
+"estimator": "felm",
+"outcome": "close10",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_GDZTK8",
+"estimator": "felm",
+"outcome": "pc_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_GFENDZ",
+"estimator": "feols",
+"outcome": "p3_cli_dv",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_GFENDZ",
+"estimator": "xtreg",
+"outcome": "p3_cli_dv",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_GHRCKV",
+"estimator": "feols",
+"outcome": "pastot",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_GHRCKV",
+"estimator": "feols",
+"outcome": "numwaivers",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_GHRHU7",
+"estimator": "felm",
+"outcome": "d_share_emp",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_GHRHU7",
+"estimator": "felm",
+"outcome": "d_share_rnf",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_GHRHU7",
+"estimator": "felm",
+"outcome": "d_share_ceo",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_GHRHU7",
+"estimator": "felm",
+"outcome": "d_share_gov",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_GHRHU7",
+"estimator": "felm",
+"outcome": "d_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_GIXQ2I",
+"estimator": "areg",
+"outcome": "select_cur",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_GKASQ5",
+"estimator": "reg",
+"outcome": "groupsize",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_GMZMPX",
+"estimator": "reg",
+"outcome": "tax",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_GOORER",
+"estimator": "reg",
+"outcome": "index_t1",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 659,
+"p": 2
+},
+{
+"dataset": "DVN_GOORER",
+"estimator": "reg",
+"outcome": "index_t2",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 726,
+"p": 2
+},
+{
+"dataset": "DVN_GXWHFG",
+"estimator": "xtreg",
+"outcome": "pswomen",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_H1RSFY",
+"estimator": "lm_robust",
+"outcome": "ss_rights_index",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 1029,
+"p": 3
+},
+{
+"dataset": "DVN_H1RSFY",
+"estimator": "lm_robust",
+"outcome": "african_perceptions",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 1029,
+"p": 3
+},
+{
+"dataset": "DVN_H1RSFY",
+"estimator": "lm_robust",
+"outcome": "nonafrican_perceptions",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 1029,
+"p": 3
+},
+{
+"dataset": "DVN_H38CWS",
+"estimator": "lm",
+"outcome": "num_coyote",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.20027063599458728,
+"n": 739,
+"p": 30
+},
+{
+"dataset": "DVN_H9XFYR",
+"estimator": "reg",
+"outcome": "level_share",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_H9XFYR",
+"estimator": "reg",
+"outcome": "peak_share",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_H9XFYR",
+"estimator": "reg",
+"outcome": "cut_share",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_H9XFYR",
+"estimator": "xtreg",
+"outcome": "level_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_H9XFYR",
+"estimator": "xtreg",
+"outcome": "peak_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_H9XFYR",
+"estimator": "xtreg",
+"outcome": "cut_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_HARTMV",
+"estimator": "areg",
+"outcome": "incvoteshare",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_HARTMV",
+"estimator": "reg",
+"outcome": "incvoteshare",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_HDDPTB",
+"estimator": "reg",
+"outcome": "actualsplit_prec",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 2067,
+"p": 2
+},
+{
+"dataset": "DVN_HDDPTB",
+"estimator": "areg",
+"outcome": "sen_abs_diff",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_HDDPTB",
+"estimator": "areg",
+"outcome": "gov_abs_diff",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_HKOBWC",
+"estimator": "reg",
+"outcome": "num_cities_split",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 3,
+"viol_share": 0.0071396697902722,
+"n": 6723,
+"p": 58
+},
+{
+"dataset": "DVN_HNH7BX",
+"estimator": "reg",
+"outcome": "gov_avg",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0,
+"n": 1045,
+"p": 9
+},
+{
+"dataset": "DVN_HQQJUK",
+"estimator": "feols",
+"outcome": "candnum",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_HQQJUK",
+"estimator": "feols",
+"outcome": "femprop1",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_HQQJUK",
+"estimator": "feols",
+"outcome": "nwprop1",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_HRK5HI",
+"estimator": "lm.cluster",
+"outcome": "hcam1",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 6,
+"viol_share": 0.3492063492063492,
+"n": 252,
+"p": 44
+},
+{
+"dataset": "DVN_HTMX3K",
+"estimator": "lm",
+"outcome": "sscie_count",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 3066,
+"p": 2
+},
+{
+"dataset": "DVN_HUZGPJ",
+"estimator": "xtreg",
+"outcome": "health_facility_visit",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_HUZGPJ",
+"estimator": "xtreg",
+"outcome": "licensed_postnatal",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_HUZGPJ",
+"estimator": "xtreg",
+"outcome": "problem_security",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_HUZGPJ",
+"estimator": "xtreg",
+"outcome": "problem_terrorism",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_HUZGPJ",
+"estimator": "xtreg",
+"outcome": "problem_crime",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_HUZGPJ",
+"estimator": "xtreg",
+"outcome": "pride",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_HUZGPJ",
+"estimator": "xtreg",
+"outcome": "health_usage_women_highinc",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_HUZGPJ",
+"estimator": "xtreg",
+"outcome": "health_usage_women_lowinc",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_HUZGPJ",
+"estimator": "xtreg",
+"outcome": "health_usage_women",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_HUZGPJ",
+"estimator": "xtreg",
+"outcome": "health_usage_men",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_I3VHZK",
+"estimator": "xtreg",
+"outcome": "farright_sh",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_I3VHZK",
+"estimator": "xtreg",
+"outcome": "m5s_leftfarleft_sh",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_I3WHUA",
+"estimator": "lm_robust",
+"outcome": "tenientes",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_IANHOG",
+"estimator": "reg",
+"outcome": "subjective_mean",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0008453085376162299,
+"n": 1183,
+"p": 16
+},
+{
+"dataset": "DVN_IANHOG",
+"estimator": "areg",
+"outcome": "subjective_mean",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_IBNCWC",
+"estimator": "lm",
+"outcome": "campact",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0,
+"n": 5564,
+"p": 8
+},
+{
+"dataset": "DVN_IEADS4",
+"estimator": "reg",
+"outcome": "unemp_exp_wt",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_IFZXQX",
+"estimator": "reg",
+"outcome": "egovernmentindex",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_IG6ICN",
+"estimator": "ivreg",
+"outcome": "red_m20_absls",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_IG6ICN",
+"estimator": "ivreg",
+"outcome": "red_b20_absls",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_IHDBTY",
+"estimator": "lm",
+"outcome": "yearslived",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 4,
+"viol_share": 0.0,
+"n": 500,
+"p": 2
+},
+{
+"dataset": "DVN_IKSE2O",
+"estimator": "ivreg",
+"outcome": "crimerate",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_IKSE2O",
+"estimator": "reg",
+"outcome": "sm",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_IKSE2O",
+"estimator": "areg",
+"outcome": "crimerate",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_INHODY",
+"estimator": "xtreg",
+"outcome": "gas_tax_nomusd_marketxr",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_INHODY",
+"estimator": "reg",
+"outcome": "gas_tax_nomusd_marketxr",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_IOAMVW",
+"estimator": "lm_robust",
+"outcome": "rps_index",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 536,
+"p": 17
+},
+{
+"dataset": "DVN_IOAMVW",
+"estimator": "lm",
+"outcome": "rps_index",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 4,
+"viol_share": 0.0,
+"n": 536,
+"p": 17
+},
+{
+"dataset": "DVN_IOAMVW",
+"estimator": "lm_robust",
+"outcome": "rps_attribution",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.007462686567164179,
+"n": 536,
+"p": 17
+},
+{
+"dataset": "DVN_IOAMVW",
+"estimator": "lm_robust",
+"outcome": "rps_concern",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0018656716417910447,
+"n": 536,
+"p": 17
+},
+{
+"dataset": "DVN_IOAMVW",
+"estimator": "lm",
+"outcome": "rps_attribution",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 3,
+"viol_share": 0.007462686567164179,
+"n": 536,
+"p": 17
+},
+{
+"dataset": "DVN_IOAMVW",
+"estimator": "lm",
+"outcome": "rps_concern",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 3,
+"viol_share": 0.0018656716417910447,
+"n": 536,
+"p": 17
+},
+{
+"dataset": "DVN_IPWGL3",
+"estimator": "xtreg",
+"outcome": "sh_perfassist_trad2",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_IPWGL3",
+"estimator": "xtreg",
+"outcome": "sh_perfassist_trad",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_IPWGL3",
+"estimator": "xtreg",
+"outcome": "sh_perfassist_pb",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_IPXFX7",
+"estimator": "xtreg",
+"outcome": "insult_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_IPXFX7",
+"estimator": "xtreg",
+"outcome": "gamma24",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_IPXFX7",
+"estimator": "xtreg",
+"outcome": "gamma8",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_IPXFX7",
+"estimator": "xtreg",
+"outcome": "gamma32",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_IQW9LQ",
+"estimator": "lm",
+"outcome": "npp2008ps_pres_p",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 6,
+"viol_share": 0.0,
+"n": 1590,
+"p": 27
+},
+{
+"dataset": "DVN_IQW9LQ",
+"estimator": "lmer",
+"outcome": "npp2008ps_pres_p",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_IUZDQI",
+"estimator": "reg",
+"outcome": "scale",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 849,
+"p": 4
+},
+{
+"dataset": "DVN_IUZDQI",
+"estimator": "reg",
+"outcome": "length",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_IUZMZW",
+"estimator": "lm",
+"outcome": "voteshare2015",
+"kind": "proportion",
+"status": "too_many_levels"
+},
+{
+"dataset": "DVN_IUZMZW",
+"estimator": "lm",
+"outcome": "voteshare2016",
+"kind": "proportion",
+"status": "too_few_rows"
+},
+{
+"dataset": "DVN_IUZMZW",
+"estimator": "lm",
+"outcome": "votes2016",
+"kind": "count",
+"status": "too_few_rows"
+},
+{
+"dataset": "DVN_IVILML",
+"estimator": "reg",
+"outcome": "capdem",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_IVILML",
+"estimator": "reg",
+"outcome": "frac_civwars_pre90",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_J4EUVP",
+"estimator": "xtreg",
+"outcome": "percfw",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_J4EUVP",
+"estimator": "xtmixed",
+"outcome": "percfw",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_J4EUVP",
+"estimator": "reg",
+"outcome": "percfw",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_J4EUVP",
+"estimator": "xtreg",
+"outcome": "presidenthrall",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_J4EUVP",
+"estimator": "xtreg",
+"outcome": "outsideprhrall",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_J4EUVP",
+"estimator": "xtreg",
+"outcome": "unemployed",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_J4EUVP",
+"estimator": "xtreg",
+"outcome": "employed",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_J4EUVP",
+"estimator": "xtreg",
+"outcome": "percm2049w",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_J4EUVP",
+"estimator": "xtreg",
+"outcome": "percmf1549w",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_J4EUVP",
+"estimator": "xtreg",
+"outcome": "orr",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_J6C26T",
+"estimator": "areg",
+"outcome": "turnout_top_cvap",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_J6C26T",
+"estimator": "areg",
+"outcome": "db_d2pshare",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_J6C26T",
+"estimator": "areg",
+"outcome": "d2pshare",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_J6C26T",
+"estimator": "reg",
+"outcome": "d2pshare",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_J7RTIW",
+"estimator": "lm",
+"outcome": "percent.ay",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 2109,
+"p": 3
+},
+{
+"dataset": "DVN_J7RTIW",
+"estimator": "lm",
+"outcome": "percent",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 6,
+"viol_share": 0.0,
+"n": 462,
+"p": 3
+},
+{
+"dataset": "DVN_J7RTIW",
+"estimator": "lm",
+"outcome": "percent.ay0",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_J7RTIW",
+"estimator": "lm",
+"outcome": "percent.aym",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_J7RTIW",
+"estimator": "lm",
+"outcome": "percent.ay1",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_J7RTIW",
+"estimator": "lm",
+"outcome": "percent2.ay",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 1783,
+"p": 3
+},
+{
+"dataset": "DVN_JCGCT5",
+"estimator": "reg",
+"outcome": "dict_sent",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_JCGCT5",
+"estimator": "reg",
+"outcome": "sharereturn",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_JIFKOU",
+"estimator": "reg",
+"outcome": "pro",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_JIFKOU",
+"estimator": "reg",
+"outcome": "anti",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_JIFKOU",
+"estimator": "reg",
+"outcome": "incongarg1",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 478,
+"p": 2
+},
+{
+"dataset": "DVN_JIFKOU",
+"estimator": "reg",
+"outcome": "congarg1",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 485,
+"p": 2
+},
+{
+"dataset": "DVN_JIFKOU",
+"estimator": "reg",
+"outcome": "gunswave2",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_JIFKOU",
+"estimator": "reg",
+"outcome": "incongargweak2",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 494,
+"p": 2
+},
+{
+"dataset": "DVN_JIFKOU",
+"estimator": "reg",
+"outcome": "incongargstrong2",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 499,
+"p": 2
+},
+{
+"dataset": "DVN_JIFKOU",
+"estimator": "reg",
+"outcome": "avg_pro01",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_JIFKOU",
+"estimator": "reg",
+"outcome": "avg_con01",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_JKPIK2",
+"estimator": "reg",
+"outcome": "closeness",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_JMNFLR",
+"estimator": "reg",
+"outcome": "vshare",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 52,
+"p": 4
+},
+{
+"dataset": "DVN_JMNFLR",
+"estimator": "reghdfe",
+"outcome": "vshare",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_JMNFLR",
+"estimator": "regress",
+"outcome": "monthlyincome",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 133,
+"p": 4
+},
+{
+"dataset": "DVN_JMNFLR",
+"estimator": "regress",
+"outcome": "party_rank",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 166,
+"p": 4
+},
+{
+"dataset": "DVN_JMNFLR",
+"estimator": "areg",
+"outcome": "party_rank",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_JO8C7A",
+"estimator": "reg",
+"outcome": "freepress",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0,
+"n": 76,
+"p": 2
+},
+{
+"dataset": "DVN_JO8C7A",
+"estimator": "reg",
+"outcome": "docshare60",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 71,
+"p": 4
+},
+{
+"dataset": "DVN_JO8C7A",
+"estimator": "reg",
+"outcome": "docshare65",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 71,
+"p": 4
+},
+{
+"dataset": "DVN_JO8C7A",
+"estimator": "reg",
+"outcome": "docshare70",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 71,
+"p": 4
+},
+{
+"dataset": "DVN_JO8C7A",
+"estimator": "reg",
+"outcome": "coop_num",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 3,
+"viol_share": 0.014285714285714285,
+"n": 70,
+"p": 5
+},
+{
+"dataset": "DVN_JO8C7A",
+"estimator": "reg",
+"outcome": "business",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 3,
+"viol_share": 0.0,
+"n": 75,
+"p": 7
+},
+{
+"dataset": "DVN_JO8C7A",
+"estimator": "reg",
+"outcome": "no_vuz_76",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.08571428571428572,
+"n": 70,
+"p": 4
+},
+{
+"dataset": "DVN_JO8C7A",
+"estimator": "reg",
+"outcome": "no_ssuz_76",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 70,
+"p": 4
+},
+{
+"dataset": "DVN_JONFVS",
+"estimator": "mixed",
+"outcome": "turnout",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_JONFVS",
+"estimator": "reg",
+"outcome": "turnout",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_JP0T5T",
+"estimator": "xtreg",
+"outcome": "v2xcl_slave",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_JPE6HG",
+"estimator": "xtreg",
+"outcome": "religious_support",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_JPE6HG",
+"estimator": "reg",
+"outcome": "religious_support",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.004032258064516129,
+"n": 2976,
+"p": 11
+},
+{
+"dataset": "DVN_JPKJSJ",
+"estimator": "reg",
+"outcome": "voteshare_g",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 537,
+"p": 3
+},
+{
+"dataset": "DVN_JPKJSJ",
+"estimator": "areg",
+"outcome": "voteshare_g",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_JS9ERS",
+"estimator": "lm_robust",
+"outcome": "dd_irt",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_JS9ERS",
+"estimator": "lm",
+"outcome": "dd_irt",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_JSR0OE",
+"estimator": "regress",
+"outcome": "wordcounts",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_JWCN9A",
+"estimator": "areg",
+"outcome": "rape",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_JWTRSC",
+"estimator": "lm",
+"outcome": "strikes",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_JYJLUB",
+"estimator": "lm",
+"outcome": "vote_share",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_KDOM7E",
+"estimator": "reghdfe",
+"outcome": "lproperty_crime",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_KDOM7E",
+"estimator": "reghdfe",
+"outcome": "lviolent_crime",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_KEWY2U",
+"estimator": "felm",
+"outcome": "inpart_cospon",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_KEWY2U",
+"estimator": "lmer",
+"outcome": "inpart_cospon",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_KEWY2U",
+"estimator": "felm",
+"outcome": "pct_mra_constit_spending",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_KEWY2U",
+"estimator": "felm",
+"outcome": "inpart_cospon2",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_KHLK5S",
+"estimator": "regress",
+"outcome": "det_cit_weight",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.03125,
+"n": 256,
+"p": 6
+},
+{
+"dataset": "DVN_KJT1V8",
+"estimator": "feols",
+"outcome": "lpop",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_KJT1V8",
+"estimator": "feols",
+"outcome": "sjurbanization",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_KJWKLR",
+"estimator": "reghdfe",
+"outcome": "share_ballots_pref",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_KNT6YQ",
+"estimator": "reg",
+"outcome": "female_turnout_ps",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_KNT6YQ",
+"estimator": "areg",
+"outcome": "female_turnout_ps",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_KNT6YQ",
+"estimator": "reg",
+"outcome": "male_turnout_ps",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_KNT6YQ",
+"estimator": "areg",
+"outcome": "male_turnout_ps",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_KO2VPS",
+"estimator": "lm",
+"outcome": "share_civilservice",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 21857,
+"p": 11
+},
+{
+"dataset": "DVN_KQJKY0",
+"estimator": "lm",
+"outcome": "month_anti_shia_pre",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_KQJKY0",
+"estimator": "lm",
+"outcome": "two_weeks_anti_shia_pre",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_KQJKY0",
+"estimator": "lm",
+"outcome": "week_anti_shia_pre",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_KQJKY0",
+"estimator": "lm",
+"outcome": "tpd_anti_shia_pre",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_KSAXQZ",
+"estimator": "xtreg",
+"outcome": "mgini_mk",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_KSAXQZ",
+"estimator": "xtreg",
+"outcome": "mgini_dp",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_KSAXQZ",
+"estimator": "reg",
+"outcome": "mgini_mk",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_KSAXQZ",
+"estimator": "reg",
+"outcome": "mgini_dp",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_KVIJSY",
+"estimator": "regress",
+"outcome": "fulfill3_fully",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 119,
+"p": 4
+},
+{
+"dataset": "DVN_KVIJSY",
+"estimator": "regress",
+"outcome": "fulfill3_none",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 119,
+"p": 4
+},
+{
+"dataset": "DVN_KXDRXB",
+"estimator": "reg",
+"outcome": "annual_share",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 3,
+"viol_share": 0.003887269193391642,
+"n": 1029,
+"p": 36
+},
+{
+"dataset": "DVN_L6WBON",
+"estimator": "lm_robust",
+"outcome": "egip_groups_count",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_L6WBON",
+"estimator": "lm_robust",
+"outcome": "parties",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_LCCOH6",
+"estimator": "reg",
+"outcome": "don1",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 3202,
+"p": 6
+},
+{
+"dataset": "DVN_LCCOH6",
+"estimator": "reg",
+"outcome": "tasa2",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 3202,
+"p": 6
+},
+{
+"dataset": "DVN_LD6NL8",
+"estimator": "lm",
+"outcome": "count",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_LEKKGT",
+"estimator": "reg",
+"outcome": "trust_anes",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_LJLWKN",
+"estimator": "lm",
+"outcome": "gm_index",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_LJLWKN",
+"estimator": "lm",
+"outcome": "iga",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_LJLWKN",
+"estimator": "lm",
+"outcome": "ige",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_LJLWKN",
+"estimator": "lm",
+"outcome": "igf",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_LJLWKN",
+"estimator": "lm",
+"outcome": "iic",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_LJLWKN",
+"estimator": "lm",
+"outcome": "isp",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_LJLWKN",
+"estimator": "lm",
+"outcome": "ipc",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_LOOT8D",
+"estimator": "reg",
+"outcome": "agree",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_LOOT8D",
+"estimator": "reg",
+"outcome": "thanks",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_LOOT8D",
+"estimator": "reg",
+"outcome": "pp_votecon",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_LP0TZR",
+"estimator": "lm",
+"outcome": "self_ind_pct",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0,
+"n": 167,
+"p": 2
+},
+{
+"dataset": "DVN_LP0TZR",
+"estimator": "lm",
+"outcome": "outgroup_pct",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0,
+"n": 162,
+"p": 2
+},
+{
+"dataset": "DVN_LP0TZR",
+"estimator": "lm",
+"outcome": "outgroup_pct_total",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 4,
+"viol_share": 0.0,
+"n": 162,
+"p": 2
+},
+{
+"dataset": "DVN_LUGBL1",
+"estimator": "lm",
+"outcome": "responded_w",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_LWHFRU",
+"estimator": "xtreg",
+"outcome": "mshare_county",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_LWHFRU",
+"estimator": "xtreg",
+"outcome": "turnout_panel",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_LXFYVH",
+"estimator": "lm",
+"outcome": "un_frac_pos",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_LXFYVH",
+"estimator": "lm",
+"outcome": "inf_frac_pos",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_LXIBYP",
+"estimator": "mixed",
+"outcome": "house1_percmin",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_LXIBYP",
+"estimator": "mixed",
+"outcome": "housef_percmin",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_LXIBYP",
+"estimator": "mixed",
+"outcome": "senate1_percmin",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_LXIBYP",
+"estimator": "mixed",
+"outcome": "senatef_percmin",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_LXIBYP",
+"estimator": "reg",
+"outcome": "house1_percmin",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 3,
+"viol_share": 0.00966183574879227,
+"n": 621,
+"p": 36
+},
+{
+"dataset": "DVN_LXIBYP",
+"estimator": "reg",
+"outcome": "housef_percmin",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 3,
+"viol_share": 0.01610305958132045,
+"n": 621,
+"p": 36
+},
+{
+"dataset": "DVN_LXIBYP",
+"estimator": "reg",
+"outcome": "senate1_percmin",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 3,
+"viol_share": 0.061191626409017714,
+"n": 621,
+"p": 26
+},
+{
+"dataset": "DVN_LXIBYP",
+"estimator": "reg",
+"outcome": "senatef_percmin",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 3,
+"viol_share": 0.08373590982286634,
+"n": 621,
+"p": 36
+},
+{
+"dataset": "DVN_M046SB",
+"estimator": "reghdfe",
+"outcome": "wkvis_pct",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_M046SB",
+"estimator": "reghdfe",
+"outcome": "sumvis_pct",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_M046SB",
+"estimator": "reghdfe",
+"outcome": "res_pct",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_M06IRS",
+"estimator": "mixed",
+"outcome": "pid_noleaners",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_M0LB5V",
+"estimator": "reg",
+"outcome": "emptotal_share",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_M98FXF",
+"estimator": "lm",
+"outcome": "cxn_up_percentage_correct_full",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 199,
+"p": 3
+},
+{
+"dataset": "DVN_M98FXF",
+"estimator": "lm",
+"outcome": "cxn_down_percentage_correct_full",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 199,
+"p": 2
+},
+{
+"dataset": "DVN_MCWNJA",
+"estimator": "reg",
+"outcome": "femalepct",
+"kind": "proportion",
+"status": "too_few_rows"
+},
+{
+"dataset": "DVN_MJWO0X",
+"estimator": "regress",
+"outcome": "ind_corrup_n",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_MLJQQN",
+"estimator": "regress",
+"outcome": "polavg",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 4209,
+"p": 36
+},
+{
+"dataset": "DVN_MMUYBO",
+"estimator": "xtreg",
+"outcome": "recognize_pro2",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MMUYBO",
+"estimator": "xtreg",
+"outcome": "reject_pro2",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MP1NSJ",
+"estimator": "xtreg",
+"outcome": "capital_sh",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MP1NSJ",
+"estimator": "xtreg",
+"outcome": "goods_sh",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MP1NSJ",
+"estimator": "xtreg",
+"outcome": "personnel_sh",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MP1NSJ",
+"estimator": "xtreg",
+"outcome": "admin_exp_sh",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MP1NSJ",
+"estimator": "xtreg",
+"outcome": "econ_exp_sh",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MP1NSJ",
+"estimator": "xtreg",
+"outcome": "edu_exp_sh",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MP1NSJ",
+"estimator": "xtreg",
+"outcome": "env_exp_sh",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MP1NSJ",
+"estimator": "xtreg",
+"outcome": "health_exp_sh",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MP1NSJ",
+"estimator": "xtreg",
+"outcome": "house_exp_sh",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MP1NSJ",
+"estimator": "xtreg",
+"outcome": "infra_exp_sh",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MP1NSJ",
+"estimator": "xtreg",
+"outcome": "law_exp_sh",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MP1NSJ",
+"estimator": "xtreg",
+"outcome": "rel_exp_sh",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MP1NSJ",
+"estimator": "xtreg",
+"outcome": "social_exp_sh",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MP1NSJ",
+"estimator": "xtreg",
+"outcome": "tour_exp_sh",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MP1NSJ",
+"estimator": "xtreg",
+"outcome": "agri_exp_sh",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "total_votes",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 287,
+"p": 2
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "remainder_votes",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 287,
+"p": 2
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "pop",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "schools",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "mosques",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "civil_def",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "pre_fem_doc",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "education",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "motorcycle",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "pre_male_doc",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "v744a_f2012",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 156,
+"p": 2
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "v744b_f2012",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 156,
+"p": 2
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "v744c_f2012",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 156,
+"p": 2
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "v744d_f2012",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 156,
+"p": 2
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "v744e_f2012",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 156,
+"p": 2
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "hiv_family",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 156,
+"p": 2
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "hiv_teacher",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 156,
+"p": 2
+},
+{
+"dataset": "DVN_MS6ZTZ",
+"estimator": "areg",
+"outcome": "pol_congress",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MS6ZTZ",
+"estimator": "areg",
+"outcome": "pol_bjp",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MS6ZTZ",
+"estimator": "areg",
+"outcome": "pol_ingov",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MS6ZTZ",
+"estimator": "areg",
+"outcome": "pol_res_sc",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MS6ZTZ",
+"estimator": "areg",
+"outcome": "pol_res_st",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MWBXDN",
+"estimator": "reghdfe",
+"outcome": "g_",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MWBXDN",
+"estimator": "reghdfe",
+"outcome": "p_",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_MZHZYQ",
+"estimator": "reg",
+"outcome": "gini_family",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_N1JX6Y",
+"estimator": "felm",
+"outcome": "elf",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_N2GGZ1",
+"estimator": "reg",
+"outcome": "yjndtmsnumberyearsunder4606",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.06539424280350438,
+"n": 6392,
+"p": 8
+},
+{
+"dataset": "DVN_N2GGZ1",
+"estimator": "xtreg",
+"outcome": "yjndtmsnumberyearsunder4606",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_N71MOK",
+"estimator": "reg",
+"outcome": "qanonft2",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.002806361085126286,
+"n": 1069,
+"p": 14
+},
+{
+"dataset": "DVN_N9LJHJ",
+"estimator": "lm",
+"outcome": "share",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_NJIIPR",
+"estimator": "regress",
+"outcome": "q21edu",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_NJIIPR",
+"estimator": "regress",
+"outcome": "q24water",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_NJIIPR",
+"estimator": "regress",
+"outcome": "q25edu",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_NJIIPR",
+"estimator": "regress",
+"outcome": "q28water",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_NJIIPR",
+"estimator": "regress",
+"outcome": "q27roads",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_NMJ4W9",
+"estimator": "reg",
+"outcome": "responselength",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_NOWHWG",
+"estimator": "lm",
+"outcome": "wordcount",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 769,
+"p": 5
+},
+{
+"dataset": "DVN_NOWHWG",
+"estimator": "lm",
+"outcome": "similarity",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 769,
+"p": 5
+},
+{
+"dataset": "DVN_NVHGIQ",
+"estimator": "lm",
+"outcome": "todorov_winner_comp",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 134,
+"p": 2
+},
+{
+"dataset": "DVN_NVMD6X",
+"estimator": "lm",
+"outcome": "emotionscale",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0,
+"n": 1352,
+"p": 19
+},
+{
+"dataset": "DVN_NWO52N",
+"estimator": "reg",
+"outcome": "wc",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_NXDEGT",
+"estimator": "reg",
+"outcome": "vote_party_relevant",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_NXDEGT",
+"estimator": "reg",
+"outcome": "turnoutpct",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_NY6NSO",
+"estimator": "reg",
+"outcome": "supremecourtlegitimacy",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 5,
+"viol_share": 0.0,
+"n": 1236,
+"p": 14
+},
+{
+"dataset": "DVN_NYPOQD",
+"estimator": "reghdfe",
+"outcome": "leave",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_NYPOQD",
+"estimator": "reg",
+"outcome": "leave",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_NZCGYX",
+"estimator": "reg",
+"outcome": "uwtaxcomp",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_NZCGYX",
+"estimator": "lmer",
+"outcome": "uwtaxcomp",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_OCIJCZ",
+"estimator": "reg",
+"outcome": "delay_14days",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_OENR84",
+"estimator": "regress",
+"outcome": "z1inst_index_w1",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_OJA7YS",
+"estimator": "lm",
+"outcome": "incumb_share16",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 4,
+"viol_share": 0.0,
+"n": 191,
+"p": 2
+},
+{
+"dataset": "DVN_OJA7YS",
+"estimator": "lm",
+"outcome": "minorparties_share",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 4,
+"viol_share": 0.0078125,
+"n": 256,
+"p": 5
+},
+{
+"dataset": "DVN_OKU1MG",
+"estimator": "lm",
+"outcome": "bn.share",
+"kind": "proportion",
+"status": "too_few_rows"
+},
+{
+"dataset": "DVN_OKU1MG",
+"estimator": "lmer",
+"outcome": "bn.share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_OL16K3",
+"estimator": "lm",
+"outcome": "turnout_19",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_OLNJSY",
+"estimator": "xtreg",
+"outcome": "retro_frc",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_OMJTCM",
+"estimator": "lm",
+"outcome": "outparty_therm",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_OMPDH0",
+"estimator": "areg",
+"outcome": "fverifyprop",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_OMPDH0",
+"estimator": "areg",
+"outcome": "mverifyprop",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_OMPDH0",
+"estimator": "ivreg2",
+"outcome": "fverifyprop",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_ON8RBD",
+"estimator": "reg",
+"outcome": "pctsocial",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 7,
+"viol_share": 0.0,
+"n": 47533,
+"p": 5
+},
+{
+"dataset": "DVN_OOLBO9",
+"estimator": "lm",
+"outcome": "abspolchange_for1",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.14049057294526818,
+"n": 10926,
+"p": 314
+},
+{
+"dataset": "DVN_OOLBO9",
+"estimator": "lm",
+"outcome": "abspolchange_for5",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.11710879009150568,
+"n": 10819,
+"p": 312
+},
+{
+"dataset": "DVN_OOLBO9",
+"estimator": "lm",
+"outcome": "abspolchange_for10",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.10947220549869556,
+"n": 9966,
+"p": 312
+},
+{
+"dataset": "DVN_OWAR19",
+"estimator": "reghdfe",
+"outcome": "ihs_cha",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_OWKXPZ",
+"estimator": "reg",
+"outcome": "military",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_OWKXPZ",
+"estimator": "reg",
+"outcome": "business",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_P2U84B",
+"estimator": "feols",
+"outcome": "number_initiated_alone",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_P2U84B",
+"estimator": "feols",
+"outcome": "pr_regionalnumber",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_P4EYHH",
+"estimator": "xtreg",
+"outcome": "usvote",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_P5GW0S",
+"estimator": "reg",
+"outcome": "my_house1",
+"kind": "proportion",
+"status": "too_few_rows"
+},
+{
+"dataset": "DVN_P5GW0S",
+"estimator": "reg",
+"outcome": "my_house2",
+"kind": "proportion",
+"status": "too_few_rows"
+},
+{
+"dataset": "DVN_P5GW0S",
+"estimator": "reg",
+"outcome": "my_house3",
+"kind": "proportion",
+"status": "too_few_rows"
+},
+{
+"dataset": "DVN_PNYLIY",
+"estimator": "reg",
+"outcome": "typea",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_PNYLIY",
+"estimator": "reg",
+"outcome": "typeb",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_PPNPH5",
+"estimator": "reg",
+"outcome": "culture_count",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_PWRN9K",
+"estimator": "lm",
+"outcome": "vote_share_t_other",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_PWRN9K",
+"estimator": "lm",
+"outcome": "vote_share_t",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_PWRN9K",
+"estimator": "lm",
+"outcome": "pres_t",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_PWRN9K",
+"estimator": "lm",
+"outcome": "turnout_t_pres",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_PXQQD5",
+"estimator": "regress",
+"outcome": "obstruction_reports",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_PXXUCO",
+"estimator": "lm",
+"outcome": "fnbstd",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0,
+"n": 816,
+"p": 2
+},
+{
+"dataset": "DVN_PXXUCO",
+"estimator": "lm",
+"outcome": "fnbstd_nonames",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 3,
+"viol_share": 0.0,
+"n": 816,
+"p": 2
+},
+{
+"dataset": "DVN_PXXUCO",
+"estimator": "lm",
+"outcome": "uper",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 1138,
+"p": 17
+},
+{
+"dataset": "DVN_PXXUCO",
+"estimator": "reg",
+"outcome": "fnbstd",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 816,
+"p": 2
+},
+{
+"dataset": "DVN_PXXUCO",
+"estimator": "xtreg",
+"outcome": "fnbstd",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_PZCXQZ",
+"estimator": "lm",
+"outcome": "blk_pct",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_Q0CNZA",
+"estimator": "felm",
+"outcome": "mean_pro_choice",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_QBJLRO",
+"estimator": "lm",
+"outcome": "voteshare",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_QBJLRO",
+"estimator": "lm",
+"outcome": "log_voteshare",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_QBJLRO",
+"estimator": "reg",
+"outcome": "log_voteshare",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 1812,
+"p": 2
+},
+{
+"dataset": "DVN_QBJLRO",
+"estimator": "areg",
+"outcome": "log_voteshare",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_QDPQUD",
+"estimator": "xtreg",
+"outcome": "entry_res",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_QGH7P4",
+"estimator": "lm_robust",
+"outcome": "prop_speakingtime_sarpanch",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0,
+"n": 593,
+"p": 14
+},
+{
+"dataset": "DVN_QGH7P4",
+"estimator": "lm",
+"outcome": "prop_speakingtime_sarpanch",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 593,
+"p": 15
+},
+{
+"dataset": "DVN_QGH7P4",
+"estimator": "lm_robust",
+"outcome": "avg_prop_land_held_sarpanch_caste",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.002631578947368421,
+"n": 380,
+"p": 15
+},
+{
+"dataset": "DVN_QGH7P4",
+"estimator": "lm",
+"outcome": "avg_prop_land_held_sarpanch_caste",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.002631578947368421,
+"n": 380,
+"p": 15
+},
+{
+"dataset": "DVN_QNHR2D",
+"estimator": "lm",
+"outcome": "wbvoteshare",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0740566037735849,
+"n": 8480,
+"p": 6
+},
+{
+"dataset": "DVN_QR73H6",
+"estimator": "xtreg",
+"outcome": "conf_count",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_QSXDUN",
+"estimator": "lm",
+"outcome": "cpivot",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0020761245674740486,
+"n": 1445,
+"p": 12
+},
+{
+"dataset": "DVN_QSXDUN",
+"estimator": "lm",
+"outcome": "tdeploy",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0,
+"n": 1021,
+"p": 6
+},
+{
+"dataset": "DVN_QSXDUN",
+"estimator": "lm",
+"outcome": "csupport",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0005015045135406219,
+"n": 1994,
+"p": 12
+},
+{
+"dataset": "DVN_QSXDUN",
+"estimator": "lm",
+"outcome": "isupport",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0,
+"n": 1997,
+"p": 6
+},
+{
+"dataset": "DVN_QSXDUN",
+"estimator": "lm",
+"outcome": "ccertain",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 1031,
+"p": 14
+},
+{
+"dataset": "DVN_QSXDUN",
+"estimator": "lm",
+"outcome": "tcertain",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 1031,
+"p": 14
+},
+{
+"dataset": "DVN_QSXDUN",
+"estimator": "lm",
+"outcome": "csucceed",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 1031,
+"p": 14
+},
+{
+"dataset": "DVN_QSXDUN",
+"estimator": "lm",
+"outcome": "tsucceed",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0009699321047526673,
+"n": 1031,
+"p": 14
+},
+{
+"dataset": "DVN_QSXDUN",
+"estimator": "lm",
+"outcome": "cthreat",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 1031,
+"p": 14
+},
+{
+"dataset": "DVN_QSXDUN",
+"estimator": "lm",
+"outcome": "tthreat",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 1031,
+"p": 14
+},
+{
+"dataset": "DVN_QVKKTE",
+"estimator": "lm",
+"outcome": "house",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_QVKKTE",
+"estimator": "lm",
+"outcome": "senate",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_QYGPDJ",
+"estimator": "ivreg2",
+"outcome": "v2x_clphy",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_R8TUOQ",
+"estimator": "reg",
+"outcome": "prescands",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0,
+"n": 135,
+"p": 2
+},
+{
+"dataset": "DVN_R8TUOQ",
+"estimator": "reg",
+"outcome": "future_opp_prop",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 3,
+"viol_share": 0.04819277108433735,
+"n": 83,
+"p": 5
+},
+{
+"dataset": "DVN_R8TUOQ",
+"estimator": "xtreg",
+"outcome": "prescands",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_R8TUOQ",
+"estimator": "reg",
+"outcome": "prescands05pct",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 135,
+"p": 2
+},
+{
+"dataset": "DVN_R8TUOQ",
+"estimator": "reg",
+"outcome": "prescands1pct",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 135,
+"p": 2
+},
+{
+"dataset": "DVN_R8TUOQ",
+"estimator": "reg",
+"outcome": "opp_prop",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 134,
+"p": 3
+},
+{
+"dataset": "DVN_R8TUOQ",
+"estimator": "xtreg",
+"outcome": "future_opp_prop",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_RCT2YX",
+"estimator": "reg",
+"outcome": "wounded",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 5,
+"viol_share": 0.09090909090909091,
+"n": 110,
+"p": 10
+},
+{
+"dataset": "DVN_RJAUNW",
+"estimator": "lm",
+"outcome": "vsointerpol",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_ROLEY5",
+"estimator": "reg",
+"outcome": "aglb_perc_ac",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_RQE9SO",
+"estimator": "regress",
+"outcome": "portfolio_sh",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_RQE9SO",
+"estimator": "regress",
+"outcome": "govpct",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_RRBPUD",
+"estimator": "reg",
+"outcome": "frac_confdr_count_men",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 13414,
+"p": 2
+},
+{
+"dataset": "DVN_RRBPUD",
+"estimator": "areg",
+"outcome": "frac_confdr_count_men",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_RRBPUD",
+"estimator": "reg",
+"outcome": "frac_confdr_count_men_1861",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_RRBPUD",
+"estimator": "reg",
+"outcome": "realprop_hsum",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_RRBPUD",
+"estimator": "reg",
+"outcome": "frac_confdr_movern_men",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 13414,
+"p": 2
+},
+{
+"dataset": "DVN_RRBPUD",
+"estimator": "areg",
+"outcome": "frac_confdr_movern_men",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_RRBPUD",
+"estimator": "reg",
+"outcome": "confdr_any_movern",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 13414,
+"p": 2
+},
+{
+"dataset": "DVN_RRBPUD",
+"estimator": "areg",
+"outcome": "confdr_any_movern",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_RTSCG3",
+"estimator": "ivreg2",
+"outcome": "taxrev_corp_pertotal",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_RXOZEZ",
+"estimator": "lm",
+"outcome": "split_for_d",
+"kind": "proportion",
+"status": "too_few_rows"
+},
+{
+"dataset": "DVN_RY1P5G",
+"estimator": "lm_robust",
+"outcome": "homicides",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_RY1P5G",
+"estimator": "lm_robust",
+"outcome": "gun_homicides",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_RY1P5G",
+"estimator": "lm_robust",
+"outcome": "extortion",
+"kind": "count",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_RY1P5G",
+"estimator": "lm_robust",
+"outcome": "malicious_homicides",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_S61U9V",
+"estimator": "lm",
+"outcome": "propdem",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 406,
+"p": 2
+},
+{
+"dataset": "DVN_S61U9V",
+"estimator": "lm",
+"outcome": "creptwo",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 406,
+"p": 7
+},
+{
+"dataset": "DVN_S9MIJU",
+"estimator": "reg",
+"outcome": "foreign_policy",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.04963466868228773,
+"n": 7938,
+"p": 74
+},
+{
+"dataset": "DVN_S9MIJU",
+"estimator": "reg",
+"outcome": "civil_rights",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.03980851599899219,
+"n": 7938,
+"p": 73
+},
+{
+"dataset": "DVN_S9MIJU",
+"estimator": "xtreg",
+"outcome": "correct",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_SDUGCC",
+"estimator": "lm",
+"outcome": "perc_lib",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_SDUGCC",
+"estimator": "lm",
+"outcome": "perc_turnout",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_SDUGCC",
+"estimator": "lm",
+"outcome": "perc_lib_fed",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_SEXLPX",
+"estimator": "reg",
+"outcome": "diffmeds",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_SEXLPX",
+"estimator": "reg",
+"outcome": "cogcab",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_SKKYFB",
+"estimator": "lm",
+"outcome": "hawk_pooled",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_SKKYFB",
+"estimator": "lm",
+"outcome": "outgroup_pooled",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_SKKYFB",
+"estimator": "lm",
+"outcome": "ingroup_pooled",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_SKYD91",
+"estimator": "xtreg",
+"outcome": "resettled_c",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_SOQH9L",
+"estimator": "regress",
+"outcome": "votesharer",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 4,
+"viol_share": 0.0,
+"n": 210,
+"p": 4
+},
+{
+"dataset": "DVN_SQSTSC",
+"estimator": "feols",
+"outcome": "biz_sim_sif",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_SQSTSC",
+"estimator": "feols",
+"outcome": "biz_word_count",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_SQSTSC",
+"estimator": "feols",
+"outcome": "amcham_mention",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_SQSTSC",
+"estimator": "feols",
+"outcome": "business",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_SQSTSC",
+"estimator": "feols",
+"outcome": "econ",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_SQSTSC",
+"estimator": "feols",
+"outcome": "commerce",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_SQSTSC",
+"estimator": "feols",
+"outcome": "political",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_SQSTSC",
+"estimator": "feols",
+"outcome": "consular",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_SQSTSC",
+"estimator": "feols",
+"outcome": "military",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_STXADQ",
+"estimator": "lmer",
+"outcome": "nprms.withdrawn",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_SYNP73",
+"estimator": "felm",
+"outcome": "farright_share",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_SYQE2H",
+"estimator": "felm",
+"outcome": "word_count",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_T8R1AI",
+"estimator": "reg",
+"outcome": "white_",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_TDTZHE",
+"estimator": "xtreg",
+"outcome": "div_gdp_5_neg",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_TE1YA6",
+"estimator": "areg",
+"outcome": "indep_1",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_TE1YA6",
+"estimator": "areg",
+"outcome": "indep_2",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_TE1YA6",
+"estimator": "areg",
+"outcome": "indep_3",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_TE9U5S",
+"estimator": "reg",
+"outcome": "t",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 100,
+"p": 3
+},
+{
+"dataset": "DVN_TK9JNU",
+"estimator": "xtreg",
+"outcome": "investment",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_TKQHYQ",
+"estimator": "xtmixed",
+"outcome": "voteshare",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_TKQHYQ",
+"estimator": "reg",
+"outcome": "voteshare",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_TKXP4A",
+"estimator": "reg",
+"outcome": "ext_dr36",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_TR9NAB",
+"estimator": "felm",
+"outcome": "vs_party",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_TR9NAB",
+"estimator": "felm",
+"outcome": "ss_party",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_TWDSBW",
+"estimator": "ivreg2",
+"outcome": "panymed",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_TWDSBW",
+"estimator": "ivreg2",
+"outcome": "pphone",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_TXKLXF",
+"estimator": "reg",
+"outcome": "incg_rdst_lr",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_TYJFQD",
+"estimator": "felm",
+"outcome": "staff_per",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_U07SDB",
+"estimator": "regress",
+"outcome": "indep_vote_share",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_U07SDB",
+"estimator": "regress",
+"outcome": "bjp_inc_vote_share",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_U07SDB",
+"estimator": "reg",
+"outcome": "ind_tot",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_U07SDB",
+"estimator": "reg",
+"outcome": "total10",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_U07SDB",
+"estimator": "reg",
+"outcome": "total5",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_U07SDB",
+"estimator": "reg",
+"outcome": "total20",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_UAJ2VC",
+"estimator": "regress",
+"outcome": "ch_h",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 4,
+"viol_share": 0.02527075812274368,
+"n": 277,
+"p": 43
+},
+{
+"dataset": "DVN_UAWGPU",
+"estimator": "lm",
+"outcome": "vote_pop",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_UBCUAQ",
+"estimator": "regress",
+"outcome": "kidnap",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 34,
+"p": 2
+},
+{
+"dataset": "DVN_UBU601",
+"estimator": "reg",
+"outcome": "getinvolved_open_count",
+"kind": "count",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_UBU601",
+"estimator": "reg",
+"outcome": "makechange_open_count",
+"kind": "count",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_UDVEXN",
+"estimator": "lmer",
+"outcome": "votes",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_UECUBY",
+"estimator": "lm",
+"outcome": "collegemore",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_UL6YWP",
+"estimator": "reg",
+"outcome": "numberissues",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 1203,
+"p": 2
+},
+{
+"dataset": "DVN_UN3KML",
+"estimator": "lm",
+"outcome": "earmark_share",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.02819548872180451,
+"n": 10108,
+"p": 78
+},
+{
+"dataset": "DVN_UN3KML",
+"estimator": "lm",
+"outcome": "tot_share",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.03719825880490701,
+"n": 10108,
+"p": 78
+},
+{
+"dataset": "DVN_UNWIHE",
+"estimator": "reg",
+"outcome": "univ_propfem",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 83802,
+"p": 2
+},
+{
+"dataset": "DVN_UOYDHN",
+"estimator": "xtreg",
+"outcome": "v2x_polyarchy",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_UQVN70",
+"estimator": "reg",
+"outcome": "elec_dist_1_5",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_UQVN70",
+"estimator": "reg",
+"outcome": "vp36",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_UQVN70",
+"estimator": "reg",
+"outcome": "elec_dist_1_4_36",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_UQVN70",
+"estimator": "reg",
+"outcome": "elec_dist_1_3_party",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_UTHBDT",
+"estimator": "xtreg",
+"outcome": "pctcrossb",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_UWG0TJ",
+"estimator": "reg",
+"outcome": "cim",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_VBNCF2",
+"estimator": "reg",
+"outcome": "noncomply",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 1124,
+"p": 11
+},
+{
+"dataset": "DVN_VBNCF2",
+"estimator": "reg",
+"outcome": "refuse",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 1124,
+"p": 11
+},
+{
+"dataset": "DVN_VDF4JW",
+"estimator": "feols",
+"outcome": "pty_dif_vv",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_VEVFUM",
+"estimator": "reg",
+"outcome": "propexp",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_VEVFUM",
+"estimator": "reg",
+"outcome": "propacad",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_VEVFUM",
+"estimator": "reg",
+"outcome": "proptank",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_VH19YR",
+"estimator": "felm",
+"outcome": "commit_purpose_both_pct",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_VHNHHN",
+"estimator": "reg",
+"outcome": "secular_vote_prop_current",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_VHNHHN",
+"estimator": "reg",
+"outcome": "secular_win",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.013729977116704805,
+"n": 437,
+"p": 7
+},
+{
+"dataset": "DVN_VMPZIX",
+"estimator": "reg",
+"outcome": "n_list",
+"kind": "count",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_VOF11U",
+"estimator": "lm",
+"outcome": "cov2c",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_VOF11U",
+"estimator": "lm",
+"outcome": "cov2c_92",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_VT4KJA",
+"estimator": "mixed",
+"outcome": "w_con_pdc4",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_VT4KJA",
+"estimator": "mixed",
+"outcome": "w_con_pdc8",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_VT4KJA",
+"estimator": "mixed",
+"outcome": "con_pdc4",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_VT4KJA",
+"estimator": "mixed",
+"outcome": "con_pdc8",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_VT4KJA",
+"estimator": "ivreg2",
+"outcome": "corrupexp",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_VUET99",
+"estimator": "lm",
+"outcome": "vis",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 640,
+"p": 12
+},
+{
+"dataset": "DVN_VVXUJE",
+"estimator": "reg",
+"outcome": "measure5",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_VWBWGW",
+"estimator": "lm",
+"outcome": "relfrac1939",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_VWU2BY",
+"estimator": "xtreg",
+"outcome": "v2regoppgroupsact_6",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_VWU2BY",
+"estimator": "reg",
+"outcome": "v2regoppgroupsact_6",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.1393080904385726,
+"n": 18355,
+"p": 463
+},
+{
+"dataset": "DVN_VXA6WY",
+"estimator": "reg",
+"outcome": "participate",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_VXA6WY",
+"estimator": "reg",
+"outcome": "positive_em4",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 1015,
+"p": 6
+},
+{
+"dataset": "DVN_VXA6WY",
+"estimator": "reg",
+"outcome": "negative_em6",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 1015,
+"p": 6
+},
+{
+"dataset": "DVN_W1YJZQ",
+"estimator": "lm",
+"outcome": "sum",
+"kind": "count",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_W8HUKY",
+"estimator": "lm",
+"outcome": "abs",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 60,
+"p": 2
+},
+{
+"dataset": "DVN_W8PHXM",
+"estimator": "lm",
+"outcome": "population",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 3,
+"viol_share": 0.0,
+"n": 2360,
+"p": 2
+},
+{
+"dataset": "DVN_WCLV9B",
+"estimator": "reg",
+"outcome": "red_priest_shr",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.02040816326530612,
+"n": 49,
+"p": 7
+},
+{
+"dataset": "DVN_WGT8QV",
+"estimator": "areg",
+"outcome": "directrule",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_WKJJ3Z",
+"estimator": "lm",
+"outcome": "dem",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_WKJJ3Z",
+"estimator": "lm",
+"outcome": "affirm",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_WMAPGB",
+"estimator": "felm",
+"outcome": "partyunity",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_WMAPGB",
+"estimator": "felm",
+"outcome": "pu55",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_WMAPGB",
+"estimator": "felm",
+"outcome": "pu60",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_WMAPGB",
+"estimator": "felm",
+"outcome": "pu65",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_WMAPGB",
+"estimator": "felm",
+"outcome": "pu70",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_WMAPGB",
+"estimator": "felm",
+"outcome": "pu75",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_WMAPGB",
+"estimator": "felm",
+"outcome": "pu80",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_WMAPGB",
+"estimator": "felm",
+"outcome": "pu85",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_WMAPGB",
+"estimator": "felm",
+"outcome": "pu90",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_WMAPGB",
+"estimator": "felm",
+"outcome": "pu_partysample",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_WMAPGB",
+"estimator": "felm",
+"outcome": "pus10",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_WMAPGB",
+"estimator": "felm",
+"outcome": "pus5",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_WMAPGB",
+"estimator": "felm",
+"outcome": "pus2",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_WPF4RC",
+"estimator": "xtreg",
+"outcome": "divisiveness",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_WPF4RC",
+"estimator": "xtreg",
+"outcome": "toptwodivisiveness",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_WPKTKJ",
+"estimator": "lm",
+"outcome": "kanu_avg_97",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0,
+"n": 209,
+"p": 7
+},
+{
+"dataset": "DVN_WPKTKJ",
+"estimator": "lm",
+"outcome": "total_dos_9298_kal_p",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 6,
+"viol_share": 0.0,
+"n": 7999,
+"p": 8
+},
+{
+"dataset": "DVN_WPKTKJ",
+"estimator": "lm",
+"outcome": "total_dos_9298_kik_p",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 6,
+"viol_share": 0.020252531566445804,
+"n": 7999,
+"p": 8
+},
+{
+"dataset": "DVN_WPKTKJ",
+"estimator": "lm",
+"outcome": "total_dos_9298_gema_p",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 7999,
+"p": 8
+},
+{
+"dataset": "DVN_WPKTKJ",
+"estimator": "lm",
+"outcome": "total_dos_9298_kamatusa_p",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 7999,
+"p": 8
+},
+{
+"dataset": "DVN_WPKTKJ",
+"estimator": "lm",
+"outcome": "total_dos_9298_miji_p",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 7999,
+"p": 8
+},
+{
+"dataset": "DVN_WPKTKJ",
+"estimator": "lm",
+"outcome": "total_dos_9298_luhya_p",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 7999,
+"p": 8
+},
+{
+"dataset": "DVN_WPKTKJ",
+"estimator": "lm",
+"outcome": "total_dos_9298_luo_p",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 7999,
+"p": 8
+},
+{
+"dataset": "DVN_WPYAB2",
+"estimator": "reg",
+"outcome": "relev2",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.08452593917710197,
+"n": 4472,
+"p": 12
+},
+{
+"dataset": "DVN_WPYAB2",
+"estimator": "reg",
+"outcome": "proceso4",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.06663685152057246,
+"n": 4472,
+"p": 12
+},
+{
+"dataset": "DVN_WPYAB2",
+"estimator": "reg",
+"outcome": "per_ini_com",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_WPYAB2",
+"estimator": "reg",
+"outcome": "per_ini_pleno",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_WPYAB2",
+"estimator": "reg",
+"outcome": "per_ini_leyes",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_WQ1R5X",
+"estimator": "lm",
+"outcome": "self_ref_perc",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.03234501347708895,
+"n": 742,
+"p": 28
+},
+{
+"dataset": "DVN_WR97GH",
+"estimator": "felm",
+"outcome": "v2xps_party",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_WVMZZU",
+"estimator": "sureg",
+"outcome": "pspn_congruence",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_WW5HMR",
+"estimator": "feols",
+"outcome": "citacq",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_WYUGQ9",
+"estimator": "lm",
+"outcome": "backlash_01",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_WYUGQ9",
+"estimator": "lm",
+"outcome": "blmsupp_01",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_WZZAXU",
+"estimator": "reg",
+"outcome": "fire_01",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 496,
+"p": 3
+},
+{
+"dataset": "DVN_XASCZ1",
+"estimator": "xtreg",
+"outcome": "nonsoe",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_XAWZVS",
+"estimator": "reg",
+"outcome": "q5_ideal",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_XAWZVS",
+"estimator": "reg",
+"outcome": "q1_ideal",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_XEMMCN",
+"estimator": "mixed",
+"outcome": "ratio_trials_cases",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_XFS42O",
+"estimator": "reg",
+"outcome": "v2x_gender",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_XKMNAO",
+"estimator": "felm",
+"outcome": "y",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_XOERIO",
+"estimator": "regress",
+"outcome": "mobilized",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 377,
+"p": 10
+},
+{
+"dataset": "DVN_XONPX2",
+"estimator": "lm",
+"outcome": "v2x_polyarchy_t1",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.0,
+"n": 9099,
+"p": 8
+},
+{
+"dataset": "DVN_XONPX2",
+"estimator": "regress",
+"outcome": "v2x_polyarchy_t1",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 176,
+"p": 4
+},
+{
+"dataset": "DVN_XPTMGF",
+"estimator": "reghdfe",
+"outcome": "duration",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_XPTMGF",
+"estimator": "reghdfe",
+"outcome": "flood_yesapprove",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_XPTMGF",
+"estimator": "reghdfe",
+"outcome": "dem_voteshare",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_XPTMGF",
+"estimator": "reghdfe",
+"outcome": "demsen_voteshare",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_XPTMGF",
+"estimator": "reghdfe",
+"outcome": "vapturnout",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_XPTMGF",
+"estimator": "reghdfe",
+"outcome": "vapsenturnout",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_XX1KYY",
+"estimator": "reg",
+"outcome": "sum3_9097",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_XY2TUK",
+"estimator": "lm",
+"outcome": "rand",
+"kind": "count",
+"status": "too_few_rows"
+},
+{
+"dataset": "DVN_Y8KIUK",
+"estimator": "xtreg",
+"outcome": "welfare_center",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_Y8KIUK",
+"estimator": "xtreg",
+"outcome": "welfare_bed",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_Y8KIUK",
+"estimator": "xtreg",
+"outcome": "highschl_stdt",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_Y90RNW",
+"estimator": "reg",
+"outcome": "mmx_factorvictimindex",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.01002227171492205,
+"n": 898,
+"p": 8
+},
+{
+"dataset": "DVN_Y9YHPL",
+"estimator": "reg",
+"outcome": "unnamedcitecount",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 6,
+"viol_share": 0.07932815335225422,
+"n": 21493,
+"p": 8
+},
+{
+"dataset": "DVN_Y9YHPL",
+"estimator": "reg",
+"outcome": "notmajopincount",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 6,
+"viol_share": 0.1217140464337226,
+"n": 21493,
+"p": 8
+},
+{
+"dataset": "DVN_Y9YHPL",
+"estimator": "lmer",
+"outcome": "unnamedcitecount",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_Y9YHPL",
+"estimator": "lmer",
+"outcome": "notmajopincount",
+"kind": "count",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_YABNFF",
+"estimator": "mixed",
+"outcome": "per_poljobs",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_YEEWVX",
+"estimator": "lm",
+"outcome": "support01",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_YEEWVX",
+"estimator": "regress",
+"outcome": "support01",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_YEFRPC",
+"estimator": "lm",
+"outcome": "registered",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_YF761K",
+"estimator": "reghdfe",
+"outcome": "dem_two_party",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_YF761K",
+"estimator": "reghdfe",
+"outcome": "dem_perc",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_YFPQJH",
+"estimator": "reg",
+"outcome": "clintonft2",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.030245746691871456,
+"n": 1587,
+"p": 11
+},
+{
+"dataset": "DVN_YLUNSN",
+"estimator": "reg",
+"outcome": "publicgoods",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_YLUNSN",
+"estimator": "reg",
+"outcome": "publicgoodscom",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_YQYZ6O",
+"estimator": "reg",
+"outcome": "revolvers",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 99,
+"p": 6
+},
+{
+"dataset": "DVN_YRD5DF",
+"estimator": "xtreg",
+"outcome": "v2x_polyarchy",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_YSS19O",
+"estimator": "lm",
+"outcome": "count_pa",
+"kind": "count",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_YTSK3R",
+"estimator": "lm_robust",
+"outcome": "acc",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_YVLJJ5",
+"estimator": "reg",
+"outcome": "ratio",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_YVLJJ5",
+"estimator": "reg",
+"outcome": "ratio_osv",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_YVLJJ5",
+"estimator": "reg",
+"outcome": "ratio_christ",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_YVLJJ5",
+"estimator": "reg",
+"outcome": "ratio_buddhist",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_Z3DQGI",
+"estimator": "reg",
+"outcome": "conflictshare",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 8,
+"viol_share": 0.06422018348623854,
+"n": 109,
+"p": 6
+},
+{
+"dataset": "DVN_Z3DQGI",
+"estimator": "ivreg2",
+"outcome": "conflictshare",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_Z3MVU7",
+"estimator": "reg",
+"outcome": "ewi_index",
+"kind": "proportion",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_Z8CNXV",
+"estimator": "lm",
+"outcome": "move_count",
+"kind": "count",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_Z8CNXV",
+"estimator": "lm",
+"outcome": "trials",
+"kind": "count",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_Z8CNXV",
+"estimator": "lm",
+"outcome": "move_count_mh",
+"kind": "count",
+"status": "complex_rhs"
+},
+{
+"dataset": "DVN_Z8CNXV",
+"estimator": "lm_robust",
+"outcome": "sentiment",
+"kind": "proportion",
+"status": "covariate_missing"
+},
+{
+"dataset": "DVN_ZABHCA",
+"estimator": "reg",
+"outcome": "motivation",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 7,
+"viol_share": 0.0,
+"n": 1014,
+"p": 11
+},
+{
+"dataset": "DVN_ZABHCA",
+"estimator": "xtreg",
+"outcome": "motivation",
+"kind": "proportion",
+"status": "estimator_not_refittable"
+},
+{
+"dataset": "DVN_ZE3ITV",
+"estimator": "reg",
+"outcome": "mean_3rd_stake1000",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.2710526315789474,
+"n": 380,
+"p": 2
+},
+{
+"dataset": "DVN_ZG2GY9",
+"estimator": "reg",
+"outcome": "pctabsent",
+"kind": "proportion",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_ZNMIXH",
+"estimator": "reg",
+"outcome": "secur_survey_b",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_ZNMIXH",
+"estimator": "reg",
+"outcome": "church_survey_b",
+"kind": "count",
+"status": "no_code_line"
+},
+{
+"dataset": "DVN_ZUH3UG",
+"estimator": "lm",
+"outcome": "landgini",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 196,
+"p": 10
+},
+{
+"dataset": "DVN_ZUH3UG",
+"estimator": "lm",
+"outcome": "gem_women_share",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 3944,
+"p": 2
+},
+{
+"dataset": "DVN_ZUH3UG",
+"estimator": "lm",
+"outcome": "fem_share",
+"kind": "proportion",
+"status": "refit_ok",
+"n_specs": 2,
+"viol_share": 0.0,
+"n": 12847,
+"p": 13
+},
+{
+"dataset": "DVN_ZWI5U1",
+"estimator": "lm_robust",
+"outcome": "population_c95",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 320,
+"p": 2
+},
+{
+"dataset": "DVN_ZWI5U1",
+"estimator": "lm_robust",
+"outcome": "vehicles_c95",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 310,
+"p": 2
+},
+{
+"dataset": "DVN_ZWI5U1",
+"estimator": "lm_robust",
+"outcome": "news_number_c95",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 318,
+"p": 2
+},
+{
+"dataset": "DVN_ZWI5U1",
+"estimator": "lm_robust",
+"outcome": "total_farms_c95",
+"kind": "count",
+"status": "refit_ok",
+"n_specs": 1,
+"viol_share": 0.0,
+"n": 320,
+"p": 2
+}
+]
+}

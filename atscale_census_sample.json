@@ -1,0 +1,842 @@
+[
+{
+"dataset": "DVN_NOWHWG",
+"estimator": "lm",
+"outcome": "wordcount",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_PXXUCO",
+"estimator": "xtreg",
+"outcome": "fnbstd",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_DGHBUX",
+"estimator": "reghdfe",
+"outcome": "votesharewithzero",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_Z8CNXV",
+"estimator": "lm",
+"outcome": "trials",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_AYSHR4",
+"estimator": "ivreg2",
+"outcome": "n_corriere",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_STXADQ",
+"estimator": "lmer",
+"outcome": "nprms.withdrawn",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_UBU601",
+"estimator": "reg",
+"outcome": "getinvolved_open_count",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_FQTA4A",
+"estimator": "reghdfe",
+"outcome": "log_delegation_ratio",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_SKYD91",
+"estimator": "xtreg",
+"outcome": "resettled_c",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_N2GGZ1",
+"estimator": "reg",
+"outcome": "yjndtmsnumberyearsunder4606",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_CAEEG7",
+"estimator": "lm",
+"outcome": "dem",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_HTMX3K",
+"estimator": "lm",
+"outcome": "sscie_count",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "mosques",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_VMPZIX",
+"estimator": "reg",
+"outcome": "n_list",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_KNT6YQ",
+"estimator": "areg",
+"outcome": "male_turnout_ps",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_RY1P5G",
+"estimator": "lm_robust",
+"outcome": "gun_homicides",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_YF761K",
+"estimator": "reghdfe",
+"outcome": "dem_perc",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_B5YNLC",
+"estimator": "reg",
+"outcome": "age",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_JO8C7A",
+"estimator": "reg",
+"outcome": "coop_num",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_YSS19O",
+"estimator": "lm",
+"outcome": "count_pa",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_0XQNDR",
+"estimator": "reghdfe",
+"outcome": "vote_share_gdem",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_J7RTIW",
+"estimator": "lm",
+"outcome": "percent.ay",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_GHRCKV",
+"estimator": "feols",
+"outcome": "pastot",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_FCZDKD",
+"estimator": "reg",
+"outcome": "proportionfemalecand",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_IUZDQI",
+"estimator": "reg",
+"outcome": "scale",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_0TIFK9",
+"estimator": "lm",
+"outcome": "prop_ran",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_KJT1V8",
+"estimator": "feols",
+"outcome": "lpop",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_9ZYFBX",
+"estimator": "reg",
+"outcome": "turnout_share1",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_BU06MH",
+"estimator": "reghdfe",
+"outcome": "applicants",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_ACMM3W",
+"estimator": "lm",
+"outcome": "vote_wait_time",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_IUZMZW",
+"estimator": "lm",
+"outcome": "voteshare2016",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_A9KK0V",
+"estimator": "lmer",
+"outcome": "v2xps_party",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_RY1P5G",
+"estimator": "lm_robust",
+"outcome": "homicides",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_QSXDUN",
+"estimator": "lm",
+"outcome": "tthreat",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_H9XFYR",
+"estimator": "xtreg",
+"outcome": "level_share",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_62TBIX",
+"estimator": "lm",
+"outcome": "age",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_Y9YHPL",
+"estimator": "reg",
+"outcome": "notmajopincount",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_SQSTSC",
+"estimator": "feols",
+"outcome": "amcham_mention",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_N2GGZ1",
+"estimator": "xtreg",
+"outcome": "yjndtmsnumberyearsunder4606",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_CHLLZ4",
+"estimator": "lmer",
+"outcome": "percent_women_candidates",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_KJWKLR",
+"estimator": "reghdfe",
+"outcome": "share_ballots_pref",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_1MGLHV",
+"estimator": "reg",
+"outcome": "elect_comp",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_IVILML",
+"estimator": "reg",
+"outcome": "frac_civwars_pre90",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_BGLGBZ",
+"estimator": "reghdfe",
+"outcome": "agency_politicized",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_WPF4RC",
+"estimator": "xtreg",
+"outcome": "toptwodivisiveness",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_Z3DQGI",
+"estimator": "ivreg2",
+"outcome": "conflictshare",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_BHVEBZ",
+"estimator": "reghdfe",
+"outcome": "o_don",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_EARLA4",
+"estimator": "xtreg",
+"outcome": "mean_prop_cospon_opp_spon_hr",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "remainder_votes",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_IG6ICN",
+"estimator": "ivreg",
+"outcome": "red_m20_absls",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "civil_def",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_KEWY2U",
+"estimator": "felm",
+"outcome": "pct_mra_constit_spending",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_WPKTKJ",
+"estimator": "lm",
+"outcome": "kanu_avg_97",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_NJIIPR",
+"estimator": "regress",
+"outcome": "q25edu",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_SQSTSC",
+"estimator": "feols",
+"outcome": "biz_sim_sif",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_8ZT2ID",
+"estimator": "lm",
+"outcome": "nay_correct_1d",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_1OPRYA",
+"estimator": "reghdfe",
+"outcome": "share_populist_parties",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_ZNMIXH",
+"estimator": "reg",
+"outcome": "secur_survey_b",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_WPKTKJ",
+"estimator": "lm",
+"outcome": "total_dos_9298_kal_p",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_R8TUOQ",
+"estimator": "reg",
+"outcome": "prescands1pct",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_TE9U5S",
+"estimator": "reg",
+"outcome": "t",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_YTSK3R",
+"estimator": "lm_robust",
+"outcome": "acc",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_MPBGXL",
+"estimator": "lm",
+"outcome": "total_votes",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_DEKMKT",
+"estimator": "reghdfe",
+"outcome": "d2pshare",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_NYPOQD",
+"estimator": "reg",
+"outcome": "leave",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_OOLBO9",
+"estimator": "lm",
+"outcome": "abspolchange_for10",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_2CITBJ",
+"estimator": "reg",
+"outcome": "portshare",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_FBKO6N",
+"estimator": "xtreg",
+"outcome": "asian_share1",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_27176",
+"estimator": "xtreg",
+"outcome": "names",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_4QUS9U",
+"estimator": "mixed",
+"outcome": "perc_community_contributions",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_M046SB",
+"estimator": "reghdfe",
+"outcome": "sumvis_pct",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_DFZKB6",
+"estimator": "felm",
+"outcome": "turnout",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_W8PHXM",
+"estimator": "lm",
+"outcome": "population",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_9AMKHL",
+"estimator": "lm",
+"outcome": "tweets",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_TK9JNU",
+"estimator": "xtreg",
+"outcome": "investment",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_QYGPDJ",
+"estimator": "ivreg2",
+"outcome": "v2x_clphy",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_F4GH3L",
+"estimator": "reg",
+"outcome": "security_sthlm2",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_TE1YA6",
+"estimator": "areg",
+"outcome": "indep_3",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_ZWI5U1",
+"estimator": "lm_robust",
+"outcome": "total_farms_c95",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_Z8CNXV",
+"estimator": "lm",
+"outcome": "move_count",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_2QG92Y",
+"estimator": "xtreg",
+"outcome": "qdisprta",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_PPNPH5",
+"estimator": "reg",
+"outcome": "culture_count",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_4PYOXP",
+"estimator": "lm_robust",
+"outcome": "duration",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_IHDBTY",
+"estimator": "lm",
+"outcome": "yearslived",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_P2U84B",
+"estimator": "feols",
+"outcome": "pr_regionalnumber",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_BZ9XRJ",
+"estimator": "reg",
+"outcome": "meta_undem_pis",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_WPYAB2",
+"estimator": "reg",
+"outcome": "relev2",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_ZWI5U1",
+"estimator": "lm_robust",
+"outcome": "news_number_c95",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_ZABHCA",
+"estimator": "reg",
+"outcome": "motivation",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_AWSQTW",
+"estimator": "reg",
+"outcome": "ev_total",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_GHRHU7",
+"estimator": "felm",
+"outcome": "d_share_ceo",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_G126SC",
+"estimator": "reghdfe",
+"outcome": "firms",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_KQJKY0",
+"estimator": "lm",
+"outcome": "month_anti_shia_pre",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_VHNHHN",
+"estimator": "reg",
+"outcome": "secular_win",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_NJIIPR",
+"estimator": "regress",
+"outcome": "q28water",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_NMJ4W9",
+"estimator": "reg",
+"outcome": "responselength",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_NJIIPR",
+"estimator": "regress",
+"outcome": "q21edu",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_2E4MOZ",
+"estimator": "feols",
+"outcome": "voteshare16_noind",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_VBNCF2",
+"estimator": "reg",
+"outcome": "refuse",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_YLUNSN",
+"estimator": "reg",
+"outcome": "publicgoods",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_DFZKB6",
+"estimator": "felm",
+"outcome": "num_of_white_cands",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_EHWM14",
+"estimator": "felm",
+"outcome": "roads_spend",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_9ZYFBX",
+"estimator": "reg",
+"outcome": "turnout_opp_party",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_VT4KJA",
+"estimator": "ivreg2",
+"outcome": "corrupexp",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_W8HUKY",
+"estimator": "lm",
+"outcome": "abs",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_AW5LU8",
+"estimator": "lm_robust",
+"outcome": "voted",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_AYSHR4",
+"estimator": "reghdfe",
+"outcome": "migshare",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_JO8C7A",
+"estimator": "reg",
+"outcome": "business",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_AU1MVC",
+"estimator": "reghdfe",
+"outcome": "counties",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_H38CWS",
+"estimator": "lm",
+"outcome": "num_coyote",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_OOLBO9",
+"estimator": "lm",
+"outcome": "abspolchange_for1",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_PXXUCO",
+"estimator": "lm",
+"outcome": "uper",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_RRBPUD",
+"estimator": "reg",
+"outcome": "frac_confdr_count_men_1861",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_EVCSCQ",
+"estimator": "xtreg",
+"outcome": "yield",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_DFZKB6",
+"estimator": "felm",
+"outcome": "total_cands",
+"kind": "count",
+"severity": "clear"
+},
+{
+"dataset": "DVN_EHWM14",
+"estimator": "felm",
+"outcome": "health_avg",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_2LHT5U",
+"estimator": "lm_robust",
+"outcome": "c10_catholic",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_BZ9XRJ",
+"estimator": "reg",
+"outcome": "meta_undem_po",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_RQE9SO",
+"estimator": "regress",
+"outcome": "portfolio_sh",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_GHRHU7",
+"estimator": "felm",
+"outcome": "d_share_gov",
+"kind": "proportion",
+"severity": "clear"
+}
+]

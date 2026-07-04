@@ -1,0 +1,1310 @@
+{
+ "raterA": [
+  {
+   "dataset": "DVN_NOWHWG",
+   "outcome": "wordcount",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "wordcount is the dependent variable in lm(wordcount ~ copartisan.sender + ...) at Grapevine_Appendix.Rmd lines 1186 and 1241, and sampled values are all non-negative integers (study1 min 6, median 32, mean 38, max 489, right-skewed) forming a genuine small word tally (King 1988), not a near-continuous magnitude, so linear OLS is misspecified."
+  },
+  {
+   "dataset": "DVN_PXXUCO",
+   "outcome": "fnbstd",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "not_proportion",
+   "reason": "fnbstd is the DV in xtreg/reg (Schub_ClusteredErrorsCheck_APSR.do line 24) but is built at Schub_BureaucracyLevelText_APSR.R line 183 as a min-max normalization of a continuous naive-Bayes political/military probability-ratio content score, landing strictly in the interior of [0,1] (n=168, p25 0.33, median 0.53, p75 0.67, only 1 obs at a boundary), i.e. a rescaled continuous index rather than a genuine bounded share/rate, so OLS is defensible."
+  },
+  {
+   "dataset": "DVN_DGHBUX",
+   "outcome": "votesharewithzero",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "votesharewithzero is the DV in reghdfe votesharewithzero CoderMean_bmi (Analysis_Appendix.do line 705) and sampled values (Data.tab col 19, n=5015) are a genuine electoral vote share confined to [0,1] with heavy boundary mass (1280 exact zeros = 25.5%, 245 exact ones = 4.9%), a textbook Papke-Wooldridge fractional outcome where linear OLS is misspecified."
+  },
+  {
+   "dataset": "DVN_Z8CNXV",
+   "outcome": "trials",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "trials is the DV in lm(trials ~ gene_reg_score*CRISPR + ...) (Gene_Replication_Jan2025.R line 113, labeled 'Clinical Trials'); the deposited country-year trials column (GeneRegs.csv col 17) is an all-integer clinical-trials count that is heavily zero-inflated (48.9% zeros, median 1, p75 3, p90 13) with an overdispersed tail, a genuine King-1988 event count where OLS is misspecified (the merged model df Coauthorships.Rdata is not deposited but the variable is unambiguously this count)."
+  },
+  {
+   "dataset": "DVN_AYSHR4",
+   "outcome": "n_corriere",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "n_corriere is the dependent variable of the linear 2SLS model ivreg2 n_corriere (zempcp zmigshare zem = zssc zssmig zss) (appendix_F.do line 155, with missing recoded to 0 at line 152) and is an all-integer count of Corriere della Sera newspaper articles per municipality (values 0-17, extremely zero-inflated at ~99.7% zeros after recode), a genuine rare-event count where the linear IV model is misspecified."
+  },
+  {
+   "dataset": "DVN_STXADQ",
+   "outcome": "nprms.withdrawn",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "replication_code.R:413 fits lmer (linear mixed, Gaussian identity link) on nprms.withdrawn as the DV alongside parallel Poisson glm/glmer, and the values are non-negative integers 0-126 with 65% zeros (mean 0.82, 22 distinct) \u2014 a genuine Poisson-like count of agency NPRM withdrawals."
+  },
+  {
+   "dataset": "DVN_UBU601",
+   "outcome": "getinvolved_open_count",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "SperberKaabaMcClendon_replication_AJPS_updated2.do:586/588 run reg (OLS, robust) on getinvolved_open_count as the DV, and inspection confirms it is the word count of an open-ended survey answer (e.g. 'yes they should, to have the zambia they imagine.' -> 9), integers 1-231 (median 16), a genuine small event count."
+  },
+  {
+   "dataset": "DVN_FQTA4A",
+   "outcome": "log_delegation_ratio",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "VannoniAshMorelli_2019.do:75 runs reghdfe (linear FE) on log_delegation_ratio as the DV, and reverse-engineering the data shows it equals log(delegations+1)/log(total provisions+1), a bounded [0,1] delegation share (mean 0.75) with boundary mass at 0 (no delegations) and 1 (all delegations) \u2014 a genuine fractional outcome, not an unbounded log transform."
+  },
+  {
+   "dataset": "DVN_SKYD91",
+   "outcome": "resettled_c",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "Replication commands.do:3 runs xtreg (linear panel) on resettled_c as the DV, and it is a raw non-negative integer refugee-resettlement count (75% zeros, median 0, max 61,298; logresettled is its log version) that the authors themselves also fit with xtnbreg \u2014 a heavily zero-inflated, overdispersed event count."
+  },
+  {
+   "dataset": "DVN_N2GGZ1",
+   "outcome": "yjndtmsnumberyearsunder4606",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "A&AISQFinalDoFile4510.do:4 runs reg (OLS) on yjndtmsnumberyearsunder4606 as the DV, but it is 'number of years under GATT/WTO' \u2014 a membership duration/tenure (integers 0-61, mean 13) that the authors also model as a duration via a Cox proportional-hazard survival model (Column VI), an integer covariate like age rather than a Poisson event count."
+  },
+  {
+   "dataset": "DVN_CAEEG7",
+   "outcome": "dem",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "county-level lm(dem ~ pslave1860, weights = sample.size) in slavery-jop-replication.R models the share of white CCES respondents identifying Democratic, and abs-jop-cces-white-countydata.tab shows dem is bounded in [0,1] with heavy boundary mass (436 exact zeros, 111 exact ones of 2931), a textbook Papke-Wooldridge fractional response."
+  },
+  {
+   "dataset": "DVN_HTMX3K",
+   "outcome": "sscie_count",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "IRExampleReplication.R fits lm(sscie_count ~ all_female + ...) on raw SSCI citation counts, which in Releasable_Article_Data.tab are all non-negative integers with zero mass and small typical values (median 12, p25 4, max 1084), a Poisson-like event count where OLS is a King (1988) misspecification."
+  },
+  {
+   "dataset": "DVN_MPBGXL",
+   "outcome": "mosques",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "figure_b2i.R uses lm(constituency_data$mosques ~ woman_win) as a covariate-balance test, and mosques in budget_results.csv is the number of mosques per constituency with a large near-continuous magnitude (median 279, p25 105, max 5564, only 3 zeros of 389) for which linear OLS is standard, not a Poisson-like event count."
+  },
+  {
+   "dataset": "DVN_VMPZIX",
+   "outcome": "n_list",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "4_appendix.do runs reg n_list i.hi_edu##i.male with the author's own comment 'DV is list position', and 2013_candidate_elected.tab shows n_list is an ordinal candidate rank on the party list (values 1-45, median 4), a positional integer rather than an event-count tally."
+  },
+  {
+   "dataset": "DVN_KNT6YQ",
+   "outcome": "male_turnout_ps",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "areg male_turnout_ps male, absorb(id) is a linear fixed-effects OLS applied to the polling-station male turnout rate, which in data_replication_2018.tab is bounded in [0,1] (median 0.575) with boundary values present (10 zeros, 31 ones), a genuine Papke-Wooldridge fractional outcome."
+  },
+  {
+   "dataset": "DVN_RY1P5G",
+   "outcome": "gun_homicides",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "Verified `lm_robust(gun_homicides ~ trade + ustrade + Total_spending + time*factor(INEGI), clusters=INEGI)` applies OLS to gun_homicides as the DV, and the deposited homicides file confirms it is a non-negative integer firearm-homicide tally (with zeros) at the sparse municipality-year unit (log(x+0.00001) used elsewhere to handle the many zeros), a genuine event count."
+  },
+  {
+   "dataset": "DVN_YF761K",
+   "outcome": "dem_perc",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "Verified `reghdfe dem_perc any_shooting_in_county_year, absorb(fips year)` applies OLS to dem_perc as the DV, and sampled values are a genuine county Democratic vote share bounded in [0,1] (mean 0.39) with substantial boundary mass (8.2% at 0, 2% at 1), a textbook Papke-Wooldridge fractional-response case."
+  },
+  {
+   "dataset": "DVN_B5YNLC",
+   "outcome": "age",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "Verified `reg age control T1 T2 T3, nocons` uses age as the DV only in a treatment-balance check, and sampled values (19-30, mean 20.1) are respondent age, an integer covariate explicitly excluded from event counts, so OLS is standard."
+  },
+  {
+   "dataset": "DVN_JO8C7A",
+   "outcome": "coop_num",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "Verified `reg coop_num mechane_new income_90 urban_90 distance, robust` uses coop_num (number of cooperatives per oblast) as the DV, but sampled values (316-12327, mean 1840, no zeros, 72 distinct) are a large near-continuous magnitude, not a sparse Poisson-like tally, so OLS is defensible."
+  },
+  {
+   "dataset": "DVN_YSS19O",
+   "outcome": "count_pa",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "Verified `reg8a <- lm(count_pa ~ absidealimportantdiff + ...)` applies OLS to count_pa as the DV, and sampled values are a genuine event count of policy conditions (integers 0-37, mean 9.07, 25 zeros, Poisson-like) that the authors otherwise model with glm.nb, so the linear model misspecifies the count DV."
+  },
+  {
+   "dataset": "DVN_0XQNDR",
+   "outcome": "vote_share_gdem",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "make_midpoint_heterogeneity_table.do runs `reghdfe vote_share_gdem midpoint ...` (OLS) on the Democratic general-election vote share, a genuine [0,1] share of a bounded total (n=84,229; min 0, max 1) with heavy boundary mass (18.9% exactly 0, 21.1% exactly 1), the canonical Papke-Wooldridge fractional-response misspecification."
+  },
+  {
+   "dataset": "DVN_J7RTIW",
+   "outcome": "percent.ay",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "`lm(percent.ay ~ Agency.Type*treat + ...)` regresses the share of tied aid (labeled 'Percent Tied'), a genuine [0,1] proportion (n=2,109; min 0, max 1) with 55.9% mass at 0 and 9% at 1, so OLS is the misspecified linear-probability-style fit Papke-Wooldridge warns against."
+  },
+  {
+   "dataset": "DVN_GHRCKV",
+   "outcome": "pastot",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "`feols(PAsTOT ~ scale_disaster ...)` applies OLS to the count of IMF prior-action conditions, a non-negative integer tally (n=8,326; integer-valued; mean 0.64; 89% zeros; max 78) that the same script also models with fenegbin, a textbook King-1988 event count."
+  },
+  {
+   "dataset": "DVN_FCZDKD",
+   "outcome": "proportionfemalecand",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "interior_defensible",
+   "reason": "`reg proportionfemalecand ...` on Appendix_D1 regresses the state-level proportion of female legislative candidates, a genuine share but strictly interior (n=98; min 0.051, max 0.452; zero mass at 0 or 1), so OLS over this bounded-away-from-the-boundaries range is defensible."
+  },
+  {
+   "dataset": "DVN_IUZDQI",
+   "outcome": "scale",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "rescaled_ordinal",
+   "reason": "cleanup.do builds `scale = (supportR+effectR+goalsR+peopleR+leaderR+selfR)/6`, the mean of six individually min-max-rescaled Likert items (a Cronbach-alpha 'BLM Support Index'; 57 granular values in [0,1]), an attitudinal composite where interval OLS via `reg scale i.treat` is the mainstream defensible choice, not a genuine share, rate, or count."
+  },
+  {
+   "dataset": "DVN_0TIFK9",
+   "outcome": "prop_ran",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "In Chamber-Level Analyses.R, lm(prop_ran ~ log_ratio) regresses prop_ran (the share of state legislators who ran for Congress, labeled 'Percent of State Legislators that Ran', bounded in [0,1] with 16.7% mass at exactly 0) as the DV, a genuine fractional-response proportion where OLS is misspecified (Papke-Wooldridge)."
+  },
+  {
+   "dataset": "DVN_KJT1V8",
+   "outcome": "lpop",
+   "kind": "count",
+   "real": false,
+   "fp_class": "transformed/correct_model",
+   "reason": "city_growth.R defines lpop as log(pop + 0.1), so feols(lpop ~ ...) regresses an already log-transformed large population magnitude (pop ranges 0-10,383 thousands), the standard log-linear specification, not a raw event count."
+  },
+  {
+   "dataset": "DVN_9ZYFBX",
+   "outcome": "turnout_share1",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "The .do file runs reg turnout_share1 on covariates using a genuine voter-turnout share bounded in [0,1] (with boundary mass at both 0 and 1) as the DV, a bounded proportion where OLS is misspecified per Papke-Wooldridge."
+  },
+  {
+   "dataset": "DVN_BU06MH",
+   "outcome": "applicants",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "reghdfe applicants (labeled '# of Applicants') uses a raw non-negative integer tally of civil-service applicants as the DV, right-skewed from 0 to 1175 with ~31% of values <=20, a King-1988 event count for which a Poisson/NB model rather than OLS is appropriate."
+  },
+  {
+   "dataset": "DVN_ACMM3W",
+   "outcome": "vote_wait_time",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "vote_wait_time is a voting wait-time duration in hours (integer-valued 0-30, stored in R objects named 'wait_hours'), a near-continuous time magnitude rather than an event-count tally, so lm on it is a defensible standard choice."
+  },
+  {
+   "dataset": "DVN_IUZMZW",
+   "estimator": "lm",
+   "outcome": "voteshare2016",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "lm(voteshare2016 ~ ...) at the party-circumscription level regresses a genuine vote share bounded in [0,0.633] (mean 0.115) with 43 exact zeros (boundary mass at 0) and no fractional-response model used, a textbook Papke-Wooldridge misspecification."
+  },
+  {
+   "dataset": "DVN_A9KK0V",
+   "estimator": "lmer",
+   "outcome": "v2xps_party",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "rescaled_ordinal",
+   "reason": "v2xps_party is the V-Dem party-system institutionalization index, a continuous latent measurement-model score on [0,1] (1575 distinct values, mean 0.52) aggregated from expert ordinal ratings rather than a genuine share/rate, so a linear mixed model on this rescaled interval index is the mainstream defensible choice."
+  },
+  {
+   "dataset": "DVN_RY1P5G",
+   "estimator": "lm_robust",
+   "outcome": "homicides",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "lm_robust(homicides ~ ...) is a linear DID at the Mexican municipality (INEGI) level on homicide event counts from IDM/SNSP crime data (integer tallies with zeros, as shown by log(homicides + 0.00001)), modeled only linearly with no Poisson/negative-binomial, a genuine King-1988 event-count misspecification."
+  },
+  {
+   "dataset": "DVN_QSXDUN",
+   "estimator": "lm",
+   "outcome": "tthreat",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "rescaled_ordinal",
+   "reason": "tThreat is an individual survey respondent's perceived-threat rating on a 0-100 slider rescaled to [0,1] (~101 values in 0.01 steps with a ceiling spike of 157 at 1.0), a rescaled rating scale in a randomized survey experiment where interval OLS is the mainstream choice, not a genuine share/rate."
+  },
+  {
+   "dataset": "DVN_H9XFYR",
+   "estimator": "xtreg",
+   "outcome": "level_share",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "transformed/correct_model",
+   "reason": "Although level_share is a genuine trade share in [0,1] (mean 0.55, 36 values at 1), the author's primary model throughout is fractional logit (glm ... family(binomial) link(logit)) and the flagged xtreg FE is one of the explicitly labeled 'alternative estimators' robustness checks, so the correct fractional-response family was actually used."
+  },
+  {
+   "dataset": "DVN_62TBIX",
+   "outcome": "age",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "age is used as the DV only in a treatment-balance F-test lm(age~PRC+interpersonal) and its values are a demographic covariate integer (11-69, mean 33.9, 45 distinct), the rubric's canonical non-count, not a Poisson-like event tally."
+  },
+  {
+   "dataset": "DVN_Y9YHPL",
+   "outcome": "notmajopincount",
+   "kind": "count",
+   "real": true,
+   "fp_class": "real",
+   "reason": "notMajOpinCount is a non-negative integer tally of non-majority-opinion citations (0-41, mean 0.25, 88% zeros) used as the DV in OLS `reg notMajOpinCount median ...` while the authors elsewhere fit glmer.nb, a genuine event count."
+  },
+  {
+   "dataset": "DVN_SQSTSC",
+   "outcome": "amcham_mention",
+   "kind": "count",
+   "real": true,
+   "fp_class": "real",
+   "reason": "amcham_mention is a non-negative integer count of AmCham mentions (0-13, mean 0.069, 96% zeros) used as the DV in the linear OLS estimator feols(amcham_mention~amcham) while the authors also fit fenegbin, a genuine event count."
+  },
+  {
+   "dataset": "DVN_N2GGZ1",
+   "outcome": "yjndtmsnumberyearsunder4606",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "the xtreg DV is a 'years under threshold' duration counter (integer 0-61, mean 13, median 5, ~uniform tail after 43% zeros), a large near-continuous temporal magnitude like age rather than a Poisson-like event tally, so OLS/xtreg is defensible."
+  },
+  {
+   "dataset": "DVN_CHLLZ4",
+   "outcome": "percent_women_candidates",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "real",
+   "reason": "Percent_Women_Candidates is a genuine share of a bounded total (women/total candidates) in [0,1] (0-0.61, mean 0.30, fractional ratios) with 4.1% mass at the 0 boundary, modeled with the linear estimator lmer where Papke-Wooldridge fractional response applies."
+  },
+  {
+   "dataset": "DVN_KJWKLR",
+   "outcome": "share_ballots_pref",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "reghdfe (linear) is applied to share_ballots_pref as the DV (2_replicating_analyses.do:451), and it is a genuine ballot share of a bounded total, gen share_ballots_pref = pref/DT_dc_votes (1_building_datasets.do:2176), bounded in (0,1) and right-skewed against the 0 boundary (n=837, min 0.0001, max 0.73, mean 0.09), a canonical Papke-Wooldridge fractional outcome."
+  },
+  {
+   "dataset": "DVN_1MGLHV",
+   "outcome": "elect_comp",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "reg elect_comp dis81_longavg, r (line 200) fits OLS to a bounded [0,0.989] electoral-competition measure with 7.2% of observations exactly at 0 and continuous support across the full range (n=359, 105 distinct values, not a Likert item), i.e. a bounded proportion with boundary mass where OLS is a fractional-response misspecification."
+  },
+  {
+   "dataset": "DVN_IVILML",
+   "outcome": "frac_civwars_pre90",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "reg frac_civwars_pre90 ruralins ..., robust (code.do:347/349) fits OLS to the fraction of pre-1990 civil-war years, a genuine [0,1] fraction with heavy mass at 0 and a value of 1.0 (Angola) in civil_wars_pre90.tab, a textbook bounded proportion with boundary mass."
+  },
+  {
+   "dataset": "DVN_BGLGBZ",
+   "outcome": "agency_politicized",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "not_proportion",
+   "reason": "agency_politicized is a right-hand-side predictor (c.agency_politicized) in every substantive regression and is a DV only in the auxiliary reliability check reghdfe agency_politicized agency_politicized_dec, noabsorb (rep_analyses.do:399) on agency_10.tab, where it reaches 1.25 (sibling column 1.75), so it is a ratio/index not truly bounded in [0,1] rather than a genuine proportion."
+  },
+  {
+   "dataset": "DVN_WPF4RC",
+   "outcome": "toptwodivisiveness",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "xtreg TopTwoDivisiveness ..., re (AJPSReplicationENPC.do:120) fits a linear RE model to a Gini-Simpson/Blau fragmentation index, gen TopTwoDivisiveness=1-(pdsTOP1^2+...) (AJPSCreating_Files.do:674), a genuine probability/share bounded [0,0.5] with 85.6% of observations exactly at 0, i.e. a fractional outcome with massive boundary mass."
+  },
+  {
+   "dataset": "DVN_Z3DQGI",
+   "outcome": "conflictshare",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "conflictshare is a genuine bounded conflict-years share (sampled n=137, min 0, max 1, mean 0.18, 32% mass at exactly 0, 1.5% at 1) used as the dependent variable in plain `reg` (dofile lines 41/43) and `ivreg2` (lines 63/64), a textbook Papke-Wooldridge fractional outcome with boundary mass fit by a linear estimator."
+  },
+  {
+   "dataset": "DVN_BHVEBZ",
+   "outcome": "o_don",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "o_don is a non-negative integer donation count (sampled min 0, max 45, mean 0.07, 96% zeros, Poisson-like) used as the DV in `reghdfe` (linear high-dimensional-FE OLS, line 280, Table A.28) while sibling counts c_don/t_don are modeled with xtpoisson/xtnbreg, a King-1988 count-vs-OLS mismatch."
+  },
+  {
+   "dataset": "DVN_EARLA4",
+   "outcome": "mean_prop_cospon_opp_spon_hr",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "mean_prop_cospon_opp_spon_HR is a genuine share of a legislator's cosponsorships going to opposite-party sponsors (sampled n=9202, min 0, max 1, mean 0.29, 4% mass at exactly 0) used as the dependent variable in `xtreg` (linear FE) at line 43, though it appears as a right-hand predictor elsewhere."
+  },
+  {
+   "dataset": "DVN_MPBGXL",
+   "outcome": "remainder_votes",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "remainder_votes is a large near-continuous vote tally (sampled n=287, min 321, max 12817, mean ~2939, 278/287 distinct values, zero mass at 0) fit by `lm` (figure_b2ii.R line 11), a magnitude for which OLS is standard rather than a Poisson-like small event count."
+  },
+  {
+   "dataset": "DVN_IG6ICN",
+   "outcome": "red_m20_absls",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "not_proportion",
+   "reason": "red_m20_absls is constructed as a difference of two income shares (share_lspost_p40p60 minus pre_p40p60, 1_create_final_dataset.do line 79), a signed redistribution measure not bounded to [0,1] and observed in a narrow strictly-interior band (sampled 0.0075-0.0353, no boundary mass), so the `ivreg` linear model (4_appendix.do line 725) is defensible."
+  },
+  {
+   "dataset": "DVN_MPBGXL",
+   "outcome": "civil_def",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "In figure_b2i.R civil_def is the LHS of lm(constituency_data$civil_def~woman_win) (a balance table), but the constituency-level 'Civil defense (#)' values are a large near-continuous integer magnitude (mean 755, median 462, range 0-2880, 237/265 distinct, only 3% <=10) where OLS is standard, not a Poisson-like small event count."
+  },
+  {
+   "dataset": "DVN_KEWY2U",
+   "outcome": "pct_mra_constit_spending",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "real",
+   "reason": "Appendix Code.R runs felm(pct_MRA_constit_spending ~ ...) labeled '% of MRA Spent on Constituency Staff', and the values are a genuine budget share bounded in [0,1] (min 0, max 0.79, mean 0.27) with mass at 0, so linear felm on this fractional response is the Papke-Wooldridge misspecification."
+  },
+  {
+   "dataset": "DVN_WPKTKJ",
+   "outcome": "kanu_avg_97",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "real",
+   "reason": "ReplicationCode_SI_SubsequentVote.R runs lm(kanu_avg_97 ~ ...) on KANU's 1997 vote share, a genuine share of votes bounded in [0,1] that spans essentially the full interval (0.019-0.994, mean 0.46, ~3% >=0.98), a classic fractional-response outcome mis-modeled by OLS."
+  },
+  {
+   "dataset": "DVN_NJIIPR",
+   "outcome": "q25edu",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "The do-file runs regress Q25Edu ..., but Q25Edu is a subjective budget-preference/percentage elicitation for education (integer 0-80 clustered at round numbers 10/15/20/25/30, with the parallel Q17Edu reaching 105), not a Poisson-like event count."
+  },
+  {
+   "dataset": "DVN_SQSTSC",
+   "outcome": "biz_sim_sif",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "interior_defensible",
+   "reason": "adst_ajps_replication.R runs fixest::feols(biz_sim_sif ~ ...) on a continuous SIF text/business-similarity (cosine) score that is strictly interior to [0,1] (range 0.327-0.837, mean 0.613) with no values near 0 or 1 and no boundary mass, so linear OLS is a defensible mainstream choice."
+  },
+  {
+   "dataset": "DVN_8ZT2ID",
+   "outcome": "nay_correct_1d",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "partycompetition_main_analysis.R line 697 fits lm(nay_correct_1D ~ ...) (Table A3 'Percent of Nay Votes Correctly Classified') on a bounded classification-accuracy rate confined to [0.6,1] with 5.3% mass at exactly 1.0, a genuine fractional/proportion outcome where OLS is Papke-Wooldridge-inappropriate."
+  },
+  {
+   "dataset": "DVN_1OPRYA",
+   "outcome": "share_populist_parties",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "a01_districtanalysis.do line 502 regresses share_populist_parties (district 'Share of Votes for Populist Parties', range [0,0.847] with 31.7% mass at exactly 0) via reghdfe, a linear high-dimensional-FE OLS estimator (Stata analog of the in-scope felm/xtreg), making it a textbook bounded vote share mis-modeled by OLS."
+  },
+  {
+   "dataset": "DVN_ZNMIXH",
+   "outcome": "secur_survey_b",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "01_analysis.do line 2006 fits reg secur_survey_b (DV labeled 'Frequency of Land Disputes') on a non-negative integer tally taking 20 distinct values from 0 to 90 with 72.9% zeros and mean 0.65, a zero-inflated event count where OLS is King-1988-inappropriate."
+  },
+  {
+   "dataset": "DVN_WPKTKJ",
+   "outcome": "total_dos_9298_kal_p",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "ReplicationCode_MainResults_And_SI.R fits lm(total_dos_9298_kal_p ~ ...) on the district proportion of 1992-98 District Officer postings that are Kalenjin (1/n fractions in [0,1], 24.3% mass at 0 and some at 1), a genuine share of a bounded total mis-modeled by OLS."
+  },
+  {
+   "dataset": "DVN_R8TUOQ",
+   "outcome": "prescands1pct",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "demo_subv_adm_code.do line 247 fits reg prescands1pct opp_prop (DV headed 'NUMBER PRESIDENTIAL CANDIDATES'), a small non-negative integer count of candidates exceeding 1% vote taking values 1-15 (mean 4.64), an event count where OLS is King-1988-inappropriate."
+  },
+  {
+   "dataset": "DVN_TE9U5S",
+   "outcome": "t",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "interior_defensible",
+   "reason": "figure3.do line 4 runs `reg t c type`; sampled `t` (a 'regime change threshold', n=100) ranges 0.149-0.848, strictly interior in [0,1] with zero mass at 0 or 1 and it is not a genuine share of a bounded total, so linear OLS is defensible."
+  },
+  {
+   "dataset": "DVN_YTSK3R",
+   "outcome": "acc",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "interior_defensible",
+   "reason": "analysis.R line 599 runs `lm_robust(acc~-1+model)`; sampled `acc` (classifier accuracy, n=250) ranges 0.7635-0.94 with no boundary mass, and the no-intercept factor model just estimates per-model mean accuracy so fitted values cannot leave [0,1], making OLS defensible."
+  },
+  {
+   "dataset": "DVN_MPBGXL",
+   "outcome": "total_votes",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "figure_b2ii.R line 9 runs `lm(total_votes~woman_win)` as an RD balance check; `total_votes` ('Party's Total Votes') ranges 321-51,564, a large near-continuous vote tally (not a Poisson-like small event count) where OLS is standard."
+  },
+  {
+   "dataset": "DVN_DEKMKT",
+   "outcome": "d2pshare",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "d2pshare (Democratic two-party vote share) is a genuine bounded share with massive boundary mass (43 obs at 0, 25,113 at 1 of 111,436) applied as the DV in linear OLS via reghdfe (1_estimation.do:847-853) and whitelisted `reg` (2_appendix.do:723,757, ctitle 'D Vote'); even the exact-0/1-filtered estimation sample spans 0.0017-0.9999 with near-boundary mass, a textbook fractional-response misspecification."
+  },
+  {
+   "dataset": "DVN_NYPOQD",
+   "outcome": "leave",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "analysis_main_all.do:279 runs `reg leave did ...` on a 1975-vs-2016 referendum DiD panel where `leave` must be a comparable leave vote share/percentage (deposited source brexitevote-ep2017.tab shows EU75Leaveshare 0.23-0.58 and Pct_Leave 21-76), not a Poisson event count; even the raw Leave tally is 621-227,300 (large near-continuous), so under no reading is it a genuine event count."
+  },
+  {
+   "dataset": "DVN_OOLBO9",
+   "outcome": "abspolchange_for10",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "abspolchange_for10 is the DV in lm() (stats_models_190123_rep.R:826) but is the absolute change in the Polity2 regime score (integer 0-19 on a bounded -10..+10 index), a difference-score magnitude rather than a Poisson-like event tally, so OLS is defensible."
+  },
+  {
+   "dataset": "DVN_2CITBJ",
+   "outcome": "portshare",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "portshare is the DV in 'reg portshare seats' (MV2020_APSR_replication.do:55) and is a party's genuine share of cabinet portfolios bounded in [0,1] (range 0.03-0.97, ~11% below 0.1), the classic Gamson's-law fractional outcome where linear OLS is the Papke-Wooldridge misspecification."
+  },
+  {
+   "dataset": "DVN_FBKO6N",
+   "outcome": "asian_share1",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "Asian_Share1 is the DV in linear fixed-effects 'xtreg Asian_Share1 ... , fe' (MainReplicationCode.do:67) and is the Asian share of the electorate bounded in [0,1] (mean 0.06 with 448 observations at exactly 0), a boundary-mass fractional outcome for which linear FE is misspecified."
+  },
+  {
+   "dataset": "DVN_27176",
+   "outcome": "names",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "names is the DV in xtreg (replication do:7-13) but is the signature count per antislavery petition ranging 0-5299 (median 61, mean 100, only 2 zeros), a large near-continuous magnitude for which OLS/log-OLS is standard (the authors also fit lnnames) rather than a small Poisson-like count."
+  },
+  {
+   "dataset": "DVN_4QUS9U",
+   "outcome": "perc_community_contributions",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "Perc_Community_Contributions ('% Any Donate') is the DV in a linear-Gaussian 'mixed' model (Appendix.do:1009) and plain reg (910/913), a genuine community-level [0,1] share (values 1/12,1/6,1/3; mean 0.50) with heavy boundary mass (346 at exactly 0, 329 at exactly 1), the textbook fractional-response outcome."
+  },
+  {
+   "dataset": "DVN_M046SB",
+   "outcome": "sumvis_pct",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "real",
+   "reason": "reghdfe (linear high-dimensional-FE OLS) regresses sumvis_pct, a summer-visit share bounded in [0,1] (mean 0.105, 20.4% mass at exactly 0), as the dependent variable at main-analysis.do line 123, a textbook Papke-Wooldridge fractional-response case."
+  },
+  {
+   "dataset": "DVN_DFZKB6",
+   "outcome": "turnout",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "real",
+   "reason": "felm regresses turnout, a genuine voter-turnout rate bounded in [0,1] (values 0.00005 to 1.0, mean 0.47, 100% in [0,1]) from the council data, as the dependent variable at Main Replication Code line 796, where a linear model on a bounded rate is misspecified."
+  },
+  {
+   "dataset": "DVN_W8PHXM",
+   "outcome": "population",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "lm regresses municipal population (raw 756 to 635,181 and standardized via scale() before the model) as a covariate-balance dependent variable, a large near-continuous magnitude rather than a Poisson-like event count, so OLS is the standard choice."
+  },
+  {
+   "dataset": "DVN_9AMKHL",
+   "outcome": "tweets",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "lm(tweets ~ post_release) operates on daily aggregate tweet volume that is integer but ranges 21 to 726 (mean 210, no zeros), a large near-continuous count with no boundary mass where the normal approximation and OLS are standard, not a small Poisson-like tally."
+  },
+  {
+   "dataset": "DVN_TK9JNU",
+   "outcome": "investment",
+   "kind": "count",
+   "real": true,
+   "fp_class": "real",
+   "reason": "xtreg (linear random-effects) regresses investment, an integer count of Chinese investment projects per country-year (0 to 43, mean 3.5, 50.6% zeros, overdispersed long tail) with no count model used anywhere, as the dependent variable at do-file lines 135-138, a canonical King 1988 count-in-OLS violation."
+  },
+  {
+   "dataset": "DVN_QYGPDJ",
+   "outcome": "v2x_clphy",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "interior_defensible",
+   "reason": "v2x_clphy is the V-Dem physical-violence latent index (continuous Bayesian-measurement composite, ~680 unique values strictly interior at 0.011-0.98 with 0% mass at 0 or 1), a bounded index with no boundary pile-up where OLS/IV is defensible rather than a genuine share, and the estimator applied (ivreg2) is 2SLS-IV."
+  },
+  {
+   "dataset": "DVN_F4GH3L",
+   "outcome": "security_sthlm2",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "rescaled_ordinal",
+   "reason": "security_sthlm2 is a composite of 1-7 Likert survey items (q80_/q24_ questions) measuring post-Stockholm-attack feeling of security, min-max rescaled to [0,1] in 1/16 steps with an 18.5% ceiling pile-up at 1, an attitudinal rating scale where interval OLS (reg) is the mainstream choice, not a genuine share of a bounded total."
+  },
+  {
+   "dataset": "DVN_TE1YA6",
+   "outcome": "indep_3",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "indep_3 is the share of newspapers self-identifying as politically independent per state-year (genuine bounded [0,1] share, 0-0.86 with a 5.4% exact-zero pile-up and no ones), and areg (linear OLS absorbing state fixed effects, equivalent to the listed felm/xtreg) is fit to it as the DV, a fractional outcome warranting a Papke-Wooldridge model."
+  },
+  {
+   "dataset": "DVN_ZWI5U1",
+   "outcome": "total_farms_c95",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "total_farms_c95 is the total number of farms per locality, an integer but large near-continuous magnitude (0-2891, mean 520, median 445, only one zero) used as a covariate-balance DV, where OLS (lm_robust) is standard and it is not a Poisson-like event count."
+  },
+  {
+   "dataset": "DVN_Z8CNXV",
+   "outcome": "move_count",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "move_count is a non-negative integer tally of researcher relocation events per origin-to-destination country dyad-year (82% zeros, median 0, mean 7.7, heavily over-dispersed), and lm is fit to it as the DV in a gravity model, a textbook King-1988 event-count misspecification where Poisson/PPML is appropriate."
+  },
+  {
+   "dataset": "DVN_2QG92Y",
+   "outcome": "qdisprta",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "The .do file runs xtreg qdisprta rolawcom, pa/re/fe i(cr) robust with qdisprta as the DV, and its deposited values are a non-negative integer tally of RTA trade disputes (0-44, 82% zeros, Poisson-like), so linear xtreg on a genuine event count is a real King-1988 misspecification."
+  },
+  {
+   "dataset": "DVN_PPNPH5",
+   "outcome": "culture_count",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "reg culture_count high_pop_pop ..., cluster(state_num2) (the paper's Table A15 'Total count') applies OLS to a raw per-speech tally of culture words (non-negative integers 0-116, mean 21, one zero), a genuine word-occurrence event count."
+  },
+  {
+   "dataset": "DVN_4PYOXP",
+   "outcome": "duration",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "lm_robust(duration ~ conditions) models survey completion time in seconds (integer 3-6115, mean 322, 765 unique values, plotted as 'Survey Duration'), a large near-continuous magnitude for which OLS is standard, not an event count."
+  },
+  {
+   "dataset": "DVN_IHDBTY",
+   "outcome": "yearslived",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "lm(yearslived ~ treat) uses 'years lived in current enumeration area' (integer 0-99, mean ~23, heaped at multiples of 5/10, elsewhere a control), an age-like tenure duration/covariate rather than a Poisson event count."
+  },
+  {
+   "dataset": "DVN_P2U84B",
+   "outcome": "pr_regionalnumber",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "feols(pr_regionalnumber ~ ...) regresses a candidate's PR party-list position (labeled 'List Number (PR)', integer 1-15 starting at 1), an ordinal rank/position, not a non-negative event-count tally starting at zero."
+  },
+  {
+   "dataset": "DVN_BZ9XRJ",
+   "estimator": "reg",
+   "outcome": "meta_undem_pis",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "rescaled_ordinal",
+   "reason": "`reg meta_undem_PiS authoritarian##wave` regresses a (meta)perception composite that averages ~4 undemocratic-practice rating items (harass/challenge/courts/polling) into 37 granular fractional levels rescaled to [0,1], an attitudinal rating scale for which interval OLS is the defensible mainstream choice rather than a genuine count-based share."
+  },
+  {
+   "dataset": "DVN_WPYAB2",
+   "estimator": "reg",
+   "outcome": "relev2",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "`reg relev2 i.pres_party4 ...` applies OLS to a non-negative integer legislative-effectiveness/bill tally (all integers 0-918, median 8, ~28% zeros, heavy right skew), a King-1988 over-dispersed event count for which linear regression is misspecified."
+  },
+  {
+   "dataset": "DVN_ZWI5U1",
+   "estimator": "lm_robust",
+   "outcome": "news_number_c95",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "`lm_robust(news_number_c95 ~ treat)` fits OLS to a non-negative integer media-mention tally (integers 0-14, ~78% zeros, p90=2), the canonical Poisson-like King-1988 event count."
+  },
+  {
+   "dataset": "DVN_ZABHCA",
+   "estimator": "reg",
+   "outcome": "motivation",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "rescaled_ordinal",
+   "reason": "`reg`/`svy: reg motivation ...` uses a multi-item political-motivation Likert battery averaged and min-max rescaled to [0,1] (39-57 granular levels), which the authors deliberately pair with a logit for the binary vote outcome, so interval OLS on this attitudinal index is the mainstream defensible treatment, not a genuine proportion."
+  },
+  {
+   "dataset": "DVN_AWSQTW",
+   "estimator": "reg",
+   "outcome": "ev_total",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "interior_defensible",
+   "reason": "`reg ev_total ctot, cl(ccode)` regresses an electoral-volatility index that is strictly interior in (0.0195, 0.6927) with zero mass at 0 or 1, so OLS is defensible and fractional-response methods are not required."
+  },
+  {
+   "dataset": "DVN_GHRHU7",
+   "outcome": "d_share_ceo",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "",
+   "reason": "In 01_main_text.R line 499 felm regresses D_share_ceo (the Democratic share of a firm's CEO political donations, paired with R_share_ceo) as the dependent variable, and the data are a genuine bounded [0,1] donation share with 79.5% mass at 0 and 9.0% at 1, a textbook Papke-Wooldridge fractional response fit with linear OLS."
+  },
+  {
+   "dataset": "DVN_G126SC",
+   "outcome": "firms",
+   "kind": "count",
+   "real": true,
+   "fp_class": "",
+   "reason": "In 2_appendix.do line 997 reghdfe (linear high-dimensional fixed-effects OLS) regresses firms, the count of firms seized from mafias that is all non-negative integers 0-175 with 99.4% zeros, and the authors themselves run xtnbreg negative binomial on it at line 1007, confirming it is a Poisson-like event count analyzed with OLS."
+  },
+  {
+   "dataset": "DVN_KQJKY0",
+   "outcome": "month_anti_shia_pre",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_outcome",
+   "reason": "month_anti_shia_pre is never a standalone dependent variable; every lm in twitter_analysis.R (e.g. line 68) uses the change score month_anti_shia_post - month_anti_shia_pre as the DV, so the flagged variable is only a subtracted baseline term and the true differenced outcome is a signed change (36.5% negative values) for which OLS is appropriate."
+  },
+  {
+   "dataset": "DVN_VHNHHN",
+   "outcome": "secular_win",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "not_proportion",
+   "reason": "Although secular_win is a bounded win-share in [0,1], the only plain reg with it as the DV (Analysis_final_tabfigs.do line 408) is the 2SLS first stage that instruments this endogenous treatment with secular_close_win to report the first-stage F-stat (53.91), where a linear first stage is the standard and recommended choice, so OLS is defensible."
+  },
+  {
+   "dataset": "DVN_NJIIPR",
+   "outcome": "q28water",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "In 'Participation and Development Replication Code 1.1.do' regress uses Q28Water, a post-treatment water-sector budget-allocation score on a 0-100 scale (n=3567, mean 31.3, sd 14.3, 60 distinct integer values, only 0.2% at 0 and 0.3% at 100), which is a bounded near-continuous magnitude rather than a Poisson-like event tally, so OLS with robust SEs is standard."
+  },
+  {
+   "dataset": "DVN_NMJ4W9",
+   "kind": "count",
+   "outcome": "responselength",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "In 02_Main_tables.do `reg responselength foreign female...if responsedummy==1` uses it as the DV, but responselength is a near-continuous text-length magnitude ranging 125-2756 with 286 distinct values and no mass near zero, where OLS is standard, not a Poisson-like event count."
+  },
+  {
+   "dataset": "DVN_NJIIPR",
+   "kind": "count",
+   "outcome": "q21edu",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "`regress Q21Edu ...` uses it as the DV, but Q21Edu is a survey education budget-allocation/preference amount ranging 0-97 (its companion Q17Edu reaches 105) with a smooth interior distribution and essentially no boundary mass (~0.7% at 0, none at 100), i.e., a near-continuous integer magnitude where OLS is standard, not a Poisson event count."
+  },
+  {
+   "dataset": "DVN_2E4MOZ",
+   "kind": "proportion",
+   "outcome": "voteshare16_noind",
+   "real": true,
+   "fp_class": "none",
+   "reason": "Figure-SI13.R applies `feols(voteshare16_noind ~ id*persig14 + ... | master_district)` (OLS with district fixed effects) to it, and voteshare16_noind is a genuine 2016 vote share bounded in [0,1] (min 0.11, max 1.0) with 12.5% of observations at exactly 1.0, a textbook Papke-Wooldridge fractional-response outcome with boundary mass."
+  },
+  {
+   "dataset": "DVN_VBNCF2",
+   "kind": "count",
+   "outcome": "refuse",
+   "real": true,
+   "fp_class": "none",
+   "reason": "`reg Refuse Managerial Penalties...` in 2.appendix-scholar-survey.do uses it as the DV, and Refuse is a bounded 0-100 subjective likelihood/percentage estimate with 24.8% of observations piled at exactly 0 (strong boundary mass, right-skewed to 100), a genuine fractional/proportion response where OLS is misspecified per Papke-Wooldridge despite the detector's 'count' label."
+  },
+  {
+   "dataset": "DVN_YLUNSN",
+   "kind": "count",
+   "outcome": "publicgoods",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "`reg publicgoods ...` in DakarTaxSurveyAnalyses_Rep.do uses it as the DV, but publicgoods is a bounded 0-100 subjective rating/percentage with a dominant interior spike at 50 (20.7%) and round-number heaping and only ~8% boundary mass, a near-continuous bounded magnitude where interval OLS is the mainstream defensible choice, not a Poisson event count."
+  },
+  {
+   "dataset": "DVN_DFZKB6",
+   "estimator": "felm",
+   "outcome": "num_of_white_cands",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "Line 630 fits felm(num_of_white_cands ~ ...) on the aggregated council data where num_of_white_cands is the LHS/DV, and its values are non-negative integers 0-30 (0-41 in ALLOFFICES) with mean ~4 and ~6.5% zeros, a genuine Poisson-like event count for which OLS is misspecified."
+  },
+  {
+   "dataset": "DVN_EHWM14",
+   "estimator": "felm",
+   "outcome": "roads_spend",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "interior_defensible",
+   "reason": "Line 155 fits felm(roads_spend ~ ...) on a genuine road-budget share, but the outcome is strictly interior in [0.008, 0.255] with zero mass at 0 or 1 and never approaches the upper bound, so the linear specification is a defensible approximation."
+  },
+  {
+   "dataset": "DVN_9ZYFBX",
+   "estimator": "reg",
+   "outcome": "turnout_opp_party",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "Line 248 runs reg turnout_opp_party treat rv treat_rv with turnout_opp_party as the DV, and it is a genuine turnout proportion spanning [0,1] with real boundary mass at both 0 (4.6%) and 1 (2.0%), the canonical Papke-Wooldridge fractional-response case where OLS is inappropriate."
+  },
+  {
+   "dataset": "DVN_VT4KJA",
+   "estimator": "ivreg2",
+   "outcome": "corrupexp",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "not_proportion",
+   "reason": "corrupexp (a bounded corruption-experience rate, 0-0.25) is estimated only via ivreg2 (2SLS/GMM instrumental variables at line 41), which is not one of the rubric's targeted OLS-family estimators, and for a 26-observation cross-national rate a linear/2SLS specification is the defensible mainstream choice."
+  },
+  {
+   "dataset": "DVN_W8HUKY",
+   "estimator": "lm",
+   "outcome": "abs",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "interior_defensible",
+   "reason": "Line 25 runs lm(abs~treat_cond, weights=weight), a two-group mean comparison of an MP absence rate that is strictly interior in [0.049, 0.713] with no mass at 0 or 1, so fitted group means stay well within [0,1] and OLS is defensible."
+  },
+  {
+   "dataset": "DVN_AW5LU8",
+   "outcome": "voted",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "The R code recodes voted to a binary 0/1 turnout indicator (cps$voted <- voted-1; values >1 set to 0) and uses it as the DV in lm_robust(voted ~ ...), which is a linear probability model on a Bernoulli indicator, not a Poisson-like event count."
+  },
+  {
+   "dataset": "DVN_AYSHR4",
+   "outcome": "migshare",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "interior_defensible",
+   "reason": "migshare (share of southern migrants, DV in reghdfe migshare and xtreg migshare) is a genuine bounded share but empirically strictly interior at 0.01-0.47 (n=11925, mean 0.078) with zero mass at 0 or 1, so linear FE predictions stay in range and OLS is defensible."
+  },
+  {
+   "dataset": "DVN_JO8C7A",
+   "outcome": "business",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "business (DV in reg business ...) takes integer values 3-22 across 77 oblasts and does not scale with region population (tiny Adygeia=9 exceeds large Bashkortostan=8, unlike the raw counts coop_num which run 316-12300), so it is an integer-rounded aggregate rate/percentage, not a genuine event count."
+  },
+  {
+   "dataset": "DVN_AU1MVC",
+   "outcome": "counties",
+   "kind": "count",
+   "real": true,
+   "fp_class": "real",
+   "reason": "counties (DV in reghdfe counties stronghold_reform) is a genuine non-negative integer tally of counties per prefecture-period, ranging 1-23 with mean 4.1 and a right-skewed Poisson-like shape, exactly the low-count regime where King-1988 count models apply rather than OLS."
+  },
+  {
+   "dataset": "DVN_H38CWS",
+   "outcome": "num_coyote",
+   "kind": "count",
+   "real": true,
+   "fp_class": "real",
+   "reason": "num_coyote (DV in lm(num_coyote ~ ...), Table A4) is a non-negative integer count of coyotes with about 79% zeros (586/739), mean 3.04 and median 0 in df_ds2, a textbook zero-inflated count where OLS is misspecified versus Poisson/NB."
+  },
+  {
+   "dataset": "DVN_OOLBO9",
+   "outcome": "abspolchange_for1",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "`lm(abspolchange_for1 ~ death ...)` (stats_models_190123_rep.R line 677+) uses the absolute change in the Polity2 regime index (integer 0-19, 84% at 0, capped at 20 by construction), a magnitude of change in a bounded -10..+10 ordinal scale rather than a Poisson-like event tally, so OLS is the standard treatment."
+  },
+  {
+   "dataset": "DVN_PXXUCO",
+   "outcome": "uper",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "real",
+   "reason": "`lm(uper ~ as.factor(role), internal)` (Schub_MainResults_APSR.R line 631) regresses uper = uncertain-words/total-function-words, a genuine [0,1] share of a bounded word total (values 0-0.095 with 16% exactly 0), so OLS on this fractional response is the Papke-Wooldridge misspecification."
+  },
+  {
+   "dataset": "DVN_RRBPUD",
+   "outcome": "frac_confdr_count_men_1861",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "real",
+   "reason": "`reg frac_confdr_count_men_1861 treat1, r` (06_analysis.do line 72) uses the fraction of a household's sons who fought in the Confederate Army, a genuine [0,1] share with heavy boundary mass at both 0 (36%) and 1 (18%), the textbook Papke-Wooldridge fractional-response case for which OLS is misspecified."
+  },
+  {
+   "dataset": "DVN_EVCSCQ",
+   "outcome": "yield",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "`xtreg yield budget i.year, fe` (cd_exp_results_replication_jop.do line 86) models sovereign bond yields (Table A2), a near-continuous financial rate expressed in basis points (241-1619, 421 unique values), not an event count, so linear panel regression is standard."
+  },
+  {
+   "dataset": "DVN_DFZKB6",
+   "outcome": "total_cands",
+   "kind": "count",
+   "real": true,
+   "fp_class": "real",
+   "reason": "`felm(total_cands ~ presidential + midterm + primary ...)` (Main Replication Code.Rmd line 957, SI table) uses total_cands as the dependent variable = number of candidates per city-council-year, a small Poisson-like integer tally (1-43, mean 5.6, 94% <=10), so OLS/felm on this event count is the King-1988 misspecification."
+  },
+  {
+   "dataset": "DVN_EHWM14",
+   "outcome": "health_avg",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "felm(health_avg ~ business_win + ...) uses the municipal health-expenditure budget share (health/total spending, labeled \"Health Expenditures (%)\"), a genuine bounded fractional outcome in [0,1] spanning ~0 (min 3.5e-5, right-skewed with heavy density near the lower boundary) to 0.73, so linear OLS is misspecified (Papke-Wooldridge)."
+  },
+  {
+   "dataset": "DVN_2LHT5U",
+   "outcome": "c10_catholic",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "interior_defensible",
+   "reason": "c10_catholic is a 2010-census municipal Catholic-population share used as a DV only once, in a randomization-balance check (lm_robust(c10_catholic ~ lives_in_sorsogon)), and its values are confined to [0.935, 0.976] (15 distinct, station-level) \u2014 strictly interior with no boundary mass \u2014 so linear OLS is defensible."
+  },
+  {
+   "dataset": "DVN_BZ9XRJ",
+   "outcome": "meta_undem_po",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "rescaled_ordinal",
+   "reason": "meta_undem_PO is the mean of several 7-point Likert meta-perception items (PO_harass_meta_/PO_challenge_meta_/PO_polling_meta_, each valued 1-7) min-max rescaled to [0,1] (values like 1/24, 1/18, 1/12), i.e., a rescaled ordinal attitude index for which interval OLS via reg is a defensible mainstream choice, not a genuine share/rate."
+  },
+  {
+   "dataset": "DVN_RQE9SO",
+   "outcome": "portfolio_sh",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "regress portfolio_sh seat_sh (Gamson's law) uses the cabinet portfolio share (= n_portfolios/tot_portfolios, confirmed by adjacent tot_portfolios/n_portfolios columns), a genuine share of a bounded total in [0,1] spanning 0 to 0.93 with a mass at 0, so linear OLS is misspecified (Papke-Wooldridge)."
+  },
+  {
+   "dataset": "DVN_GHRHU7",
+   "outcome": "d_share_gov",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "felm(D_share_gov ~ ...) uses the Democratic donation share D/(R+D) (constructed at line 438: mutate(D_share = D/(R+D))) among government-relations employees, a genuine bounded fractional outcome in [0,1] with extreme boundary mass (95% at 0, 3.1% at 1, no negatives), so linear OLS is misspecified (Papke-Wooldridge)."
+  }
+ ],
+ "raterB": [
+  {
+   "dataset": "DVN_QYGPDJ",
+   "outcome": "v2x_clphy",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "interior_defensible",
+   "reason": "v2x_clphy is the V-Dem physical-violence latent index, and in the estimation sample it is strictly interior (min 0.10, max 0.945, no mass at 0 or 1), so it is a bounded interval index rather than a genuine boundary proportion and the linear IV fit (ivreg2) is defensible."
+  },
+  {
+   "dataset": "DVN_OOLBO9",
+   "outcome": "abspolchange_for10",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "abspolchange_for10 is the absolute change in the bounded Polity regime score (integer 0-19, theoretical max 20, heavily zero-inflated), a difference-of-index magnitude rather than a Poisson event tally, so OLS on a change score is defensible."
+  },
+  {
+   "dataset": "DVN_ZABHCA",
+   "outcome": "motivation",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "rescaled_ordinal",
+   "reason": "motivation is a multi-item participation-motivation attitudinal scale min-max rescaled to [0,1] (31-57 distinct fractional values with denominators like 1/18 and 1/12, negligible boundary mass), i.e. a rescaled ordinal composite for which interval OLS is the mainstream choice, not a genuine share or rate."
+  },
+  {
+   "dataset": "DVN_FCZDKD",
+   "outcome": "proportionfemalecand",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "proportionfemalecand is a genuine share of legislative/House candidates who are female (bounded [0,1], values 0 to 0.45 with ~4.9% mass at exactly 0 in the US-House sample) used as the dependent variable in OLS (reg), the canonical Papke-Wooldridge fractional-response misspecification."
+  },
+  {
+   "dataset": "DVN_MPBGXL",
+   "outcome": "total_votes",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "total_votes is a party's total vote tally ranging 321 to 51,564 (median ~2,464, 279 of 287 values distinct, effectively continuous), a large near-continuous magnitude for which OLS is standard, not a small Poisson-like event count."
+  },
+  {
+   "dataset": "DVN_SKYD91",
+   "outcome": "resettled_c",
+   "kind": "count",
+   "real": true,
+   "fp_class": "real",
+   "reason": "In 'Replication commands.do' xtreg is applied to resettled_c (annual refugees resettled per country, non-negative integers 0-61298 with 74.7% zeros/median 0 and heavy overdispersion) as the DV; it is a genuine zero-inflated event count for which the authors themselves ran xtnbreg negative binomial, so the linear model is a King-1988 misspecification."
+  },
+  {
+   "dataset": "DVN_W8PHXM",
+   "outcome": "population",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "The only lm(population ~ Treated2015) call (code_04_R_Appendix.R, a covariate-balance check) uses municipal population (756 to 635,181, median 6,750, no zero mass) as the DV, a large near-continuous demographic magnitude where OLS/log-OLS is standard, not a Poisson-like event count."
+  },
+  {
+   "dataset": "DVN_27176",
+   "outcome": "names",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "xtreg regresses names (signatures per antislavery petition: median 61, 10th pct 20, only 2 zeros of 8,647, max 5,299) which is a large near-continuous/overdispersed magnitude for which OLS or the authors' own log transform (lnnames, also fit in the do-file) is the mainstream defensible choice, not a small zero-bounded event count."
+  },
+  {
+   "dataset": "DVN_KQJKY0",
+   "outcome": "month_anti_shia_pre",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_outcome",
+   "reason": "month_anti_shia_pre is never a standalone DV; every lm in twitter_analysis.R regresses the post-minus-pre change score (month_anti_shia_post - month_anti_shia_pre, ranging -86 to +293, ~half negative) on treatment, and the count itself is directly modeled with glm.nb (line 488) where this variable is a predictor, so the flagged token is the subtracted baseline, not the dependent variable."
+  },
+  {
+   "dataset": "DVN_STXADQ",
+   "outcome": "nprms.withdrawn",
+   "kind": "count",
+   "real": true,
+   "fp_class": "real",
+   "reason": "At replication_code.R line 413 lmer (the Gaussian identity-link column, explicitly contrasted with the authors' own Poisson glm/glmer in the 'Different Modeling Assumptions' table) is fit to nprms.withdrawn (withdrawn proposed rules per agency-year: mean 0.82, median 0, 65% zeros, 98% <=5, max 126), a textbook small event count, making the linear model a genuine King-1988 count misspecification."
+  },
+  {
+   "dataset": "DVN_IUZDQI",
+   "outcome": "scale",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "rescaled_ordinal",
+   "reason": "In analysis.do `reg scale treat22 treat23 treat24, robust` uses `scale` as the DV, but cleanup.do defines it as the 'BLM Support Index' = mean of six Likert items each rescaled to [0,1], and sampled values span [0,1] (162/849 at 1.0, 9 at 0), making it a composite attitude scale where interval OLS is the defensible mainstream choice, not a genuine share or rate."
+  },
+  {
+   "dataset": "DVN_EARLA4",
+   "outcome": "mean_prop_cospon_opp_spon_hr",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "real",
+   "reason": "The House replication runs `xtreg mean_prop_cospon_opp_spon_HR prop_co_bipart ... , fe cluster(icpsr)` with it as the DV, and its sampled values are a genuine [0,1] proportion (n=9202, median 0.26, 368 exact zeros/~4%, 61 ones) capturing the mean share of a member's cosponsorships to opposite-party sponsors, so linear FE on this fractional response with boundary mass is a real Papke-Wooldridge misspecification."
+  },
+  {
+   "dataset": "DVN_2LHT5U",
+   "outcome": "c10_catholic",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "interior_defensible",
+   "reason": "c10_catholic is a 2010-census municipal Catholic share used almost entirely as a right-hand-side control and only once as a DV in a balance test (`lm_robust(c10_catholic ~ lives_in_sorsogon)`, line 883), and its sampled values are tightly clustered in [0.934, 0.976] with only 15 distinct municipal values and no mass at 0 or 1, so it is strictly interior and OLS is defensible."
+  },
+  {
+   "dataset": "DVN_62TBIX",
+   "outcome": "age",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "age is used as a DV only inside a balance F-test (`lm(age~PRC+interpersonal)` fed to `pf(...)`), and its sampled values are respondent ages ranging 11-60, i.e., a near-continuous integer covariate (the rubric's canonical not_count example), not a Poisson-like event count."
+  },
+  {
+   "dataset": "DVN_EHWM14",
+   "outcome": "health_avg",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "real",
+   "reason": "MunicipalAnalysis.R runs `felm(health_avg ~ business_win + ... | factor(unit_type) | 0 | region)` with health_avg as the DV, and it is labeled 'Health Expenditures (%)' with xlim(0,1) and sampled as a genuine budget share in [0, 0.73] (mean 0.026, 488/2260 ~22% at exactly 0), a fractional response with heavy boundary mass at 0 that linear FE misspecifies."
+  },
+  {
+   "dataset": "DVN_HTMX3K",
+   "kind": "count",
+   "outcome": "sscie_count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "sscie_count is a genuine citation event count (integer 0-1084, 6.4% zeros, heavily overdispersed\u2014the paper's main models use glm.nb), and IRExampleReplication.R lines 1136-1137 apply lm() to the raw count as the dependent variable, so OLS-on-a-count is genuinely present."
+  },
+  {
+   "dataset": "DVN_NJIIPR",
+   "kind": "count",
+   "outcome": "q21edu",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "Q21Edu is a participatory-budgeting survey allocation to the education sector (integer 0-97, mean 22, a paired pre/post sector-budget preference), a near-continuous bounded magnitude where OLS is defensible, not a Poisson-like event tally."
+  },
+  {
+   "dataset": "DVN_P2U84B",
+   "kind": "count",
+   "outcome": "pr_regionalnumber",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "pr_regionalnumber is labeled 'List Number (PR)'\u2014a candidate's ordinal/nominal position number on the party's proportional-representation list (integers 1-15, 34% at value 1)\u2014a positional identifier rather than an event count."
+  },
+  {
+   "dataset": "DVN_1OPRYA",
+   "kind": "proportion",
+   "outcome": "share_populist_parties",
+   "real": true,
+   "fp_class": "none",
+   "reason": "share_populist_parties is a genuine district-level populist vote share bounded in [0,1] with 31.7% mass exactly at 0, and reghdfe (a linear felm-equivalent FE-OLS) is applied to it as the DV\u2014a textbook Papke-Wooldridge fractional-outcome misspecification."
+  },
+  {
+   "dataset": "DVN_DGHBUX",
+   "kind": "proportion",
+   "outcome": "votesharewithzero",
+   "real": true,
+   "fp_class": "none",
+   "reason": "votesharewithzero is a genuine vote share in [0,1] with boundary mass at both 0 (24.8%) and 1 (4.7%), fitted with linear reghdfe as the dependent variable, a classic fractional-response OLS misspecification."
+  },
+  {
+   "dataset": "DVN_G126SC",
+   "outcome": "firms",
+   "kind": "count",
+   "real": true,
+   "fp_class": "real",
+   "reason": "`reghdfe firms treated` (2_appendix.do:997, Table D.6 'firms seized from mafias') applies a linear model to a non-negative integer count that equals 0 in 289,259/290,880 rows (max 175, all integers), and the authors themselves fit `xtnbreg` on it, confirming a genuine zero-inflated event count."
+  },
+  {
+   "dataset": "DVN_CHLLZ4",
+   "outcome": "percent_women_candidates",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "real",
+   "reason": "`lmerTest::lmer(Percent_Women_Candidates ~ ...)` fits a Gaussian linear mixed model to the share of a party's candidates who are women, observed in [0, 0.61] with mass at the 0 boundary (6/148 zeros), a genuine Papke-Wooldridge fractional share of a bounded total rather than a rescaled Likert item."
+  },
+  {
+   "dataset": "DVN_VMPZIX",
+   "outcome": "n_list",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "`reg n_list i.hi_edu##i.male` (4_appendix.do:431) regresses ballot-list POSITION (integers 1-45 with monotonically decreasing frequency; the inline comment states 'DV is list position'), an ordinal rank rather than a Poisson-like tally of events, so the count classification is a false positive."
+  },
+  {
+   "dataset": "DVN_N2GGZ1",
+   "outcome": "yjndtmsnumberyearsunder4606",
+   "kind": "count",
+   "real": true,
+   "fp_class": "real",
+   "reason": "`xtreg yjndtmsnumberyearsunder4606 ...` (Table 3 Cols IV/V) fits a linear model to 'Number of Years Under GATT/WTO', a non-negative integer (0-61) with 43% zeros (3,889/9,038) that the authors themselves model with negative binomial (Col II, `nbreg`), so it is a genuine count outcome."
+  },
+  {
+   "dataset": "DVN_IG6ICN",
+   "outcome": "red_m20_absls",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "not_proportion",
+   "reason": "`red_m20_absls` is built as `share_lspost_p40p60 - pre_p40p60` (1_create_final_dataset.do:79), a redistribution DIFFERENCE of two income shares observed in a tight interior band (0.0075-0.0353, no negatives, no boundary mass), so the `ivreg` on this continuous signed measure is defensible and not a bounded-proportion misspecification."
+  },
+  {
+   "dataset": "DVN_DFZKB6",
+   "outcome": "total_cands",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "outcome_note": "felm on candidate count",
+   "reason": "In the 'Total Number of Candidate' chunk (Rmd line 957) felm(total_cands ~ ...) uses total_cands as the dependent variable, and in the loaded council-data file it is an all-integer tally of candidates ranging 1-43 (mode 3-5), a genuine small Poisson-like event count."
+  },
+  {
+   "dataset": "DVN_4QUS9U",
+   "outcome": "perc_community_contributions",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "Perc_Community_Contributions is the dependent variable in both reg (Appendix.do l.910/913) and mixed (l.1009/1012), and its deposited values are a genuine k/n share bounded in [0,1] with heavy mass at 0 (21.5%) and 1 (20.4%), a textbook fractional-response outcome."
+  },
+  {
+   "dataset": "DVN_KJWKLR",
+   "outcome": "share_ballots_pref",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "share_ballots_pref is constructed as pref/DT_dc_votes (1_building_datasets.do l.2176) and is the reghdfe dependent variable (2_replicating_analyses.do l.451-471); it is a genuine bounded vote share in [0,1] heavily piled near the zero bound (38% below 0.05, min 0.0001), a Papke-Wooldridge fractional outcome."
+  },
+  {
+   "dataset": "DVN_BZ9XRJ",
+   "outcome": "meta_undem_pis",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "rescaled_ordinal",
+   "reason": "meta_undem_PiS (reg dependent variable, panel analysis.do l.117) is the mean of several 7-point Likert meta-perception items (harass/challenge/polling/violence, each 1-7) min-max-rescaled to [0,1], i.e., a rescaled composite attitude scale where interval OLS is the defensible mainstream choice, not a genuine share of a bounded total or a rate."
+  },
+  {
+   "dataset": "DVN_EHWM14",
+   "outcome": "roads_spend",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "interior_defensible",
+   "reason": "roads_spend is a budget share ('Roads and Transportation Expenditures (%)', felm dependent variable RegionalAnalysis.R l.155/157) but its values are strictly interior (0.0076-0.255, 640 distinct, zero mass at 0 or 1 and far from both bounds), so OLS is defensible and the boundary concern does not bind."
+  },
+  {
+   "dataset": "DVN_AU1MVC",
+   "outcome": "counties",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "Appendix.do:310 `reghdfe counties stronghold_reform` uses counties as the DV, and its values in appendix_county_rebel.tab are a small non-negative integer tally (1-23, mode 2, right-skewed, no near-continuous magnitude), a genuine King-1988 unit count fit with a linear FE model."
+  },
+  {
+   "dataset": "DVN_RQE9SO",
+   "outcome": "portfolio_sh",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "gamson-apsr.do:45 `regress portfolio_sh seat_sh` uses portfolio_sh (cabinet-portfolio share, the canonical Gamson's-law DV) which is a genuine share of a bounded total in [0,1] (min 0, max 0.93, mean 0.33, a boundary obs at 0, 237 distinct fractions), a Papke-Wooldridge fractional outcome fit with OLS, not a rescaled Likert."
+  },
+  {
+   "dataset": "DVN_GHRCKV",
+   "outcome": "pastot",
+   "kind": "count",
+   "real": true,
+   "fp_class": "none",
+   "reason": "The headline Table 1 model `feols(PAsTOT ~ scale_disaster | year+ccode)` (titled 'Number of Prior Actions') applies linear OLS to PAsTOT, whose values are a genuine event count (integers 0-78, ~89% zeros with a long right tail, and the authors also fit fenegbin), so the linear feols is a King-1988 count misspecification."
+  },
+  {
+   "dataset": "DVN_CAEEG7",
+   "outcome": "dem",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "The county-level `lm(dem ~ pslave1860, weights=sample.size)` models dem (labeled 'Prop. Democrat') as the DV, and its values form a genuine aggregated share in [0,1] with real boundary mass (14.9% at 0, 3.8% at 1, mean 0.34), a Papke-Wooldridge fractional outcome fit with weighted OLS."
+  },
+  {
+   "dataset": "DVN_N2GGZ1",
+   "outcome": "yjndtmsnumberyearsunder4606",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "The `reg yjndtmsnumberyearsunder4606 ...` DV is a cumulative GATT/WTO membership-duration clock (integer years 0-61, 43% structural zeros then a near-uniform one-per-year ramp, which the authors also model with a Cox survival model), i.e., a tenure/duration magnitude like age rather than a Poisson event count, so linear/duration modeling is defensible."
+  },
+  {
+   "dataset": "DVN_AWSQTW",
+   "outcome": "ev_total",
+   "kind": "proportion",
+   "real": false,
+   "fp_class": "interior_defensible",
+   "reason": "ev_total is the Electoral Volatility (Pedersen) index used as DV in `reg ev_total ctot` (Table D7); it is bounded [0,1] but strictly interior with observed range [0.0195, 0.6927] and zero observations at 0 or 1, so OLS is defensible."
+  },
+  {
+   "dataset": "DVN_NMJ4W9",
+   "outcome": "responselength",
+   "kind": "count",
+   "real": false,
+   "fp_class": "not_count",
+   "reason": "responselength is the DV in `reg responselength foreign female ...` but is a text-length magnitude (integers 125-2756, mean 667, 286 distinct values, no small counts), a large near-continuous quantity where OLS is standard, not a Poisson-like event tally."
+  },
+  {
+   "dataset": "DVN_WPF4RC",
+   "outcome": "toptwodivisiveness",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "TopTwoDivisiveness = 1 - sum(donation-share^2) is a Gini-Simpson/1-HHI diversity index genuinely bounded in [0,0.5] with 86% of values piled exactly at 0, used as DV in `xtreg`, so linear modeling ignores the extreme lower-boundary mass."
+  },
+  {
+   "dataset": "DVN_0XQNDR",
+   "outcome": "vote_share_gdem",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "vote_share_gdem is the Democratic general-election vote share in [0,1] used as DV in `reghdfe` on the full sample (no removal of boundary values) with ~19% exact zeros and ~21% exact ones, a textbook fractional outcome whose boundary mass OLS mismodels."
+  },
+  {
+   "dataset": "DVN_WPKTKJ",
+   "outcome": "total_dos_9298_kal_p",
+   "kind": "proportion",
+   "real": true,
+   "fp_class": "none",
+   "reason": "total_dos_9298_kal_p is the proportion of District Officers who are Kalenjin (fractions such as 1/28, 1/25, 1/23) bounded in [0,1] with ~24% zeros, used as DV in `lm(total_dos_9298_kal_p ~ ...)`, a genuine bounded share with boundary mass that OLS mismodels."
+  }
+ ],
+ "summary": {
+  "overall": "66/119=0.55 CI(0.47, 0.64)",
+  "proportion": "37/60",
+  "count": "29/59",
+  "kappa": "~0.90 (0.90-0.95 depending on treatment of one rater-B self-contradicting duplicate; conservative honest value 0.90)",
+  "kappa_note": "37/39 agreement counting the N2GGZ1 self-contradiction as a disagreement; one real disagreement FCZDKD/proportionfemalecand",
+  "raterB_overall": "21/40"
+ }
+}

@@ -1,0 +1,15 @@
+# Reproduction package dependencies.
+#
+# Number regeneration from the committed artifacts (reproduce.py) needs only:
+numpy>=1.24
+pandas>=2.0
+#
+# The refit check (src/refit_broken.py) and the re-analysis anchors (src/reanalysis.py),
+# both optional re-runs over the rebuilt corpus:
+statsmodels>=0.14
+#
+# The DDI-CDI generator extension (src/cdi_generator_ext.py), needed to re-profile
+# datasets when the corpus is rebuilt (not needed for reproduce.py on the artifacts):
+datasketch>=1.6
+python-dateutil>=2.8
+chardet>=5.0

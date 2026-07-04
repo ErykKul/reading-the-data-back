@@ -1,0 +1,15 @@
+# This package SHIPS every committed artifact reproduce.py reads, so `python reproduce.py`
+# runs offline with no API key and no network. The raw census pool (~20 GB of deposited
+# replication data, rebuilt from public DOIs via src/census_harvest.py) is local-only and
+# must never be committed:
+data/
+
+# Local config (optional Dataverse API key for the corpus rebuild):
+.env
+
+# Python:
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
