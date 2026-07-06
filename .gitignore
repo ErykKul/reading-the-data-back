@@ -7,6 +7,9 @@ data/
 # Local config (optional Dataverse API key for the corpus rebuild):
 .env
 
+# Regenerated report written by src/run_eval_v2.py:
+rebuild_results.md
+
 # Python:
 __pycache__/
 *.pyc

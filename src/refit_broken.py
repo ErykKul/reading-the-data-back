@@ -247,6 +247,11 @@ def main():
     ap.add_argument("--only", default=None, help="comma-separated dataset dirs (debug)")
     args = ap.parse_args()
 
+    if not os.path.isdir(args.pool):
+        sys.exit(f"pool directory '{args.pool}' not found: the refit needs the raw census pool "
+                 f"(rebuild with `make corpus`). The shipped results are in atscale_refit_broken.json; "
+                 f"reproduce.py recomputes every paper number from them. Refusing to overwrite '{args.out}'.")
+
     res = json.load(open(args.flags))
     todo = []                                                    # (dataset, flag) for every clear-tier flag
     for d, x in res.items():

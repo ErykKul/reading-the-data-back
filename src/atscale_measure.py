@@ -28,26 +28,30 @@ print(f"  mismatches recovered (exact outcome flagged): {mm_outcome}/{len(mm)}")
 print(f"  controls passed (no flag): {ok_passed}/{len(ok)}")
 
 # ---- outcome-identification accuracy on the testbed (was the true outcome profiled + correctly classed?) ----
-loc = cls = n = 0
-miss_taxonomy = {"not_in_data": 0, "misclassified": 0, "profiled_ok": 0}
-for r in tb.itertuples():
-    if not r.in_pool:
-        continue
-    n += 1
-    kinds = profile_dataset(f"data/dv/{r.d}")
-    k = kinds.get(r.outcome_var.lower())
-    if k is None:
-        miss_taxonomy["not_in_data"] += 1
-    else:
-        loc += 1
-        if r.gt_label == "mismatch" and k in NONCONT:
-            cls += 1; miss_taxonomy["profiled_ok"] += 1
-        elif r.gt_label == "match":
-            cls += 1
+# Needs the raw pool: profiles the deposited data live (rebuild with `make corpus`).
+if not os.path.isdir("data/dv"):
+    print("\n[OUTCOME-ID] SKIPPED (data/dv not present; needs the raw pool)")
+else:
+    loc = cls = n = 0
+    miss_taxonomy = {"not_in_data": 0, "misclassified": 0, "profiled_ok": 0}
+    for r in tb.itertuples():
+        if not r.in_pool:
+            continue
+        n += 1
+        kinds = profile_dataset(f"data/dv/{r.d}")
+        k = kinds.get(r.outcome_var.lower())
+        if k is None:
+            miss_taxonomy["not_in_data"] += 1
         else:
-            miss_taxonomy["misclassified"] += 1
-print(f"\n[OUTCOME-ID] on {n} in-pool testbed cases: outcome located in data {loc}/{n} ({100*loc/n:.0f}%)")
-print(f"  miss taxonomy: {miss_taxonomy}")
+            loc += 1
+            if r.gt_label == "mismatch" and k in NONCONT:
+                cls += 1; miss_taxonomy["profiled_ok"] += 1
+            elif r.gt_label == "match":
+                cls += 1
+            else:
+                miss_taxonomy["misclassified"] += 1
+    print(f"\n[OUTCOME-ID] on {n} in-pool testbed cases: outcome located in data {loc}/{n} ({100*loc/n:.0f}%)")
+    print(f"  miss taxonomy: {miss_taxonomy}")
 
 # ---- corpus + flag volume ----
 tot = sum(len(x["flags"]) for x in res.values())
