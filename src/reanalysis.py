@@ -71,26 +71,34 @@ for label, res in [("OLS (clustered SE)", ols), ("Fractional logit (clustered SE
 oob = ((ols.fittedvalues < 0) | (ols.fittedvalues > 1)).mean() * 100
 print(f"  OLS predicts vote shares OUTSIDE [0,1] for {oob:.0f}% of observations (impossible); fractional logit cannot.")
 
-print()
-print("=" * 72)
-print("CASE 3  Legislative output (Y0HJJF): bill counts, published as linear panel (xtreg)")
-print("=" * 72)
-d = load("data/dv/cnt-ols_aflegis.tab", "\t")
-clustercol = next((c for c in ["country", "COWcode", "COW"] if c in d.columns), None)
-num = ["bills", "polyarchy_mean", "polyarchy_dev", "laws", "lpop", "wdi_gdpgr", "wdi_lifexp", "year"]
-num = [c for c in num if c in d.columns]
-for c in num:
-    d[c] = pd.to_numeric(d[c], errors="coerce")
-d = d.dropna(subset=num + ([clustercol] if clustercol else []))
-print(f"n={len(d)}  bills: mean={d.bills.mean():.1f} max={d.bills.max():.0f} (integer count)  cluster={clustercol}")
-f = "bills ~ polyarchy_mean + polyarchy_dev + laws + lpop + wdi_gdpgr + wdi_lifexp + C(year)"
-g = pd.factorize(d[clustercol])[0]
-ols = smf.ols(f, d).fit(cov_type="cluster", cov_kwds={"groups": g})
-poi = smf.glm(f, d, family=sm.families.Poisson()).fit(cov_type="cluster", cov_kwds={"groups": g})
-for label, res in [("OLS (published)", ols), ("Poisson (correct)", poi)]:
-    b, se, p = keycoef(res, "polyarchy_mean")
-    print(f"  {label:18}  polyarchy_mean  b={b:+.4f}  se={se:.4f}  p={p:.3f}  {sig(p)}")
-print(f"  OLS predicts NEGATIVE bill counts for {(ols.fittedvalues < 0).mean() * 100:.0f}% of observations.")
+# --- WITHDRAWN false positive (NOT one of Table 4's three re-analyses) --------------------------
+# Y0HJJF (African legislative bills) was filed as a count->OLS exemplar but removed from the testbed
+# during verification: as the paper reports (Sec. "The verified testbed"), its deposited headline model
+# is in fact a correct count model (nbreg), so it is NOT a mismatch. It is kept here only for the
+# record and is disabled by default, so this script reproduces exactly the paper's three-row Table 4
+# (CASE 1 hate crimes, CASE 2 ANC vote share, CASE 4 battle deaths).
+RUN_WITHDRAWN_CASE = False  # set True only to inspect the withdrawn Y0HJJF false positive
+if RUN_WITHDRAWN_CASE:
+    print()
+    print("=" * 72)
+    print("CASE 3  [WITHDRAWN] Legislative output (Y0HJJF): filed count->OLS, deposits correct nbreg")
+    print("=" * 72)
+    d = load("data/dv/cnt-ols_aflegis.tab", "\t")
+    clustercol = next((c for c in ["country", "COWcode", "COW"] if c in d.columns), None)
+    num = ["bills", "polyarchy_mean", "polyarchy_dev", "laws", "lpop", "wdi_gdpgr", "wdi_lifexp", "year"]
+    num = [c for c in num if c in d.columns]
+    for c in num:
+        d[c] = pd.to_numeric(d[c], errors="coerce")
+    d = d.dropna(subset=num + ([clustercol] if clustercol else []))
+    print(f"n={len(d)}  bills: mean={d.bills.mean():.1f} max={d.bills.max():.0f} (integer count)  cluster={clustercol}")
+    f = "bills ~ polyarchy_mean + polyarchy_dev + laws + lpop + wdi_gdpgr + wdi_lifexp + C(year)"
+    g = pd.factorize(d[clustercol])[0]
+    ols = smf.ols(f, d).fit(cov_type="cluster", cov_kwds={"groups": g})
+    poi = smf.glm(f, d, family=sm.families.Poisson()).fit(cov_type="cluster", cov_kwds={"groups": g})
+    for label, res in [("OLS (published)", ols), ("Poisson (correct)", poi)]:
+        b, se, p = keycoef(res, "polyarchy_mean")
+        print(f"  {label:18}  polyarchy_mean  b={b:+.4f}  se={se:.4f}  p={p:.3f}  {sig(p)}")
+    print(f"  OLS predicts NEGATIVE bill counts for {(ols.fittedvalues < 0).mean() * 100:.0f}% of observations.")
 
 print()
 print("=" * 72)
