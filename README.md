@@ -119,8 +119,8 @@ paper item, ending with the refit summary self-check (`stored summary matches re
 
 This repository is the public record of this work while the accompanying manuscript is under review:
 the full method, every reported number, and everything needed to reproduce them offline. A frozen copy
-is archived on Zenodo with a version DOI (badge added at release); until the paper is out, cite this
-repository by that DOI. The full paper citation will be added here at publication.
+will be deposited in the KU Leuven Research Data Repository (RDR) with a DOI at publication; until then,
+cite this repository directly (URL and commit). The full paper citation will be added here at publication.
 
 ## License
 
