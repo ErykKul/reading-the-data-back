@@ -74,7 +74,17 @@ from dateutil import parser as dateparser
 DDI_CDI_CONTEXT = "https://ddi-cdi.github.io/m2t-ng/DDI-CDI_1-0/encoding/json-ld/ddi-cdi.jsonld"
 
 # ---- Generator Version (increment when making changes to track generated files) ----
-GENERATOR_VERSION = "0.8"
+GENERATOR_VERSION = "0.9"  # 0.9: also emit the DDI-CDI standard classificationLevel alongside distributionKind
+
+# ---- P2: distributionKind's measurement-scale axis -> the DDI-CDI standard property classificationLevel ----
+# classificationLevel (CategoryRelationCode enum: Nominal/Ordinal/Interval/Ratio/Continuous) already carries
+# measurement scale in the standard, so the scale axis of distributionKind is NOT novel. The finer
+# distribution-family cut (count/proportion/heavy-tailed/binary) is the extension the DDI-CDI vocabulary
+# does not express, and it is what the model-data mismatch operator needs below the scale level.
+CLASSIFICATION_LEVEL = {
+    "categorical": "Nominal", "binary": "Nominal", "ordinal": "Ordinal",
+    "count": "Ratio", "proportion": "Ratio", "heavy-tailed": "Ratio", "continuous": "Continuous",
+}
 
 # ---- DDI Controlled Vocabulary Data Types ----
 DDI_DATATYPE_CV = "http://rdf-vocabulary.ddialliance.org/cv/DataType/1.1.2/#"
@@ -1385,7 +1395,18 @@ def build_jsonld_graph(
                 }
             }
             # --- P2 extension: emit the measured distribution KIND per variable ---
-            domain_node["distributionKind"] = col_stats.distribution_kind()
+            dkind = col_stats.distribution_kind()
+            domain_node["distributionKind"] = dkind
+            # Reuse the DDI-CDI standard measurement-scale property (classificationLevel, the scale axis of
+            # distributionKind) on a ValueAndConceptDescription, per the DDI-CDI SHACL. Purely additive: it
+            # does not touch distributionKind or the streaming profile the mismatch flags are built from.
+            vacd_id = f"{domain_id}-VACD"
+            domain_node["isDescribedBy"] = vacd_id
+            graph.append({
+                "@id": vacd_id,
+                "@type": "ValueAndConceptDescription",
+                "classificationLevel": CLASSIFICATION_LEVEL.get(dkind, "Continuous"),
+            })
             if codelist_id:
                 domain_node["takesValuesFrom"] = codelist_id
             graph.append(domain_node)
