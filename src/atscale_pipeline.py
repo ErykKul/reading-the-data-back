@@ -79,7 +79,7 @@ def extract_regressions(ddir):
 
 
 def assumed_kind(est):
-    base = est.split(".")[0].split("(")[0]
+    base = est.split(".")[0].split("(")[0].split("-")[0]  # also strip annotations like "regress-logOLS"
     if est in LINEAR or base in LINEAR:
         return "continuous"
     if base in COUNT_EST or est in COUNT_EST:

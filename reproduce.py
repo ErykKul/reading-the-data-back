@@ -75,7 +75,7 @@ fp = sum(1 for r in ok.itertuples()
          if assumed_kind(r.estimator.lower()) == "continuous" and r.measured_dist in NONCONT)
 print(f"""
 [TESTBED]  {len(tb)} cases ({len(mm)} mismatch, {len(ok)} controls), {tb.d.nunique()} datasets
-  detector on recorded classes: P = {tp/(tp+fp):.1f}, R = {tp/len(mm):.1f}  (== one-line baseline; the disclosed tie)""")
+  detector on recorded classes: P = {tp/(tp+fp):.3f}, R = {tp/len(mm):.3f}  ({tp} TP, {fp} FP, {len(mm)-tp} FN; == one-line baseline; the disclosed tie)""")
 
 # ---------------------------------------------------------------- recovery through noise
 in_pool = set(res)
