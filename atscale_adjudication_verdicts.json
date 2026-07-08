@@ -1,0 +1,435 @@
+[
+ {
+  "dataset": "DVN_QR73H6",
+  "outcome": "conf_count",
+  "kind": "count",
+  "real": true,
+  "fp_class": "real",
+  "source": "reused"
+ },
+ {
+  "dataset": "DVN_IOAMVW",
+  "outcome": "rps_attribution",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "source": "reused"
+ },
+ {
+  "dataset": "DVN_8I6NOT",
+  "outcome": "inappropriate",
+  "kind": "proportion",
+  "real": false,
+  "fp_class": "not_proportion",
+  "source": "reused"
+ },
+ {
+  "dataset": "DVN_8I6NOT",
+  "outcome": "offensive",
+  "kind": "proportion",
+  "real": false,
+  "fp_class": "not_proportion",
+  "source": "reused"
+ },
+ {
+  "dataset": "DVN_8I6NOT",
+  "outcome": "part_offline",
+  "kind": "proportion",
+  "real": false,
+  "fp_class": "not_outcome",
+  "source": "reused"
+ },
+ {
+  "dataset": "DVN_DO43V5",
+  "outcome": "taxrate.e",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "source": "reused"
+ },
+ {
+  "dataset": "DVN_IOAMVW",
+  "outcome": "rps_attribution",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "source": "reused"
+ },
+ {
+  "dataset": "DVN_OMJTCM",
+  "outcome": "outparty_therm",
+  "kind": "count",
+  "real": false,
+  "fp_class": "not_count",
+  "source": "reused"
+ },
+ {
+  "dataset": "DVN_NOWHWG",
+  "outcome": "wordcount",
+  "kind": "count",
+  "real": false,
+  "fp_class": "not_count",
+  "source": "reused"
+ },
+ {
+  "dataset": "DVN_YABNFF",
+  "outcome": "per_poljobs",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "source": "reused"
+ },
+ {
+  "dataset": "DVN_8I6NOT",
+  "outcome": "talk_offline_3",
+  "kind": "proportion",
+  "real": false,
+  "fp_class": "not_proportion",
+  "source": "reused"
+ },
+ {
+  "dataset": "DVN_IOAMVW",
+  "outcome": "houstonschool_n",
+  "kind": "proportion",
+  "real": false,
+  "fp_class": "not_proportion",
+  "source": "reused"
+ },
+ {
+  "dataset": "DVN_77KLLV",
+  "outcome": "uswunder",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "source": "reused"
+ },
+ {
+  "dataset": "DVN_27176",
+  "outcome": "names",
+  "kind": "count",
+  "real": false,
+  "fp_class": "not_count",
+  "source": "reused"
+ },
+ {
+  "dataset": "DVN_IOAMVW",
+  "outcome": "houstonschool_n",
+  "kind": "proportion",
+  "real": false,
+  "fp_class": "not_proportion",
+  "source": "reused"
+ },
+ {
+  "dataset": "DVN_8I6NOT",
+  "outcome": "part_online",
+  "kind": "proportion",
+  "real": false,
+  "fp_class": "not_outcome",
+  "source": "reused"
+ },
+ {
+  "dataset": "DVN_27512",
+  "outcome": "lnsmallent",
+  "kind": "count",
+  "real": false,
+  "fp_class": "transformed",
+  "source": "reused"
+ },
+ {
+  "dataset": "DVN_IK4NUZ",
+  "outcome": "harper_af_w2",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "In maintext_replication.do, `reg harper_af_w2 i.cond` runs plain OLS on harper_af_w2 (study1.tab col 8), an attitude scale rescaled to a discrete [0,1] grid (0, .167, .333, .5, .667, .833, 1) with min=0, max=1 and boundary mass (11/443 at 0, 3/443 at 1), a genuine bounded fractional outcome under a linear model.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_JIFKOU",
+  "outcome": "avg_con01",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "Study 2 Code .do runs `reg avg_con01 ...` (plain OLS) on avg_con01 (Study 2 Data.tab col 6), a [0,1]-scaled measure on a 0.05 grid ranging [0.1,1.0] with ~10.1% of the 623 observations piled at the upper boundary 1.0, so OLS can predict outside [0,1]: a real Papke-Wooldridge mismatch.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_OJA7YS",
+  "outcome": "minorparties_share",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "BKO_debates_AppendixTablesB1B2.R fits `lm(minorparties_share ~ ...)` on minorparties_share from BKO_constituency_analysis.csv, a genuine continuous constituency vote-share proportion in [0,0.408] with 14/275 observations at exactly 0, a bounded [0,1] rate under OLS.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_IOAMVW",
+  "outcome": "justifiedshooting_n",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "02-plots-rps.R fits `lm_robust(justifiedshooting_n ~ ...)` on justifiedshooting_n (clean-data.csv col 40), a 5-point Likert item explicitly rescaled as (code-1)/4 to {0,.25,.5,.75,1} with 35.6% mass at 0 and 2.9% at 1, a strongly boundary-loaded bounded [0,1] outcome under a linear model.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_HNH7BX",
+  "outcome": "trump_approve",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "Create Regression Tables.do runs `reg trump_approve ..., robust` (and the Rmd uses lm()) on trump_approve (Survey Respondent Data tab col 28), a 4-point approval scale rescaled to {0,.333,.667,1} with 64.5% of 1076 observations at the two boundaries (31.0% at 0, 33.5% at 1), a strong bounded-fractional mismatch under OLS.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_IOAMVW",
+  "outcome": "rps_concern",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "In 05-regression-tables-rps.R, rps_concern is the dependent variable in lm(rps_concern ~ ...) with HC1 robust SEs, and its sampled values (n=548) are a [0,1]-bounded rescaled scale (min=0, max=1, 18 distinct) with heavy boundary mass at 1 (22.8%) and some at 0 (0.9%), so OLS on this bounded fractional outcome is a genuine Papke-Wooldridge mismatch.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_WZZAXU",
+  "outcome": "meritocracy_01",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "In Replication_Do-File.do the primary/Figure 1 model is `reg meritocracy_01 ineq ineqWP` (OLS), and meritocracy_01 is a 5-point Likert item (raw 1-5) rescaled to {0,.25,.5,.75,1} bounded in [0,1] with mass at 0 (5.2%) and 1 (17.0%), so linear regression on this bounded fractional outcome is a real mismatch despite an ologit robustness check in the appendix.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_YFPQJH",
+  "outcome": "onepercent2",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "In Study 1.do, onepercent2 is the DV in `reg onepercent2 suspicion2 ...` (OLS); it is a 5-point Likert item min-max rescaled to {0,.25,.5,.75,1}, bounded in [0,1] with boundary mass at 0 (7.3%) and 1 (19.5%), so OLS on this bounded fractional outcome is a genuine mismatch.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_OKU1MG",
+  "outcome": "bn.share",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "In Section_4_Code.R, BN.Share is the DV in plain OLS `lm(BN.Share ~ Malay.Share + Population.Density)` (no transform), and it is a genuine electoral vote share (a true proportion, values 0.079-0.819 in [0,1]) which is exactly the Papke-Wooldridge fractional-response target; interior in this sample but still a bounded share where the linear model can predict outside [0,1].",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_IOAMVW",
+  "outcome": "deathpenalty_n",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "In 05-regression-tables-rps.R, deathpenalty_n is the DV in lm(deathpenalty_n ~ ...) with estimatr::starprep HC2 robust SEs (the lm_robust flag), and it is a 7-point Likert item rescaled to {0,1/6,...,1} bounded in [0,1] with heavy mass at BOTH boundaries (18.1% at 0, 15.7% at 1), the strongest case of a linear model on a bounded fractional outcome.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_8I6NOT",
+  "outcome": "talk_offline3",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "talk_offline3 is the dependent variable in lm(talk_offline3 ~ sdrt + ..., df.us) (analysis_s1_s8_appendix.R line 479), and its sampled values in s1_us_2018.csv are a min-max normalized 7-point Likert item bounded in [0,1] ({0,0.167,...,1}) with extreme mass at the 0 boundary (838/1515 ~55%), so OLS on this bounded fraction is a genuine Papke-Wooldridge mismatch.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_8ZT2ID",
+  "outcome": "first_eigen_share",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "first_eigen_share is the dependent variable in several lm(first_eigen_share ~ ...) models on oc_main (partycompetition_main_analysis.R lines 668-672) and by construction is the first eigenvalue divided by the sum of eigenvalues (a variance-explained share); on the analytic subset it is bounded in [0,1] (min 0.156, max=1.000, zero out-of-bounds) with the upper boundary attained, so OLS on this genuine bounded share is a real fractional-outcome mismatch.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_IOAMVW",
+  "outcome": "truancy_n",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "truancy_n is the dependent variable in lm_robust(truancy_n ~ ...) (02-plots-rps.R line 563) and lm() (05-regression-tables-rps.R line 255), and it is a 7-point Likert item rescaled as (1..7 - 1)/6 so its sampled values fall in [0,1] with heavy mass at 0 (175 obs) and 1 (31 obs), making OLS on this bounded fraction with boundary mass a genuine mismatch.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_IOAMVW",
+  "outcome": "welfarework_n",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "welfarework_n is the dependent variable in lm_robust(welfarework_n ~ ...) (02-plots-rps.R line 534) and lm() (05-regression-tables-rps.R line 245), constructed as a 5-point Likert item rescaled (1..5 - 1)/4 so sampled values lie in [0,1] with mass at 0 (104 obs) and 1 (40 obs), so OLS on this bounded fractional outcome with boundary mass is a real mismatch.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_22636",
+  "outcome": "disactual_voters_ratio",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "disactual_voters_ratio is the dependent variable in reg disactual_voters_ratio ... (MaleskySchulerTran do-file lines 632-636), and on the regression subset (politburo==0) its sampled values are a voter-share ratio bounded in [0,1] compressed against the top (range 0.963 to 0.9999, median 0.998, ~29% at/near 1), so OLS on this boundary-piled fractional response is a strong Papke-Wooldridge mismatch.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_ZUH3UG",
+  "outcome": "gem_women_share",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "Analysis_Main.R fits lm(gem_women_share ~ fair_dic) (raw, non-standardized DV) and Data_Main.tab col 7 gives n=3944 values in [0,0.8] with 39 observations exactly at 0, a genuine share-of-women proportion with mass at the 0 boundary that OLS can project below 0.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_IOAMVW",
+  "outcome": "rps_index",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "05-regression-tables-rps.R fits lm(rps_index ~ ...); the index is built as (sum of six 1-7 items minus 6)/36 so it is bounded [0,1] by construction, and clean-data.csv shows n=548 in exactly [0,1] with 5 obs at 0 and 12 at 1, a bounded fractional outcome with boundary mass.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_ZUH3UG",
+  "outcome": "fem_share",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "Analysis_Muni_Panel.R fits lm(fem_share ~ fair_dic + factor(year)) and GESIS_Councils.tab col 5 gives n=13297 values in [0,0.714] (share of women on municipal councils) with 3 obs at exactly 0, a genuine [0,1] proportion under a linear model.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_JIFKOU",
+  "outcome": "incongargstrong2",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "Study 3 Code.do fits reg incongargstrong2 i.open (and reg incongargstrong2 open) and Study 3 Data.tab col 23 is a near-continuous normalized rating with n=499 in exactly [0,1], including 28 obs at 0 and 5 at 1, so it is a bounded fractional outcome with boundary mass under OLS.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_8I6NOT",
+  "outcome": "talk_online_2",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "analysis_s1_s8_appendix.R fits lm(talk_online_2 ~ sdrt + ...) and s4_us_2021.csv col 53 is a 7-point item rescaled to k/6 in exactly [0,1] with 388 of 895 (43%) at exactly 0 and 14 at 1, a strongly boundary-massed bounded outcome for which OLS predicts impossible values.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_NOWHWG",
+  "outcome": "similarity",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "In Grapevine_Appendix.Rmd, `mod.similarity <- lm(similarity ~ ...)` uses cosine similarity as the dependent variable, and the grapevine tab data confirm it is genuinely bounded in [0,1] (study1 min 0.10 / max 1.0; study2 min 0.11 with 243/1013 = 24% piled at the 1.0 boundary), a bounded [0,1] ratio where OLS can predict impossible >1 values.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_YFPQJH",
+  "outcome": "deepstate2",
+  "kind": "proportion",
+  "real": false,
+  "fp_class": "not_proportion",
+  "reason": "`reg deepstate2 ...` uses it as the DV, but Study 1.do builds deepstate2 by min-max rescaling `gen deepstate2=(deepstate-r(min))/(r(max)-r(min))` of the raw 5-point Likert item deepstate (values 1-5), giving only 5 mass points {0,.25,.5,.75,1} in the data, i.e. a rescaled ordinal attitude scale, not a proportion/rate/share.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_8I6NOT",
+  "outcome": "talk_online_1",
+  "kind": "proportion",
+  "real": false,
+  "fp_class": "not_proportion",
+  "reason": "`lm(talk_online_1 ~ ...)` uses it as the DV on s4_us_2021 data, but functions.R defines `zero.one(x,min=1,max=7)=(x-1)/6` and the stored values are exactly the 7 Likert mass points {0,1/6,...,1}, so talk_online_1 is a rescaled 7-point ordinal frequency item, not a fractional proportion.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_WKJJ3Z",
+  "outcome": "affirm",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "`ols.affirm <- lm(affirm ~ protest_indicator + ..., weights=sample.size)` regresses a county-level share labeled 'Prop. Support Affirmative Action', and abs-jop-cces-white-countydata confirms it is a [0,1] proportion (n=2931, min 0, max 1, no values <0 or >1) with heavy boundary mass (625 counties at 0, 64 at 1), a textbook bounded fractional outcome under OLS.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_IOAMVW",
+  "outcome": "justifiedshooting_n",
+  "kind": "proportion",
+  "real": false,
+  "fp_class": "not_proportion",
+  "reason": "`lm(justifiedshooting_n ~ ...)` uses it as the DV, but 01-clean builds it from a 5-point Likert item via `(case_when(Never~1,...,Always~5)-1)/4`, a min-max rescaling of an ordinal attitude scale to [0,1] (mass points at 0/.25/.5/.75/1), not a proportion/rate/share.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_IOAMVW",
+  "outcome": "justifiedshooting_n",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "In 05-regression-tables-rps.R line 225 lm(justifiedshooting_n ~ ...) uses it as the DV; it is a 5-point Likert rescaled (x-1)/4 in the cleaning script and clean-data.csv shows values in {0, 0.166, 0.25, 0.333, 0.5, 0.666, 0.75, 0.833, 1} bounded in [0,1] with heavy mass at 0, 0.5, and 1, so OLS can predict outside [0,1] (Papke-Wooldridge).",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_JIFKOU",
+  "outcome": "post_position",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "In 'Study 2 Code .do' (e.g. line 71/116/117) reg post_position ... uses it as the DV, and Study 2 Data col 8 is bounded in [0,1] (0.0 to 1.0) with substantial boundary mass (207 at 0, 44 at 1), a genuine fractional outcome under a linear model.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_JIFKOU",
+  "outcome": "incongarg1",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "In 'Study 3 Code.do' reg incongarg1 i.open (line 58) and reg incongarg1 open (line 265) use it as the DV, and Study 3 Data col 28 ranges 0.0 to 1.0 (with mass at 0 and observations at 1), a bounded fractional outcome under OLS.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_Z3MVU7",
+  "outcome": "ewi_index",
+  "kind": "proportion",
+  "real": false,
+  "fp_class": "not_proportion",
+  "reason": "Although EWI_Index is the DV in reg EWI_Index ... (Appendix Models.do) and lies within [0,1], FINAL_CLIPPED_25degrees.tab col 6 is a continuous index strictly in the interior (~0.027 to ~0.961) with zero mass at (or near) the 0/1 boundaries, so OLS is defensible and the Papke-Wooldridge concern does not bind.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_77KLLV",
+  "outcome": "uswtrust",
+  "kind": "proportion",
+  "real": true,
+  "fp_class": "real",
+  "reason": "In the replication .do line 92 regress uswtrust uswtreat cruz uses it as the DV, and data col 32 is a 7-point trust scale rescaled to {0, 0.166, ..., 1} with 44.9% of the 1000 observations piled at the 0/1 boundaries (288 at 0, 161 at 1), a textbook bounded fractional outcome where OLS predicts outside [0,1].",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_8I6NOT",
+  "outcome": "talk_offline1",
+  "kind": "proportion",
+  "real": false,
+  "fp_class": "not_proportion",
+  "reason": "lm(talk_offline1 ~ sdrt + ...) confirms it is the DV, but the import script (vars17 + zero.one, lines 253-256) shows talk_offline1 is a single 7-point Likert 'talk politics offline' item cosmetically rescaled to the 7 values {0,.167,...,1}; despite 14% mass at 0 it is a rescaled ordinal rating, not a genuine proportion/rate/share, so the P&W fractional-response concern does not truly apply.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_HNH7BX",
+  "outcome": "crp_support",
+  "kind": "proportion",
+  "real": false,
+  "fp_class": "not_proportion",
+  "reason": "'reg crp_support crp_quintile ...' confirms it is the DV and values are bounded in [0,1] with heavy mass at 1, but the four evenly-spaced values {0,.333,.667,1} are the signature of a single 4-point ordinal support/agreement item rescaled by (x-1)/3, i.e. a rescaled Likert rating rather than a proportion/rate/share.",
+  "source": "refined_pass"
+ },
+ {
+  "dataset": "DVN_JIFKOU",
+  "outcome": "anti",
+  "kind": "proportion",
+  "real": false,
+  "fp_class": "not_proportion",
+  "reason": "'reg anti open##overall_pro if strng==1' confirms it is the DV, but 'anti' is an averaged participant-rating index of anti-gun-control statements scaled to [0,1] that is near-continuous (328 distinct values) and ~96% strictly interior with only ~1% at 0 and ~3% at 1, so OLS is defensible and it is not a boundary-heavy proportion.",
+  "source": "refined_pass"
+ }
+]

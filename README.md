@@ -72,11 +72,10 @@ Committed artifacts read by `reproduce.py`:
   each with its evidence note and false-positive class), so every call can be re-examined
 - `atscale_refit_broken.json` - the automated refit results with the full coverage taxonomy
 
-The remaining `atscale_*.json` files are the census-round intermediates: `atscale_novel_flags.json`
-(the novel clear-tier flags `atscale_measure.py` extracts) and `atscale_census_sample.json` /
-`atscale_census_irr.json` (the balanced sample + inter-rater overlap that `prep_census_adjudication.py`
-builds for the panel). `reproduce.py` recomputes the honest kappa from `atscale_census_verdicts.json`
-and shows the favorable collapse it replaces.
+The remaining `atscale_*.json` files are the disclosed audit trail of the adjudication protocol
+(pilot samples and verdicts, the first-pass records superseded by corrections reported in the paper,
+inter-rater samples and mappings). They are shipped for transparency; `reproduce.py` recomputes the
+honest kappa and shows the favorable collapse it replaces.
 
 ## What is in the package
 
@@ -88,7 +87,7 @@ reading-the-data-back/
   atscale_flags.json            census flag record        \
   atscale_census_verdicts.json  full adjudication record   | the committed artifacts
   atscale_refit_broken.json     automated refit results    |
-  atscale_*.json                census-round intermediates /
+  atscale_*.json                adjudication audit trail  /
   src/                          pipeline, generator extension, evaluation + fetch scripts
   requirements.txt  Makefile  example.env  SHA256SUMS
 ```

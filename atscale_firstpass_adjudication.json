@@ -1,0 +1,25 @@
+{
+"n": 50,
+"real": 11,
+"precision": 0.22,
+"byKind": {
+"count": {
+"n": 27,
+"real": 2
+},
+"proportion": {
+"n": 19,
+"real": 8
+},
+"unknown": {
+"n": 4,
+"real": 1
+}
+},
+"fpClasses": {
+"not_count": 23,
+"not_proportion": 12,
+"not_outcome": 3,
+"transformed": 1
+}
+}

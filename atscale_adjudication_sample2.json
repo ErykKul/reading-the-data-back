@@ -1,0 +1,233 @@
+[
+{
+"dataset": "DVN_IK4NUZ",
+"estimator": "reg",
+"outcome": "harper_af_w2",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_JIFKOU",
+"estimator": "reg",
+"outcome": "avg_con01",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_OJA7YS",
+"estimator": "lm",
+"outcome": "minorparties_share",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_IOAMVW",
+"estimator": "lm_robust",
+"outcome": "justifiedshooting_n",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_HNH7BX",
+"estimator": "reg",
+"outcome": "trump_approve",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_IOAMVW",
+"estimator": "lm",
+"outcome": "rps_concern",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_WZZAXU",
+"estimator": "reg",
+"outcome": "meritocracy_01",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_YFPQJH",
+"estimator": "reg",
+"outcome": "onepercent2",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_OKU1MG",
+"estimator": "lm",
+"outcome": "bn.share",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_IOAMVW",
+"estimator": "lm_robust",
+"outcome": "deathpenalty_n",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_8I6NOT",
+"estimator": "lm",
+"outcome": "talk_offline3",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_8ZT2ID",
+"estimator": "lm",
+"outcome": "first_eigen_share",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_IOAMVW",
+"estimator": "lm_robust",
+"outcome": "truancy_n",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_IOAMVW",
+"estimator": "lm_robust",
+"outcome": "welfarework_n",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_22636",
+"estimator": "reg",
+"outcome": "disactual_voters_ratio",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_ZUH3UG",
+"estimator": "lm",
+"outcome": "gem_women_share",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_IOAMVW",
+"estimator": "lm",
+"outcome": "rps_index",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_ZUH3UG",
+"estimator": "lm",
+"outcome": "fem_share",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_JIFKOU",
+"estimator": "reg",
+"outcome": "incongargstrong2",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_8I6NOT",
+"estimator": "lm",
+"outcome": "talk_online_2",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_NOWHWG",
+"estimator": "lm",
+"outcome": "similarity",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_YFPQJH",
+"estimator": "reg",
+"outcome": "deepstate2",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_8I6NOT",
+"estimator": "lm",
+"outcome": "talk_online_1",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_WKJJ3Z",
+"estimator": "lm",
+"outcome": "affirm",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_IOAMVW",
+"estimator": "lm",
+"outcome": "justifiedshooting_n",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_JIFKOU",
+"estimator": "reg",
+"outcome": "post_position",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_JIFKOU",
+"estimator": "reg",
+"outcome": "incongarg1",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_Z3MVU7",
+"estimator": "reg",
+"outcome": "ewi_index",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_77KLLV",
+"estimator": "regress",
+"outcome": "uswtrust",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_HNH7BX",
+"estimator": "reg",
+"outcome": "gov_avg",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_8I6NOT",
+"estimator": "lm",
+"outcome": "talk_offline1",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_HNH7BX",
+"estimator": "reg",
+"outcome": "crp_support",
+"kind": "proportion",
+"severity": "clear"
+},
+{
+"dataset": "DVN_JIFKOU",
+"estimator": "reg",
+"outcome": "anti",
+"kind": "proportion",
+"severity": "clear"
+}
+]
