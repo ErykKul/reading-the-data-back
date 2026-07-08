@@ -56,7 +56,7 @@ summarizes, each runnable alone from the package root (`PYTHONPATH=src python sr
 | the enriched DDI-CDI generator: per-variable `distributionKind` in one streaming pass | `cdi_generator_ext.py` (fork of `cdi_generator_jsonld.py` from [libis/rdm-integration](https://github.com/libis/rdm-integration)) |
 | standalone profiler used to build and re-verify the testbed | `profile_outcome.py` |
 | testbed precision/recall and the disclosed one-line-baseline tie | `run_eval_v2.py` (+ `testbed_eval.py`) |
-| census harvest (all 4,882 datasets, resumable) | `census_harvest.py` (pilot pool: `harvest_pool.py`; Dataverse API client: `dv.py`) |
+| census harvest (all 4,882 datasets, resumable) | `census_harvest.py` (Dataverse API client: `dv.py`) |
 | census profiling + flagging -> `atscale_flags.json` | `atscale_pipeline.py` |
 | recovery, denominators, flag volume, novel-flag extraction | `atscale_measure.py` |
 | the balanced adjudication sample + the two-rater adjudication panel | `prep_census_adjudication.py`, `census_adjudication_panel.js` |
@@ -72,10 +72,11 @@ Committed artifacts read by `reproduce.py`:
   each with its evidence note and false-positive class), so every call can be re-examined
 - `atscale_refit_broken.json` - the automated refit results with the full coverage taxonomy
 
-The remaining `atscale_*.json` files are the disclosed audit trail of the adjudication protocol
-(pilot samples and verdicts, the first-pass records superseded by corrections reported in the paper,
-inter-rater samples and mappings). They are shipped for transparency; `reproduce.py` recomputes the
-honest kappa and shows the favorable collapse it replaces.
+The remaining `atscale_*.json` files are the census-round intermediates: `atscale_novel_flags.json`
+(the novel clear-tier flags `atscale_measure.py` extracts) and `atscale_census_sample.json` /
+`atscale_census_irr.json` (the balanced sample + inter-rater overlap that `prep_census_adjudication.py`
+builds for the panel). `reproduce.py` recomputes the honest kappa from `atscale_census_verdicts.json`
+and shows the favorable collapse it replaces.
 
 ## What is in the package
 
@@ -87,7 +88,7 @@ reading-the-data-back/
   atscale_flags.json            census flag record        \
   atscale_census_verdicts.json  full adjudication record   | the committed artifacts
   atscale_refit_broken.json     automated refit results    |
-  atscale_*.json                adjudication audit trail  /
+  atscale_*.json                census-round intermediates /
   src/                          pipeline, generator extension, evaluation + fetch scripts
   requirements.txt  Makefile  example.env  SHA256SUMS
 ```
